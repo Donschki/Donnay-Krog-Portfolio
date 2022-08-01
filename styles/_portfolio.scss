@@ -1,13 +1,15 @@
-
-
-.portfolio {//               PORTFOLIO
+@mixin flexCenter {
  display: flex;
  justify-content: center;
+ align-items: center;
+}
+
+.portfolio {//               PORTFOLIO
  width: 100vw;
 
 .portfolioBox {//               PORTFOLIO_BOX
  height: 60vh;   
-} 
+
 
 .portfolioHeading {//               PORTFOLIO_HEADING
  width: 100vw;
@@ -29,29 +31,28 @@
  letter-spacing: 15px;
 }}
 
+.downWithDough3DContainer {
+ display: flex;
+ justify-content: center;
 }
 
-.downWithDough3DContainer {
- @include flexCenter;
-}
 
 .downWithDough3D {
- @include flexCenter;
  max-width: 60vw;
+ -moz-transform: skewY(-10deg);
+ -ms-transform: skewY(-10deg);
  transform: skewY(-10deg);
  transition: all 0.8s;
 
      img {
       width: 100%;
-      position: relative;
-      top: 0;
       transition: all 1s;
      }
 }
 
 .downWithDough3D img:hover {
  transition: all 1.5s;
- width: 80vw;
+ width: 70vw;
 }
 
 .downWithDough3D::before {
@@ -94,6 +95,6 @@ content: "";
  transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
  transition: all 1s;
  width: 100%;
-}
+}}}
 
 

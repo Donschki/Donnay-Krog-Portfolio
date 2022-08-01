@@ -188,11 +188,6 @@ body {
   font-family: "Edu NSW ACT Foundation", cursive;
   font-size: 1em;
   transition: 1s;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  backdrop-filter: blur(100px 10px 10px);
-  -webkit-backdrop-filter: blur(100px 100px 10px);
   overflow-x: hidden;
   /* Hide scrollbar for Chrome, Safari and Opera */
   -ms-overflow-style: none; /* IE and Edge */
@@ -283,58 +278,46 @@ body body::-webkit-scrollbar {
 }
 
 .portfolio {
-  display: flex;
-  justify-content: center;
   width: 100vw;
 }
 .portfolio .portfolioBox {
   height: 60vh;
 }
-.portfolio .portfolioHeading {
+.portfolio .portfolioBox .portfolioHeading {
   width: 100vw;
   padding-bottom: 3em;
   font-size: 8vw;
   word-spacing: 7px;
   letter-spacing: 4px;
 }
-.portfolio .portfolioHeading h1 {
+.portfolio .portfolioBox .portfolioHeading h1 {
   text-align: center;
   width: 100vw;
 }
-.portfolio .portfolioHeading #spanMyPortfolio {
+.portfolio .portfolioBox .portfolioHeading #spanMyPortfolio {
   letter-spacing: 20px;
 }
-.portfolio .portfolioHeading #spanPortfolio {
+.portfolio .portfolioBox .portfolioHeading #spanPortfolio {
   letter-spacing: 15px;
 }
-
-.downWithDough3DContainer {
+.portfolio .portfolioBox .downWithDough3DContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
-.downWithDough3D {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.portfolio .portfolioBox .downWithDough3D {
   max-width: 60vw;
   transform: skewY(-10deg);
   transition: all 0.8s;
 }
-.downWithDough3D img {
+.portfolio .portfolioBox .downWithDough3D img {
   width: 100%;
-  position: relative;
-  top: 0;
   transition: all 1s;
 }
-
-.downWithDough3D img:hover {
+.portfolio .portfolioBox .downWithDough3D img:hover {
   transition: all 1.5s;
-  width: 80vw;
+  width: 70vw;
 }
-
-.downWithDough3D::before {
+.portfolio .portfolioBox .downWithDough3D::before {
   content: "";
   width: 40px;
   height: 100%;
@@ -345,8 +328,7 @@ body body::-webkit-scrollbar {
   transform: skewY(45deg);
   transition: all 1s;
 }
-
-.downWithDough3D::after {
+.portfolio .portfolioBox .downWithDough3D::after {
   content: "";
   display: flex;
   align-items: center;
@@ -362,14 +344,12 @@ body body::-webkit-scrollbar {
   overflow: none;
   transition: all 1s;
 }
-
-.downWithDough3D:hover::before {
+.portfolio .portfolioBox .downWithDough3D:hover::before {
   color: black;
   transform: rotateY(160deg) translateX(8vw) skewY(30deg);
   transition: all 1s;
 }
-
-.downWithDough3D:hover::after {
+.portfolio .portfolioBox .downWithDough3D:hover::after {
   color: black;
   transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
   transition: all 1s;

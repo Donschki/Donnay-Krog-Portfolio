@@ -6,13 +6,6 @@ body {////////////////BODY      ///TABLE_TENNIS
     font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 1em;    
     transition: 1s;
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100% 100%; 
-    backdrop-filter: blur(100px 10px 10px);
-    -webkit-backdrop-filter: blur(100px 100px 10px);
-
     overflow-x: hidden;
 
 /* Hide scrollbar for Chrome, Safari and Opera */

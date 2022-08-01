@@ -1,8 +1,11 @@
-                                          //MIXINS
-@mixin flexCenter {/////////DISLPAY_FLEX
+
+
+//MIXINS
+@mixin flexCenter {
   display: flex;
   justify-content: center;
-  align-items: center;}
+  align-items: center;
+}
 
 @mixin navBar {/////////NAV_BAR
   width: 100%;
@@ -13,8 +16,7 @@
   background:linear-gradient();
   justify-content:space-between;
   top: 0;
-  left: 0;
-}
+  left: 0;}
 
 @mixin sideBar {//////////SIDE_BAR
   @include flexCenter();
