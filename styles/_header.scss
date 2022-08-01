@@ -1,0 +1,118 @@
+                                          //MIXINS
+@mixin flexCenter {/////////DISLPAY_FLEX
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+@mixin navBar {/////////NAV_BAR
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  position: fixed;
+  z-index: 1000; 
+  background:linear-gradient();
+  justify-content:space-between;
+  top: 0;
+  left: 0;
+}
+
+@mixin sideBar {//////////SIDE_BAR
+  @include flexCenter();
+  width: 14em;
+  height: 18em;
+  position: absolute;
+  top: 5em;
+  transition: transform 0.7s, opacity 0.7s, left 0.7s;
+  opacity: 0;
+  left: -16em}
+
+@mixin hamburger {//////////HAMBURGER
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  list-style: none;
+
+  .lines {////////////////HAMBURGER LINES
+    width: 1.5em;
+    height: 2px;
+    border-radius: 70px;
+  }
+  #line1 {
+   width: 0.9em;
+   background-color: white;
+  }
+  #line2 {
+   background-color: $fontColor;
+  }
+  #line3 {
+   background-color: $salmon;
+}}
+
+@mixin navList {///////////////NAV_LIST
+  justify-content: space-around;
+  color: rgba(95, 95, 95, 0.473);
+  
+.listItem {///////////////LIST_ITEM
+  display: flex;
+  justify-content: center;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+a {///////////////////////SIDEBAR_LINKS
+  @include flexCenter();
+  flex-direction: column;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.521);
+  transition: 0.5s;
+ 
+  height: 3em;
+  width: 4em;
+  
+&:hover {///////////////LIST_ITEM_HOVER
+  cursor: pointer;
+  background: $headingColor;
+  color: white;
+  border-radius: 6px;
+}}}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                            //HEADER NAV HAMBURGER
+
+header {///////////////HEADER
+
+nav {///////////////////////NAV_BAR
+  @include navBar();
+}
+
+.hamburgerMenu {//////////HAMBURGER
+  @include hamburger();
+}
+
+.sideBar {//////////SIDEBAR
+  @include sideBar();
+}
+
+.change {//////////SIDEBAR_CHANGE
+  opacity: 1;
+  left: 1em
+}
+
+#navList {///////////////NAV_LIST
+  @include navList();
+
+  .toggleLight {
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    
+    img {
+      position: absolute;
+      right: 0;
+    }
+  }
+}}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+

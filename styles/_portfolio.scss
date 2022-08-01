@@ -1,0 +1,214 @@
+
+@mixin projectContainers {
+    width: 20%;
+    height: 20em;
+    background-color: white;
+    margin: auto auto;
+    box-shadow: -12px 12px 5px 1px rgba(95, 95, 95, 0.473);
+
+    &:hover {
+        top:0.5em;
+        right: 0.5em;
+        position: relative;
+        box-shadow: none;
+        cursor: pointer;
+        transition: 0.5s;
+}}
+
+.projectsSection { ///////////////////////PROJECTS
+    @include flexCenter();
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+
+.projectContainers {
+    @include projectContainers();
+    margin:  1em;
+
+#tableTennis {///////////////////////TABLE_TENNIS
+    @include flexCenter();
+    position: sticky;
+    top: 10em;
+    height: 20em;
+    width: 100vw;
+    z-index: -100;
+
+.left-side {///////////////////////LEFT_SIDE
+     width: 2em;
+     position: absolute;
+     left: 0;}
+
+.right-side {///////////////////////RIGHT_SIDE
+     position: absolute;
+     right: 0;
+     width: 2em;}
+
+.left-bar,
+.right-bar {/////////////////////// BAR CUSTOM SETTING
+     height: 10em;
+     background-color: rgba(128, 128, 128, 0.74);
+     left: 0;
+     position: relative;  
+     border-radius: 7px ;
+     opacity: 0.3;}
+
+.left-bar {
+     animation: leftUpDown 15s;
+     animation-timing-function: infinite;
+     animation-iteration-count: infinite;
+
+     @keyframes leftUpDown {
+     0%{top: 100%; bottom: 0px;};
+     10%{top: 500px; bottom: 200px;};
+     20%{top: 50px; bottom: 0;};
+     30%{top: 50px; bottom: 0;};
+     40%{top: 50px; bottom: 0;};
+     50%{top: 50px; bottom: 0;};
+     60%{ bottom: 0; top: 0;};
+     70%{ bottom: 0; top: 0;};
+     80%{ bottom: 0; top: 0;};
+     90%{ bottom: 0; top: 0;};
+     100%{ bottom: 0; top: 0;};
+}}
+
+.right-bar {
+     animation: rightUpDown 15s; 
+     animation-iteration-count: infinite;
+
+    @keyframes rightUpDown {
+     0%{top: 50px; bottom: 0;};
+     10%{top: 50px; bottom: 0;};
+     20%{top: 50px; bottom: 0;};
+     30%{top: 50px; bottom: 0;};
+     40%{top: 50px; bottom: 0;};
+     50%{top: 50px; bottom: 0;};
+     60%{ bottom: 0; top: 0;};
+     70%{ bottom: 0; top: 0;};
+     80%{ bottom: 0; top: 0;};
+     90%{ bottom: 0; top: 0;};
+     100%{ bottom: 0; top: 0;};
+}}
+
+.ball {//////////////////////////BALL
+     width: 2em;
+     height: 2em;
+     margin: auto;
+     position: absolute;
+     border-radius: 50%;
+     background-color: rgba(128, 128, 128, 0.74);
+     opacity: 0.3;
+
+     animation: ball 15s;
+     animation-timing-function: infinite;
+     animation-iteration-count: infinite;
+     animation-direction: normal;
+
+@keyframes ball {
+    0%{left: 3%; left: 540px;};
+}}}}
+}
+
+
+
+
+
+
+.portfolio {//               PORTFOLIO
+ display: flex;
+ justify-content: center;
+ width: 100vw;
+
+.portfolioBox {//               PORTFOLIO_BOX
+ height: 60vh;   
+} 
+
+.portfolioHeading {//               PORTFOLIO_HEADING
+ width: 100vw;
+ padding-bottom: 3em;
+ font-size: 8vw;
+ word-spacing: 7px;
+ letter-spacing: 4px;
+
+ h1 {
+ text-align: center;
+ width: 100vw;
+ }
+
+ #spanMyPortfolio {
+ letter-spacing: 20px;
+ }
+        
+ #spanPortfolio {
+ letter-spacing: 15px;
+}}
+
+}
+
+
+
+.downWithDough3DContainer {
+ @include flexCenter;
+}
+
+.downWithDough3D {
+ @include flexCenter;
+ max-width: 60vw;
+ transform: skewY(-10deg);
+ transition: all 0.8s;
+
+     img {
+      width: 100%;
+      position: relative;
+      top: 0;
+      transition: all 1s;
+     }
+}
+
+.downWithDough3D img:hover {
+ transition: all 1.5s;
+ width: 80vw;
+}
+
+.downWithDough3D::before {
+content: "";
+ width: 40px;
+ height: 100%;
+ background-color: $blue;
+ position: absolute;
+ left: -40px;
+ top: -20px;
+ transform:  skewY(45deg);
+ transition: all 1s;
+}
+
+.downWithDough3D::after {
+      content: "";
+      display: flex;
+      align-items: center;
+      color: white;
+      width: 100%;
+      height: 40px;
+      top: -40px;
+      left: -0px;
+      background-color: $salmon;
+      position: absolute;
+      transform:  skewX(45deg);
+      transform-origin: bottom;
+      overflow: none;
+      transition: all 1s;
+}
+
+.downWithDough3D:hover::before {
+ color: black;
+ transform: rotateY(160deg) translateX(8vw) skewY(30deg);
+ transition: all 1s;
+}
+
+.downWithDough3D:hover::after {
+ color: black;
+ transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
+ transition: all 1s;
+ width: 100%;
+}
+
+
