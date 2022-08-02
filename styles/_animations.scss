@@ -32,7 +32,7 @@
       0 0 2px #fff,
       0 0 2px #fff,
       0 0 7px #fff,
-      0 0 10px #fff,
+      0 0 30px #fff,
   }
  0%,5%,8%,9%, 12% {
    text-shadow: none;
@@ -57,7 +57,7 @@
     0 0 1px $blue,
     0 0 2px $blue,
     0 0 2px $blue,
-    0 0 7px $blue,
+    0 0 30px $blue,
   }
 
  0%, 5%, 12% {
@@ -69,11 +69,11 @@
 
  #spanKrog {
  animation: spanKrog 4s infinite;
- color: rgba(134, 134, 134, 0.178);
+ color: rgba(150, 54, 54, 0.123);
 
  @keyframes spanKrog {
 
- 0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+ 0%,10%,15%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
 
   text-shadow: 
   0 0 1px $salmon,
@@ -85,9 +85,10 @@
   0 0 2px $salmon,
   0 0 2px $salmon,
   0 0 7px $salmon,
+  0 0 30px $salmon,
   }
 
- 0%, 5%, 12% {
+ 0%, 5%,20%, 12% {
    text-shadow: none;
 }
 

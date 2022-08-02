@@ -89,6 +89,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  gap: 1em;
 }
 main .portrait {
   min-height: 100vh;
@@ -101,7 +102,7 @@ main .portrait .portraitBox .mainHeading {
   flex-direction: column;
   font-size: 28vw;
   letter-spacing: 0.3em;
-  line-height: 30vh;
+  line-height: 25vh;
 }
 main .portrait .portraitBox .spanMainHeading {
   display: flex;
@@ -363,7 +364,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 30px #fff;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -371,7 +372,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 30px #fff;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -385,7 +386,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 30px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -393,7 +394,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 30px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -403,21 +404,21 @@ body body::-webkit-scrollbar {
 #spanKrog {
   -webkit-animation: spanKrog 4s infinite;
           animation: spanKrog 4s infinite;
-  color: rgba(134, 134, 134, 0.178);
+  color: rgba(150, 54, 54, 0.123);
 }
 @-webkit-keyframes spanKrog {
-  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e;
+  0%, 10%, 15%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
   }
-  0%, 5%, 12% {
+  0%, 5%, 20%, 12% {
     text-shadow: none;
   }
 }
 @keyframes spanKrog {
-  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e;
+  0%, 10%, 15%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
   }
-  0%, 5%, 12% {
+  0%, 5%, 20%, 12% {
     text-shadow: none;
   }
 }
