@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
 header nav {
-  width: 100%;
+  width: 100vw;
   padding: 0.5em;
   display: flex;
   position: fixed;
@@ -95,19 +95,18 @@ main .portrait {
   min-height: 100vh;
 }
 main .portrait .portraitBox {
-  display: flex;
+  height: 100vh;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
-  font-size: 28vw;
+  width: 100vw;
   letter-spacing: 0.3em;
-  line-height: 25vh;
 }
 main .portrait .portraitBox .spanMainHeading {
-  display: flex;
-  transform: rotateX(-30deg);
-  padding: 15px;
+  font-size: 38vw;
+  height: 30vh;
 }
 
 .main2 {
