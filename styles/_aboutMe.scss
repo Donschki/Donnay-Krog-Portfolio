@@ -4,8 +4,9 @@
  flex-direction: column;
 
 .myJourneyBox {////                 ////MY_JOURNEY_BOX
-
-width: 100vw;
+    
+.spanMyJourneyBox {
+}
  section {
  display: flex;
  flex-direction: column;
@@ -38,6 +39,8 @@ width: 100vw;
      }
 }}
 
+
+
 .aboutMeBox {////////ABOUT_ME_BOX
 
 #spanMe {
@@ -68,7 +71,7 @@ section {
  overflow: hidden;
  
 .initialContainer {
- width: 50%;
+ width: 54%;
 }
 
 .initial {

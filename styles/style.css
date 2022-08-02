@@ -88,15 +88,10 @@ header #navList .toggleLight img {
 main {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  gap: 1em;
+  overflow-x: hidden;
 }
 main .portrait {
   min-height: 100vh;
-}
-main .portrait .portraitBox {
-  display: flex;
-  gap: 2em;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
@@ -201,9 +196,6 @@ body body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
 }
-.aboutMe .myJourneyBox {
-  width: 100vw;
-}
 .aboutMe .myJourneyBox section {
   display: flex;
   flex-direction: column;
@@ -260,7 +252,7 @@ body body::-webkit-scrollbar {
   overflow: hidden;
 }
 .aboutMe .aboutMeBox section .initialContainer {
-  width: 50%;
+  width: 54%;
 }
 .aboutMe .aboutMeBox section .initial {
   width: 10em;
@@ -502,16 +494,15 @@ main {
 .slidingBanner {
   -webkit-animation: banner 7s linear infinite;
           animation: banner 7s linear infinite;
-  width: 100vw;
   transform: translateX(100%);
   font-size: 40px;
+  margin: 10px;
 }
 .slidingBanner h2 {
   width: 18em;
-  color: rgba(255, 255, 255, 0.295);
+  color: rgba(65, 82, 241, 0.178);
   word-spacing: 3px;
   letter-spacing: 8px;
-  height: 1.7em;
 }
 @-webkit-keyframes banner {
   0% {
@@ -521,7 +512,7 @@ main {
     transform: translateX(-330%);
   }
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 10px #2da8d8, 0 0 40px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 30px #2da8d8;
   }
   1%, 5%, 9%, 90% {
     text-shadow: none;
@@ -535,7 +526,7 @@ main {
     transform: translateX(-330%);
   }
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 10px #2da8d8, 0 0 40px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 30px #2da8d8;
   }
   1%, 5%, 9%, 90% {
     text-shadow: none;
@@ -627,6 +618,9 @@ main {
   #spanPrinciples {
     font-size: 6vw;
   }
+  .portraitBox .spanMainHeading {
+    font-size: 1em;
+  }
   .aboutMe #spanMy {
     margin-left: 50em;
   }
@@ -660,6 +654,11 @@ main {
   .aboutMe .myJourneyBox #spanHungry {
     font-size: 5vw;
     width: 100%;
+  }
+}
+@media all and (min-width: 700px) {
+  .spanMainHeading {
+    font-size: 10vw;
   }
 }
 * {

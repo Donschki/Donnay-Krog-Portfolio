@@ -2,15 +2,14 @@
 main {
  display: flex;
  flex-direction: column;
- overflow: hidden;
- gap: 1em;
+ overflow-x: hidden;
+
 
 .portrait {
  min-height: 100vh;
 
 .portraitBox{
-  display: flex;
-  gap: 2em;
+
     .mainHeading {
      display: flex;
      flex-wrap: nowrap;

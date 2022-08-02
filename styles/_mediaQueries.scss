@@ -4,6 +4,13 @@
  font-size: 6vw;
 }
 
+.portraitBox {
+
+.spanMainHeading {
+  font-size: 1em;
+}
+}
+
 .aboutMe {
 
 #spanMy {
@@ -54,8 +61,10 @@
 }
 }}}
 
-@media all and (min-width: 680px) {
-
+@media all and (min-width: 700px) {
+.spanMainHeading {
+  font-size: 10vw;
+}
 }
 
 @media all and (min-width: 800px) {
