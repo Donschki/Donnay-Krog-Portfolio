@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
+header nav {
+  width: 100%;
+  padding: 0.5em;
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  background: linear-gradient();
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+}
+header .hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+  list-style: none;
+}
+header .hamburgerMenu .lines {
+  width: 1.5em;
+  height: 2px;
+  border-radius: 70px;
+}
+header .hamburgerMenu #line1 {
+  width: 0.9em;
+  background-color: white;
+}
+header .hamburgerMenu #line2 {
+  background-color: #2da8d8;
+}
+header .hamburgerMenu #line3 {
+  background-color: #d9524e;
+}
+header .sideBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14em;
+  height: 18em;
+  position: absolute;
+  top: 5em;
+  transition: transform 0.7s, opacity 0.7s, left 0.7s;
+  opacity: 0;
+  left: -16em;
+}
+header .change {
+  opacity: 1;
+  left: 1em;
+}
+header #navList {
+  justify-content: space-around;
+  color: rgba(95, 95, 95, 0.473);
+}
+header #navList .listItem {
+  display: flex;
+  justify-content: center;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+header #navList a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 0.521);
+  transition: 0.5s;
+  height: 3em;
+  width: 4em;
+}
+header #navList a:hover {
+  cursor: pointer;
+  background: #d9524e;
+  color: white;
+  border-radius: 6px;
+}
+header #navList .toggleLight {
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+}
+header #navList .toggleLight img {
+  position: absolute;
+  right: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 2em;
+}
+main .portrait {
+  min-height: 90vh;
+}
+main .portrait .portraitBox {
+  display: flex;
+}
+main .portrait .portraitBox .mainHeading {
+  display: flex;
+  flex-direction: column;
+  font-size: 28vw;
+  letter-spacing: 0.2em;
+  gap: 6vh;
+}
+main .portrait .portraitBox .spanMainHeading {
+  transform: rotateX(-30deg);
+  padding: 10px 20px;
+}
+
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* SIDEBAR START */
+.hoverMenu {
+  transform: skewY(-10deg);
+  width: 100%;
+  position: relative;
+  left: 2em;
+  z-index: 1000;
+}
+
+.hoverMenu .menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background-color: #4c4e57;
+  z-index: var(--i);
+  transition: 0.5s;
+  padding: 0.5em;
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+}
+
+.hoverMenu .menuItem:hover {
+  background: #d9524e;
+  transform: translateX(50px);
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 150px 10px #d9524e;
+}
+
+.hoverMenu .menuItem::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #3e3f46;
+  transform: skewY(45deg);
+  transform-origin: right;
+  transition: 0.5s;
+  box-shadow: 0 0 150px 10px #2da8d8;
+}
+
+.hoverMenu .menuItem::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  background-color: #3e3f46;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+
+/* SIDEBAR END */
+body {
+  background-color: #2C3539;
+  font-family: "Oswald", sans-serif;
+  font-family: "Tapestry", cursive;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-size: 1em;
+  transition: 1s;
+  overflow-x: hidden;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+body body::-webkit-scrollbar {
+  display: none;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMe .myJourneyBox {
+  width: 100vw;
+}
+.aboutMe .myJourneyBox section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.aboutMe .myJourneyBox #spanMy {
+  letter-spacing: 20px;
+  margin-left: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .myJourneyBox #spanJourney {
+  text-orientation: sideways-left;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  letter-spacing: 10px;
+  float: right;
+  margin-top: 0.5em;
+}
+.aboutMe .myJourneyBox .myJourneyBoxParagraph {
+  font-size: 0.7em;
+  color: #2da8d8;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+  padding: 0.5em 0;
+}
+.aboutMe .myJourneyBox .myJourneyBoxParagraph #bigWord {
+  color: #d9524e;
+}
+.aboutMe .aboutMeBox #spanMe {
+  letter-spacing: 20px;
+  margin-left: 1em;
+}
+.aboutMe .aboutMeBox #spanAbout {
+  text-orientation: sideways-left;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: rotateZ(-180deg);
+  letter-spacing: 15px;
+  float: left;
+  margin-top: 1em;
+}
+.aboutMe .aboutMeBox #spanHungry {
+  font-size: 8vw;
+  width: 8em;
+  text-align: center;
+  margin: auto;
+}
+.aboutMe .aboutMeBox section {
+  display: flex;
+  flex-direction: column;
+  color: #2da8d8;
+}
+.aboutMe .aboutMeBox section .initialContainer {
+  width: 50%;
+}
+.aboutMe .aboutMeBox section .initial {
+  width: 7.2em;
+  font-size: 1em;
+}
+.aboutMe .aboutMeBox section .principles {
+  line-height: 1.4em;
+  letter-spacing: 2px;
+  font-size: 0.7em;
+}
+.aboutMe .aboutMeBox section .initial::first-letter {
+  color: #d9524e;
+  font-size: 170px;
+  float: left;
+  line-height: 0.8em;
+}
+
+.portfolio {
+  width: 100vw;
+}
+.portfolio .portfolioBox {
+  height: 60vh;
+}
+.portfolio .portfolioBox .portfolioHeading {
+  width: 100vw;
+  padding-bottom: 3em;
+  font-size: 7vw;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+}
+.portfolio .portfolioBox .portfolioHeading h1 {
+  text-align: center;
+  width: 100vw;
+}
+.portfolio .portfolioBox .portfolioHeading #spanMyPortfolio {
+  letter-spacing: 20px;
+}
+.portfolio .portfolioBox .portfolioHeading #spanPortfolio {
+  letter-spacing: 15px;
+}
+.portfolio .portfolioBox .downWithDough3DContainer {
+  display: flex;
+  justify-content: center;
+}
+.portfolio .portfolioBox .downWithDough3D {
+  max-width: 60vw;
+  transform: skewY(-10deg);
+  transition: all 0.8s;
+}
+.portfolio .portfolioBox .downWithDough3D img {
+  width: 100%;
+  transition: all 1s;
+}
+.portfolio .portfolioBox .downWithDough3D img:hover {
+  transition: all 1.5s;
+  width: 70vw;
+}
+.portfolio .portfolioBox .downWithDough3D::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-color: #2da8d8;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  transform: skewY(45deg);
+  transition: all 1s;
+}
+.portfolio .portfolioBox .downWithDough3D::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 40px;
+  top: -40px;
+  left: 0px;
+  background-color: #d9524e;
+  position: absolute;
+  transform: skewX(45deg);
+  transform-origin: bottom;
+  overflow: none;
+  transition: all 1s;
+}
+.portfolio .portfolioBox .downWithDough3D:hover::before {
+  color: black;
+  transform: rotateY(160deg) translateX(8vw) skewY(30deg);
+  transition: all 1s;
+}
+.portfolio .portfolioBox .downWithDough3D:hover::after {
+  color: black;
+  transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
+  transition: all 1s;
+  width: 100%;
+}
+
+#spanDon {
+  -webkit-animation: spanDon 4s infinite;
+          animation: spanDon 4s infinite;
+  color: rgba(158, 158, 158, 0.096);
+}
+@-webkit-keyframes spanDon {
+  1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 25px white;
+  }
+  0%, 5%, 8%, 9%, 12% {
+    text-shadow: none;
+  }
+}
+@keyframes spanDon {
+  1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 25px white;
+  }
+  0%, 5%, 8%, 9%, 12% {
+    text-shadow: none;
+  }
+}
+
+#spanNay {
+  -webkit-animation: spanNay 4s infinite;
+          animation: spanNay 4s infinite;
+  color: rgba(134, 134, 134, 0.178);
+}
+@-webkit-keyframes spanNay {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #2da8d8, 0 0 3px #2da8d8, 0 0 5px #2da8d8, 0 0 25px #2da8d8;
+  }
+  0%, 5%, 12% {
+    text-shadow: none;
+  }
+}
+@keyframes spanNay {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #2da8d8, 0 0 3px #2da8d8, 0 0 5px #2da8d8, 0 0 25px #2da8d8;
+  }
+  0%, 5%, 12% {
+    text-shadow: none;
+  }
+}
+
+#spanKrog {
+  -webkit-animation: spanKrog 4s infinite;
+          animation: spanKrog 4s infinite;
+  color: rgba(160, 47, 47, 0.342);
+}
+@-webkit-keyframes spanKrog {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 3px #d9524e, 0 0 5px #d9524e, 0 0 25px #d9524e;
+  }
+  0%, 5%, 12% {
+    text-shadow: none;
+  }
+}
+@keyframes spanKrog {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 3px #d9524e, 0 0 5px #d9524e, 0 0 25px #d9524e;
+  }
+  0%, 5%, 12% {
+    text-shadow: none;
+  }
+}
+
+.spanMyJourneyBox {
+  -webkit-animation: flicker1 5s infinite alternate;
+          animation: flicker1 5s infinite alternate;
+  color: rgba(255, 255, 255, 0.295);
+  font-size: 15vw;
+  text-orientation: sideways;
+}
+@-webkit-keyframes flicker1 {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 100% {
+    text-shadow: 0 0 1px white, 0 0 5px white, 0 0 50px white;
+  }
+  90%, 92%, 94%, 99% {
+    text-shadow: none;
+  }
+}
+@keyframes flicker1 {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 100% {
+    text-shadow: 0 0 1px white, 0 0 5px white, 0 0 50px white;
+  }
+  90%, 92%, 94%, 99% {
+    text-shadow: none;
+  }
+}
+
+.spanAboutMeBox {
+  -webkit-animation: flicker2 3s infinite alternate;
+          animation: flicker2 3s infinite alternate;
+  color: rgba(255, 255, 255, 0.295);
+  font-size: 15vw;
+  text-orientation: sideways;
+}
+@-webkit-keyframes flicker2 {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px white, 0 0 5px white, 0 0 50px white;
+  }
+  1%, 5%, 9%, 90% {
+    text-shadow: none;
+  }
+}
+@keyframes flicker2 {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px white, 0 0 5px white, 0 0 50px white;
+  }
+  1%, 5%, 9%, 90% {
+    text-shadow: none;
+  }
+}
+
+.slidingBanner {
+  -webkit-animation: banner 7s linear infinite;
+          animation: banner 7s linear infinite;
+  width: 100vw;
+  transform: translateX(100%);
+  font-size: 40px;
+}
+.slidingBanner h2 {
+  width: 18em;
+  color: rgba(255, 255, 255, 0.295);
+  word-spacing: 3px;
+  letter-spacing: 8px;
+  height: 1.7em;
+}
+@-webkit-keyframes banner {
+  0% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(-330%);
+  }
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #2da8d8, 0 0 10px #2da8d8, 0 0 40px #2da8d8;
+  }
+  1%, 5%, 9%, 90% {
+    text-shadow: none;
+  }
+}
+@keyframes banner {
+  0% {
+    transform: translateX(140%);
+  }
+  100% {
+    transform: translateX(-330%);
+  }
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px #2da8d8, 0 0 10px #2da8d8, 0 0 40px #2da8d8;
+  }
+  1%, 5%, 9%, 90% {
+    text-shadow: none;
+  }
+}
+
+#spanHungry {
+  color: rgba(255, 255, 255, 0.295);
+  -webkit-animation: breatheFlicker 4.5s linear infinite;
+          animation: breatheFlicker 4.5s linear infinite;
+}
+@-webkit-keyframes breatheFlicker {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+  }
+  90%, 99% {
+    text-shadow: none;
+  }
+}
+@keyframes breatheFlicker {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+  }
+  90%, 99% {
+    text-shadow: none;
+  }
+}
+
+#spanPrinciples {
+  -webkit-animation: flickerPrinciples 5s infinite linear;
+          animation: flickerPrinciples 5s infinite linear;
+  color: rgba(255, 255, 255, 0.295);
+  font-size: 8vw;
+}
+@-webkit-keyframes flickerPrinciples {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+  }
+  1%, 3% {
+    text-shadow: none;
+  }
+}
+@keyframes flickerPrinciples {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+  }
+  1%, 3% {
+    text-shadow: none;
+  }
+}
+
+.portfolioHeading {
+  -webkit-animation: headingFlicker 5s infinite alternate;
+          animation: headingFlicker 5s infinite alternate;
+  color: rgba(255, 255, 255, 0.295);
+}
+@-webkit-keyframes headingFlicker {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px white, 0 0 5px white, 0 0 50px white;
+  }
+  1%, 5%, 9%, 90% {
+    text-shadow: none;
+  }
+}
+@keyframes headingFlicker {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 99%, 100% {
+    text-shadow: 0 0 1px white, 0 0 5px white, 0 0 50px white;
+  }
+  1%, 5%, 9%, 90% {
+    text-shadow: none;
+  }
+}
+
+.lightMode {
+  background: hsl(0deg, 6%, 85%);
+  transition: 2s;
+  color: rgb(27, 27, 27);
+}
+.lightMode span {
+  transition: 2s;
+  color: rgb(24, 23, 23);
+}
+.lightMode p {
+  transition: 1s;
+  color: rgb(17, 16, 16);
+}
+
+@media all and (min-width: 430px) {
+  #spanPrinciples {
+    font-size: 6vw;
+  }
+  .aboutMe #spanMy {
+    margin-left: 50em;
+  }
+}
+@media all and (min-width: 520px) {
+  .aboutMe {
+    gap: 0;
+  }
+  .aboutMe .aboutMeBox .spanAboutMeBox {
+    font-size: 8vw;
+  }
+  .aboutMe .aboutMeBox #aboutMeboxSection {
+    flex-direction: row;
+    align-items: center;
+  }
+  .aboutMe .aboutMeBox .principles {
+    text-align: center;
+  }
+  .aboutMe .aboutMeBox #spanPrinciples {
+    font-size: 5vw;
+  }
+  .aboutMe .myJourneyBox .spanMyJourneyBox {
+    font-size: 8vw;
+  }
+  .aboutMe .myJourneyBox .myJourneyBoxParagraph {
+    text-align: center;
+  }
+  .aboutMe .myJourneyBox #spanMy {
+    margin-left: 6em;
+  }
+  .aboutMe .myJourneyBox #spanHungry {
+    font-size: 5vw;
+    width: 100%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

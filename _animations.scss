@@ -1,0 +1,264 @@
+
+                   
+// main { //                          FADE_IN_AT_PAGE_ENTER
+//     animation-duration: 5s;
+//     animation-name: animate-fade;
+//     animation-delay: 0.5s;
+//     animation-fill-mode: both;
+  
+  
+//   @keyframes animate-fade { //      
+//     0% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }}
+ 
+
+ #spanDon {
+ animation: spanDon 4s infinite;
+ color: rgba(158, 158, 158, 0.096);
+
+ @keyframes spanDon {
+
+ 1%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+  text-shadow: 
+    0 0 1px white,
+    0 0 3px white,
+    0 0 5px white,
+    0 0 25px white,
+  }
+ 0%,5%,8%,9%, 12% {
+   text-shadow: none;
+}
+
+}}
+
+
+ #spanNay {
+ animation: spanNay 4s infinite;
+ color: rgba(134, 134, 134, 0.178);
+
+ @keyframes spanNay {
+
+ 0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+  text-shadow: 
+    0 0 1px $blue,
+    0 0 3px $blue,
+    0 0 5px $blue,
+    0 0 25px $blue,
+  }
+
+ 0%, 5%, 12% {
+   text-shadow: none;
+}
+
+}}
+
+
+ #spanKrog {
+ animation: spanKrog 4s infinite;
+ color: rgba(160, 47, 47, 0.342);
+
+ @keyframes spanKrog {
+
+ 0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+
+  text-shadow: 
+    0 0 1px $salmon,
+    0 0 3px $salmon,
+    0 0 5px $salmon,
+    0 0 25px $salmon,
+  }
+
+ 0%, 5%, 12% {
+   text-shadow: none;
+}
+
+}}
+
+
+.spanMyJourneyBox {//                  SPAN_HEADINGS
+  animation: flicker1 5s infinite alternate;
+  color: rgba(255, 255, 255, 0.295);
+  font-size: 15vw;
+  text-orientation: sideways;
+
+@keyframes flicker1 {
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,89%,91%, 100% {
+    
+    text-shadow: 
+    0 0 1px white,
+    0 0 5px white,
+    0 0 50px white,
+  }
+  
+  90%, 92%, 94%, 99% {
+    text-shadow: none;
+  }
+}}
+
+
+.spanAboutMeBox {//                  SPAN_HEADINGS
+  animation: flicker2 3s infinite alternate;
+  color: rgba(255, 255, 255, 0.295);
+  font-size: 15vw;
+  text-orientation: sideways;
+
+@keyframes flicker2 {
+  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+
+  text-shadow: 
+  0 0 1px white,
+  0 0 5px white,
+  0 0 50px white,
+}
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+}}
+
+
+.slidingBanner {//                  ANIMATED_BANNER
+ animation: banner 7s linear infinite; 
+ width: 100vw;
+ transform: translateX(100%);
+ font-size: 40px;
+
+h2 {
+  width: 18em;
+  color: rgba(255, 255, 255, 0.295);
+  word-spacing: 3px;
+  letter-spacing: 8px;
+  height: 1.7em;
+ }
+
+@keyframes banner {
+  0% {
+    transform: translateX(140%); 
+  }
+  
+  100% {
+    transform: translateX(-330%); 
+  }
+  
+  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+    
+    text-shadow: 
+    0 0 1px $blue,
+    0 0 10px $blue,
+    0 0 40px $blue,
+  }
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+
+}}
+
+
+#spanHungry {//                         SPAN_HUNGRY_FLICKER
+  color: rgba(255, 255, 255, 0.295);
+  animation: breatheFlicker 4.5s linear infinite;
+
+
+  @keyframes breatheFlicker {
+
+    0%,10%,20%,30%,40%,50%,60%,70%,80%,89%,91%, 100% {
+    
+      text-shadow: 
+      0 0 1px #D9524EFF,
+      0 0 10px #D9524EFF,
+      0 0 42px #D9524EFF,
+      0 0 82px #D9524EFF,
+    }
+    
+    90%, 99% {
+      text-shadow: none;
+    }
+    
+  }}
+ 
+
+#spanPrinciples {//                         SPAN_PRINCIPLES_FLICKER
+ animation: flickerPrinciples 5s infinite linear;
+ color: rgba(255, 255, 255, 0.295);
+ font-size: 8vw;
+
+ @keyframes flickerPrinciples {
+  0%,10%,20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    text-shadow: 
+    0 0 1px #D9524EFF,
+    0 0 10px #D9524EFF,
+    0 0 42px #D9524EFF,
+    0 0 82px #D9524EFF,
+  }
+ 1%, 3% {
+  text-shadow: none;
+ }
+}}
+
+
+.portfolioHeading {//                         PORTFOLIO_HEADING
+   animation: headingFlicker 5s infinite alternate;
+   color: rgba(255, 255, 255, 0.295);
+
+@keyframes headingFlicker {
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,89%,91%,99%, 100% {
+    
+    text-shadow: 
+    0 0 1px white,
+    0 0 5px white,
+    0 0 50px white,
+  }
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//                              3D_shake
+// .downWithDough3D:hover {
+//  animation: vibrate 1s cubic-bezier(.36,.07,.19,.97) both;
+//  cursor: pointer;
+// }
+
+// @keyframes vibrate {
+//   10%, 90% {
+//     transform: translateX(-1px, 0, 0);
+//   }
+  
+//   20%, 80% {
+//     transform: translate3d(2px, 0, 0);
+//   }
+
+//   30%, 50%, 70% {
+//     transform: translate3d(-4px, 0, 0);
+//   }
+
+//   40%, 60% {
+//     transform: translate3d(4px, 0, 0);
+//   }
+// }
+

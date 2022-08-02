@@ -1,0 +1,92 @@
+
+.aboutMe {///////////////////ABOUT_ME_SECTION
+ display: flex;
+ flex-direction: column;
+
+.myJourneyBox {////                 ////MY_JOURNEY_BOX
+ width: 100vw;
+
+ section {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ }
+
+ #spanMy {
+ letter-spacing: 20px;
+ margin-left: 2em;
+ @include flexCenter;
+ }
+
+ #spanJourney {
+ text-orientation: sideways-left;
+ writing-mode: vertical-rl; 
+ letter-spacing: 10px;
+ float: right; 
+ margin-top: 0.5em;
+ }
+
+ .myJourneyBoxParagraph {
+     font-size: 0.7em;
+     color: $fontColor;
+     letter-spacing: 2px;
+     line-height: 1.4em;
+     padding: 0.5em 0;
+     
+     #bigWord {
+     color: $headingColor;
+     }
+}}
+
+.aboutMeBox {////////ABOUT_ME_BOX
+
+#spanMe {
+ letter-spacing: 20px;
+ margin-left: 1em;
+}
+
+#spanAbout {
+ text-orientation:sideways-left;
+ writing-mode: vertical-lr;
+ transform: rotateZ(-180deg); 
+ letter-spacing: 15px;
+ float: left; 
+ margin-top: 1em;
+}
+
+#spanHungry {
+ font-size: 8vw;
+ width: 8em;
+ text-align: center;
+ margin: auto;
+}
+
+section {
+ display: flex;
+ flex-direction: column;
+ color: $fontColor;
+ 
+.initialContainer {
+ width: 50%;
+}
+
+.initial {
+ width: 7.2em;
+ font-size: 1em;
+}
+
+.principles {
+ line-height: 1.4em;
+ letter-spacing: 2px;
+ font-size: 0.7em;
+}
+
+.initial::first-letter {
+ color: $salmon;
+ font-size: 170px;
+ float: left;
+ line-height: 0.8em;
+}}}}
+
+
+

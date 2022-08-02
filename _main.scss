@@ -1,0 +1,39 @@
+
+main {
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+ gap: 2em;
+
+.portrait {
+ min-height: 90vh;
+
+.portraitBox{
+ display: flex;
+
+    .mainHeading {
+     display: flex;
+     flex-direction: column;
+     font-size: 28vw;
+     letter-spacing: 0.2em;
+     gap: 6vh;
+    }
+
+    .spanMainHeading {
+     transform: rotateX(-30deg);
+     padding: 10px 20px;
+    }
+  }
+}
+}
+
+.main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
