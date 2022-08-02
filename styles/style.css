@@ -89,9 +89,14 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  gap: 1em;
 }
 main .portrait {
   min-height: 100vh;
+}
+main .portrait .portraitBox {
+  display: flex;
+  gap: 2em;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
@@ -184,7 +189,6 @@ body {
   font-family: "Edu NSW ACT Foundation", cursive;
   font-size: 1em;
   transition: 1s;
-  overflow-x: hidden;
   /* Hide scrollbar for Chrome, Safari and Opera */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
