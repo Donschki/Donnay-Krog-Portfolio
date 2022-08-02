@@ -363,7 +363,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -371,7 +371,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
