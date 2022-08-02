@@ -403,7 +403,7 @@ body body::-webkit-scrollbar {
 #spanKrog {
   -webkit-animation: spanKrog 4s infinite;
           animation: spanKrog 4s infinite;
-  color: rgba(160, 47, 47, 0.342);
+  color: rgba(134, 134, 134, 0.178);
 }
 @-webkit-keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
