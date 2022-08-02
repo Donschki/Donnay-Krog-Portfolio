@@ -89,7 +89,6 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  gap: 2em;
 }
 main .portrait {
   min-height: 100vh;
@@ -182,7 +181,7 @@ a {
 
 /* SIDEBAR END */
 body {
-  background-color: #2C3539;
+  background-color: #242f33;
   font-family: "Oswald", sans-serif;
   font-family: "Tapestry", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
@@ -229,7 +228,7 @@ body body::-webkit-scrollbar {
   color: #2da8d8;
   letter-spacing: 2px;
   line-height: 1.4em;
-  padding: 0.5em 0;
+  padding: 0.5em;
 }
 .aboutMe .myJourneyBox .myJourneyBoxParagraph #bigWord {
   color: #d9524e;
@@ -269,6 +268,7 @@ body body::-webkit-scrollbar {
   line-height: 1.4em;
   letter-spacing: 2px;
   font-size: 0.7em;
+  text-align: center;
 }
 .aboutMe .aboutMeBox section .initial::first-letter {
   color: #d9524e;
@@ -359,11 +359,11 @@ body body::-webkit-scrollbar {
 #spanDon {
   -webkit-animation: spanDon 4s infinite;
           animation: spanDon 4s infinite;
-  color: rgba(61, 61, 61, 0.267);
+  color: rgba(158, 158, 158, 0.096);
 }
 @-webkit-keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 3px #d9524e, 0 0 4px #d9524e, 0 0 5px #d9524e, 0 0 6px #d9524e, 0 0 7px #d9524e, 0 0 8px #d9524e, 0 0 50px #d9524e, 0 0 30px white;
+    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 25px white;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -371,7 +371,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 3px #d9524e, 0 0 4px #d9524e, 0 0 5px #d9524e, 0 0 6px #d9524e, 0 0 7px #d9524e, 0 0 8px #d9524e, 0 0 50px #d9524e, 0 0 30px white;
+    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 25px white;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -381,11 +381,11 @@ body body::-webkit-scrollbar {
 #spanNay {
   -webkit-animation: spanNay 4s infinite;
           animation: spanNay 4s infinite;
-  color: rgba(61, 61, 61, 0.267);
+  color: rgba(134, 134, 134, 0.178);
 }
 @-webkit-keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 3px #d9524e, 0 0 4px #d9524e, 0 0 5px #d9524e, 0 0 6px #d9524e, 0 0 7px #d9524e, 0 0 8px #d9524e, 0 0 50px #d9524e, 0 0 30px white;
+    text-shadow: 0 0 1px #2da8d8, 0 0 3px #2da8d8, 0 0 5px #2da8d8, 0 0 25px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -393,7 +393,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 3px #d9524e, 0 0 4px #d9524e, 0 0 5px #d9524e, 0 0 6px #d9524e, 0 0 7px #d9524e, 0 0 8px #d9524e, 0 0 50px #d9524e, 0 0 30px white;
+    text-shadow: 0 0 1px #2da8d8, 0 0 3px #2da8d8, 0 0 5px #2da8d8, 0 0 25px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -403,11 +403,11 @@ body body::-webkit-scrollbar {
 #spanKrog {
   -webkit-animation: spanKrog 4s infinite;
           animation: spanKrog 4s infinite;
-  color: rgba(61, 61, 61, 0.267);
+  color: rgba(160, 47, 47, 0.342);
 }
 @-webkit-keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 3px #d9524e, 0 0 4px #d9524e, 0 0 5px #d9524e, 0 0 6px #d9524e, 0 0 7px #d9524e, 0 0 8px #d9524e, 0 0 50px #d9524e, 0 0 30px white;
+    text-shadow: 0 0 1px #d9524e, 0 0 3px #d9524e, 0 0 5px #d9524e, 0 0 25px #d9524e;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -415,7 +415,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 3px #d9524e, 0 0 4px #d9524e, 0 0 5px #d9524e, 0 0 6px #d9524e, 0 0 7px #d9524e, 0 0 8px #d9524e, 0 0 50px #d9524e, 0 0 30px white;
+    text-shadow: 0 0 1px #d9524e, 0 0 3px #d9524e, 0 0 5px #d9524e, 0 0 25px #d9524e;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -480,8 +480,6 @@ body body::-webkit-scrollbar {
 .slidingBanner h2 {
   width: 18em;
   color: rgba(255, 255, 255, 0.295);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   word-spacing: 3px;
   letter-spacing: 8px;
   height: 1.7em;
@@ -522,7 +520,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes breatheFlicker {
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e;
   }
   90%, 99% {
     text-shadow: none;
@@ -530,7 +528,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes breatheFlicker {
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 89%, 91%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e;
   }
   90%, 99% {
     text-shadow: none;
@@ -545,7 +543,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes flickerPrinciples {
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e;
   }
   1%, 3% {
     text-shadow: none;
@@ -553,7 +551,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes flickerPrinciples {
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e, 0 0 82px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 10px #d9524e, 0 0 42px #d9524e;
   }
   1%, 3% {
     text-shadow: none;

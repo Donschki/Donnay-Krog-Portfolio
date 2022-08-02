@@ -19,25 +19,17 @@
 
  #spanDon {
  animation: spanDon 4s infinite;
- color: rgba(61, 61, 61, 0.267);
+ color: rgba(158, 158, 158, 0.096);
 
  @keyframes spanDon {
 
  1%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
-
- text-shadow: 
- 0 0 1px $salmon,
- 0 0 2px $salmon,
- 0 0 3px $salmon,
- 0 0 4px $salmon,
- 0 0 5px $salmon,
- 0 0 6px $salmon,
- 0 0 7px $salmon,
- 0 0 8px $salmon,
- 0 0 50px $salmon,
- 0 0 30px white,
-}
-
+  text-shadow: 
+    0 0 1px white,
+    0 0 3px white,
+    0 0 5px white,
+    0 0 25px white,
+  }
  0%,5%,8%,9%, 12% {
    text-shadow: none;
 }
@@ -47,24 +39,17 @@
 
  #spanNay {
  animation: spanNay 4s infinite;
- color: rgba(61, 61, 61, 0.267);
+ color: rgba(134, 134, 134, 0.178);
 
  @keyframes spanNay {
 
  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
-
- text-shadow: 
- 0 0 1px $salmon,
- 0 0 2px $salmon,
- 0 0 3px $salmon,
- 0 0 4px $salmon,
- 0 0 5px $salmon,
- 0 0 6px $salmon,
- 0 0 7px $salmon,
- 0 0 8px $salmon,
- 0 0 50px $salmon,
- 0 0 30px white,
-}
+  text-shadow: 
+    0 0 1px $blue,
+    0 0 3px $blue,
+    0 0 5px $blue,
+    0 0 25px $blue,
+  }
 
  0%, 5%, 12% {
    text-shadow: none;
@@ -75,24 +60,18 @@
 
  #spanKrog {
  animation: spanKrog 4s infinite;
- color: rgba(61, 61, 61, 0.267);
+ color: rgba(160, 47, 47, 0.342);
 
  @keyframes spanKrog {
 
  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
 
- text-shadow: 
- 0 0 1px $salmon,
- 0 0 2px $salmon,
- 0 0 3px $salmon,
- 0 0 4px $salmon,
- 0 0 5px $salmon,
- 0 0 6px $salmon,
- 0 0 7px $salmon,
- 0 0 8px $salmon,
- 0 0 50px $salmon,
- 0 0 30px white,
-}
+  text-shadow: 
+    0 0 1px $salmon,
+    0 0 3px $salmon,
+    0 0 5px $salmon,
+    0 0 25px $salmon,
+  }
 
  0%, 5%, 12% {
    text-shadow: none;
@@ -152,8 +131,6 @@
 h2 {
   width: 18em;
   color: rgba(255, 255, 255, 0.295);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   word-spacing: 3px;
   letter-spacing: 8px;
   height: 1.7em;
@@ -196,7 +173,6 @@ h2 {
       0 0 1px #D9524EFF,
       0 0 10px #D9524EFF,
       0 0 42px #D9524EFF,
-      0 0 82px #D9524EFF,
     }
     
     90%, 99% {
@@ -217,7 +193,6 @@ h2 {
     0 0 1px #D9524EFF,
     0 0 10px #D9524EFF,
     0 0 42px #D9524EFF,
-    0 0 82px #D9524EFF,
   }
  1%, 3% {
   text-shadow: none;
