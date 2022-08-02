@@ -25,10 +25,16 @@
 
  1%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
   text-shadow: 
-    0 0 1px white,
-    0 0 3px white,
-    0 0 5px white,
-    0 0 25px white,
+      0 0 1px #fff,
+      0 0 1px #fff,
+      0 0 1px #fff,
+      0 0 1px #fff,
+      0 0 2px #fff,
+      0 0 2px #fff,
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 120px #fff,
   }
  0%,5%,8%,9%, 12% {
    text-shadow: none;
@@ -46,9 +52,16 @@
  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
   text-shadow: 
     0 0 1px $blue,
-    0 0 3px $blue,
-    0 0 5px $blue,
-    0 0 25px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 2px $blue,
+    0 0 2px $blue,
+    0 0 7px $blue,
+      0 0 42px $blue,
+      0 0 120px $blue,
   }
 
  0%, 5%, 12% {
@@ -67,10 +80,17 @@
  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
 
   text-shadow: 
-    0 0 1px $salmon,
-    0 0 3px $salmon,
-    0 0 5px $salmon,
-    0 0 25px $salmon,
+  0 0 1px $salmon,
+  0 0 1px $salmon,
+  0 0 1px $salmon,
+  0 0 1px $salmon,
+  0 0 1px $salmon,
+  0 0 1px $salmon,
+  0 0 2px $salmon,
+  0 0 2px $salmon,
+  0 0 7px $salmon,
+    0 0 42px $salmon,
+    0 0 120px $salmon,
   }
 
  0%, 5%, 12% {

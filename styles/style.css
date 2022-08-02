@@ -106,7 +106,7 @@ main .portrait .portraitBox .mainHeading {
 main .portrait .portraitBox .spanMainHeading {
   display: flex;
   transform: rotateX(-30deg);
-  padding: 10px 20px;
+  padding: 15px;
 }
 
 .main2 {
@@ -261,7 +261,7 @@ body body::-webkit-scrollbar {
   width: 50%;
 }
 .aboutMe .aboutMeBox section .initial {
-  width: 7.2em;
+  width: 10em;
   font-size: 1em;
 }
 .aboutMe .aboutMeBox section .principles {
@@ -363,7 +363,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 25px white;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 120px #fff;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -371,7 +371,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanDon {
   1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 5px white, 0 0 25px white;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 120px #fff;
   }
   0%, 5%, 8%, 9%, 12% {
     text-shadow: none;
@@ -385,7 +385,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 3px #2da8d8, 0 0 5px #2da8d8, 0 0 25px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8, 0 0 42px #2da8d8, 0 0 120px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -393,7 +393,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 3px #2da8d8, 0 0 5px #2da8d8, 0 0 25px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8, 0 0 42px #2da8d8, 0 0 120px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -407,7 +407,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 3px #d9524e, 0 0 5px #d9524e, 0 0 25px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 42px #d9524e, 0 0 120px #d9524e;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -415,7 +415,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 3px #d9524e, 0 0 5px #d9524e, 0 0 25px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 42px #d9524e, 0 0 120px #d9524e;
   }
   0%, 5%, 12% {
     text-shadow: none;
