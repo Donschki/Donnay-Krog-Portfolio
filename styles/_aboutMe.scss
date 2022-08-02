@@ -65,6 +65,7 @@ section {
  display: flex;
  flex-direction: column;
  color: $fontColor;
+ overflow: hidden;
  
 .initialContainer {
  width: 50%;
