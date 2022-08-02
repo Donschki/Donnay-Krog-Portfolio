@@ -18,7 +18,7 @@
  
 
  #spanDon {
- animation: spanDon 4s infinite;
+ animation: spanDon 3.1s infinite;
  color: rgba(158, 158, 158, 0.096);
 
  @keyframes spanDon {
@@ -42,7 +42,7 @@
 
 
  #spanNay {
- animation: spanNay 4s infinite;
+ animation: spanNay 3.5s infinite;
  color: rgba(134, 134, 134, 0.178);
 
  @keyframes spanNay {
@@ -68,7 +68,7 @@
 
 
  #spanKrog {
- animation: spanKrog 4s infinite;
+ animation: spanKrog 3.8s infinite;
  color: rgba(150, 54, 54, 0.123);
 
  @keyframes spanKrog {
@@ -88,7 +88,7 @@
   0 0 30px $salmon,
   }
 
- 0%, 5%,20%, 12% {
+  0%, 5%, 12% {
    text-shadow: none;
 }
 

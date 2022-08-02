@@ -3,13 +3,12 @@ main {
  display: flex;
  flex-direction: column;
  overflow: hidden;
- gap: 1em;
+
 
 .portrait {
  min-height: 100vh;
 
 .portraitBox{
- height: 100vh;
     .mainHeading {
      display: flex;
      flex-wrap: nowrap;
@@ -19,6 +18,7 @@ main {
     }
 
     .spanMainHeading {
+      text-align: center;
      font-size: 38vw;
      height: 30vh;
     }

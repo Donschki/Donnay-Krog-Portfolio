@@ -89,13 +89,9 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  gap: 1em;
 }
 main .portrait {
   min-height: 100vh;
-}
-main .portrait .portraitBox {
-  height: 100vh;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
@@ -105,6 +101,7 @@ main .portrait .portraitBox .mainHeading {
   letter-spacing: 0.3em;
 }
 main .portrait .portraitBox .spanMainHeading {
+  text-align: center;
   font-size: 38vw;
   height: 30vh;
 }
@@ -357,8 +354,8 @@ body body::-webkit-scrollbar {
 }
 
 #spanDon {
-  -webkit-animation: spanDon 4s infinite;
-          animation: spanDon 4s infinite;
+  -webkit-animation: spanDon 3.1s infinite;
+          animation: spanDon 3.1s infinite;
   color: rgba(158, 158, 158, 0.096);
 }
 @-webkit-keyframes spanDon {
@@ -379,8 +376,8 @@ body body::-webkit-scrollbar {
 }
 
 #spanNay {
-  -webkit-animation: spanNay 4s infinite;
-          animation: spanNay 4s infinite;
+  -webkit-animation: spanNay 3.5s infinite;
+          animation: spanNay 3.5s infinite;
   color: rgba(134, 134, 134, 0.178);
 }
 @-webkit-keyframes spanNay {
@@ -401,15 +398,15 @@ body body::-webkit-scrollbar {
 }
 
 #spanKrog {
-  -webkit-animation: spanKrog 4s infinite;
-          animation: spanKrog 4s infinite;
+  -webkit-animation: spanKrog 3.8s infinite;
+          animation: spanKrog 3.8s infinite;
   color: rgba(150, 54, 54, 0.123);
 }
 @-webkit-keyframes spanKrog {
   0%, 10%, 15%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
     text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
   }
-  0%, 5%, 20%, 12% {
+  0%, 5%, 12% {
     text-shadow: none;
   }
 }
@@ -417,7 +414,7 @@ body body::-webkit-scrollbar {
   0%, 10%, 15%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
     text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
   }
-  0%, 5%, 20%, 12% {
+  0%, 5%, 12% {
     text-shadow: none;
   }
 }
