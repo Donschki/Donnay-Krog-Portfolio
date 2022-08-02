@@ -385,7 +385,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8, 0 0 42px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -393,7 +393,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanNay {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8, 0 0 42px #2da8d8;
+    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 7px #2da8d8;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -407,7 +407,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 42px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e;
   }
   0%, 5%, 12% {
     text-shadow: none;
@@ -415,7 +415,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes spanKrog {
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 42px #d9524e;
+    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e;
   }
   0%, 5%, 12% {
     text-shadow: none;
