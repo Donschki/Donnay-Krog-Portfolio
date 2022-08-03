@@ -7,7 +7,7 @@
 .portraitBox {
 
 .spanMainHeading {
-  font-size: 1em;
+ max-height: 50vh;
 }
 }
 
@@ -18,10 +18,14 @@
 }}
 }
 
-@media all and (min-width: 520px) {
+@media all and (min-width: 480px) {
+}
+
+@media all and (min-width: 600px) {
+
+
 .aboutMe {
- gap: 0;
- 
+
 .aboutMeBox {
 
 .spanAboutMeBox {
@@ -62,9 +66,36 @@
 }}}
 
 @media all and (min-width: 700px) {
-.spanMainHeading {
-  font-size: 10vw;
-}
+
+  .mainsBox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1em;
+    
+   
+    main {
+     max-width: 50%;
+     overflow: visible;
+
+     .portrait {
+       .spanMainHeading {
+        font-size: 20vw;
+        height: 30vw;
+       }}
+    }
+   
+    .main2 {
+     width: 50%;
+     flex-direction: column-reverse;
+
+     .spanMyJourneyBox {
+      padding: 0 1em;
+     }
+    
+    }
+   }
+
 }
 
 @media all and (min-width: 800px) {

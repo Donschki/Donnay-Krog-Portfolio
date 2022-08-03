@@ -85,25 +85,29 @@ header #navList .toggleLight img {
   right: 0;
 }
 
+.mainsBox {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
 }
-main .portrait {
-  min-height: 100vh;
-}
 main .portrait .portraitBox .mainHeading {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
-  width: 100vw;
-  letter-spacing: 0.3em;
 }
 main .portrait .portraitBox .spanMainHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 38vw;
+  font-size: 40vw;
   height: 30vh;
+  min-height: 1em;
+  margin-top: 0.1em;
 }
 
 .main2 {
@@ -195,6 +199,7 @@ body body::-webkit-scrollbar {
 .aboutMe {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .aboutMe .myJourneyBox section {
   display: flex;
@@ -348,33 +353,6 @@ body body::-webkit-scrollbar {
   transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
   transition: all 1s;
   width: 100%;
-}
-
-main {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: animate-fade;
-          animation-name: animate-fade;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-@-webkit-keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 #spanDon {
@@ -619,16 +597,13 @@ main {
     font-size: 6vw;
   }
   .portraitBox .spanMainHeading {
-    font-size: 1em;
+    max-height: 50vh;
   }
   .aboutMe #spanMy {
     margin-left: 50em;
   }
 }
-@media all and (min-width: 520px) {
-  .aboutMe {
-    gap: 0;
-  }
+@media all and (min-width: 600px) {
   .aboutMe .aboutMeBox .spanAboutMeBox {
     font-size: 8vw;
   }
@@ -657,8 +632,26 @@ main {
   }
 }
 @media all and (min-width: 700px) {
-  .spanMainHeading {
-    font-size: 10vw;
+  .mainsBox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1em;
+  }
+  .mainsBox main {
+    max-width: 50%;
+    overflow: visible;
+  }
+  .mainsBox main .portrait .spanMainHeading {
+    font-size: 20vw;
+    height: 30vw;
+  }
+  .mainsBox .main2 {
+    width: 50%;
+    flex-direction: column-reverse;
+  }
+  .mainsBox .main2 .spanMyJourneyBox {
+    padding: 0 1em;
   }
 }
 * {
