@@ -93,6 +93,7 @@ header #navList .toggleLight img {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
@@ -644,7 +645,7 @@ body body::-webkit-scrollbar {
   }
   .mainsBox main .portrait .spanMainHeading {
     font-size: 20vw;
-    height: 30vw;
+    height: 20vh;
   }
   .mainsBox .main2 {
     width: 50%;
