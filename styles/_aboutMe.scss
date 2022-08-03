@@ -6,8 +6,6 @@
 
 .myJourneyBox {////                 ////MY_JOURNEY_BOX
     
-.spanMyJourneyBox {
-}
  section {
  display: flex;
  flex-direction: column;
@@ -40,8 +38,6 @@
      }
 }}
 
-
-
 .aboutMeBox {////////ABOUT_ME_BOX
 
 #spanMe {
@@ -69,7 +65,6 @@ section {
  display: flex;
  flex-direction: column;
  color: $fontColor;
- overflow: hidden;
  
 .initialContainer {
  width: 54%;

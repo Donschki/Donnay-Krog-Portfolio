@@ -67,36 +67,46 @@
 
 @media all and (min-width: 700px) {
 
-  .mainsBox {
-    flex-direction: row;
-    flex-wrap: wrap;
-    overflow: hidden;
-    gap: 1em;
-    
-   
-    main {
-     max-width: 50%;
-     overflow: visible;
+.mainsBox {
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  gap: 1em;
+  
+ 
+  main {
+   max-width: 50%;
+   height: 804px;
 
-     .portrait {
-       .spanMainHeading {
-        font-size: 20vw;
-        height: 30vw;
-       }}
-    }
-   
-    .main2 {
-     width: 50%;
-     flex-direction: column-reverse;
+   .portrait {
+     .spanMainHeading {
+      font-size: 20vw;
+      height: 30vw;
+     }}
+  }
+ 
+  .main2 {
+   width: 50%;
+   flex-direction: column-reverse;
+   overflow: visible;
+  
+  .aboutMe {
+      #aboutMeboxSection {
+        flex-direction: column;
+        width: 50%;
 
-     .spanMyJourneyBox {
-      padding: 0 1em;
-     }
-    
-    }
+        .initialContainer {
+          position: relative;
+          left: -2em;
+        }
+     }}
+   
+   .spanMyJourneyBox {
+    padding: 0 1em;
    }
-
-}
+  }
+  
+}}
 
 @media all and (min-width: 800px) {
 

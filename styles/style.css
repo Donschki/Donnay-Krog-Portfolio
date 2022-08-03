@@ -93,7 +93,6 @@ header #navList .toggleLight img {
 main {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
@@ -114,6 +113,7 @@ main .portrait .portraitBox .spanMainHeading {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* SIDEBAR START */
@@ -254,7 +254,6 @@ body body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   color: #2da8d8;
-  overflow: hidden;
 }
 .aboutMe .aboutMeBox section .initialContainer {
   width: 54%;
@@ -475,6 +474,7 @@ body body::-webkit-scrollbar {
   transform: translateX(100%);
   font-size: 40px;
   margin: 10px;
+  min-height: 1em;
 }
 .slidingBanner h2 {
   width: 18em;
@@ -640,7 +640,7 @@ body body::-webkit-scrollbar {
   }
   .mainsBox main {
     max-width: 50%;
-    overflow: visible;
+    height: 804px;
   }
   .mainsBox main .portrait .spanMainHeading {
     font-size: 20vw;
@@ -649,6 +649,15 @@ body body::-webkit-scrollbar {
   .mainsBox .main2 {
     width: 50%;
     flex-direction: column-reverse;
+    overflow: visible;
+  }
+  .mainsBox .main2 .aboutMe #aboutMeboxSection {
+    flex-direction: column;
+    width: 50%;
+  }
+  .mainsBox .main2 .aboutMe #aboutMeboxSection .initialContainer {
+    position: relative;
+    left: -2em;
   }
   .mainsBox .main2 .spanMyJourneyBox {
     padding: 0 1em;
