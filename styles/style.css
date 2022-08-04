@@ -280,6 +280,7 @@ body body::-webkit-scrollbar {
 
 .portfolio {
   width: 100vw;
+  height: 100vh;
 }
 .portfolio .portfolioBox {
   height: 60vh;
@@ -607,6 +608,11 @@ body body::-webkit-scrollbar {
   }
 }
 @media all and (min-width: 500px) {
+  .aboutMe .aboutMeBox {
+    max-width: 550px;
+    margin: auto;
+    border: saddlebrown;
+  }
   .aboutMe .aboutMeBox #aboutMeSection {
     flex-direction: row;
   }
@@ -634,7 +640,7 @@ body body::-webkit-scrollbar {
     width: 100%;
   }
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 700px) {
   .mainsBox {
     flex-direction: row;
     flex-wrap: wrap;
@@ -650,12 +656,13 @@ body body::-webkit-scrollbar {
     padding-bottom: 0.5em;
   }
   .mainsBox .main2 {
+    margin-top: 8em;
     width: 50%;
     max-height: 100vh;
     flex-direction: column;
   }
   .mainsBox .main2 .slidingBanner {
-    padding: 1em 0;
+    padding-top: 1em;
   }
   .mainsBox .main2 .aboutMe {
     display: block;
@@ -670,9 +677,12 @@ body body::-webkit-scrollbar {
   .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection .principles {
     width: 48vw;
   }
-  .mainsBox .main2 .aboutMe .myJourneyBox .spanMyJourneyBox {
-    padding: 0 1em;
-    width: 50%;
+  .mainsBox .main2 .aboutMe .myJourneyBox #spanMy {
+    margin: 0;
+  }
+  .mainsBox .main2 .aboutMe .myJourneyBox .myJourneyBoxParagraph {
+    padding: 0;
+    text-align: right;
   }
 }
 * {
