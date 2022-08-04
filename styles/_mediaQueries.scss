@@ -96,7 +96,7 @@ border: saddlebrown;
    display: block;
 
    .aboutMeBox {
-
+  
    #spanAbout {
    float: right;
   }
@@ -118,11 +118,18 @@ border: saddlebrown;
 
   .myJourneyBoxParagraph {
     padding: 0;
-    text-align: right;
+    text-align: center;
   }
  }
 }
 }}
+
+.portfolio {
+  #spanMyPortfolio {
+    float: left;
+  }
+}
+
 }
 
 

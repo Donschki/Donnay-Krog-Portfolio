@@ -682,7 +682,10 @@ body body::-webkit-scrollbar {
   }
   .mainsBox .main2 .aboutMe .myJourneyBox .myJourneyBoxParagraph {
     padding: 0;
-    text-align: right;
+    text-align: center;
+  }
+  .portfolio #spanMyPortfolio {
+    float: left;
   }
 }
 * {
