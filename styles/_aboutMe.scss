@@ -5,11 +5,8 @@
  flex-wrap: wrap;
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
- display: flex;
- justify-content: center;
- align-items: center;
-
- section {
+    
+ #myJourneySection {
  display: flex;
  flex-direction: column;
  text-align: center;
@@ -26,7 +23,6 @@
  writing-mode: vertical-rl; 
  letter-spacing: 10px;
  float: right; 
- margin-top: 0.5em;
  }
 
  .myJourneyBoxParagraph {
@@ -34,7 +30,7 @@
      color: $fontColor;
      letter-spacing: 2px;
      line-height: 1.4em;
-     padding: 0.5em;
+     padding: 0.3em;
      
      #bigWord {
      color: $headingColor;
@@ -64,7 +60,7 @@
  margin: auto;
 }
 
-.aboutMeSection {
+#aboutMeSection {
  display: flex;
  flex-direction: column;
  color: $fontColor;

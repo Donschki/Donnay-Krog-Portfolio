@@ -1,40 +1,39 @@
 
 @media all and (min-width: 430px) {
+main {
+ 
+  .mainHeading {
+
+  .mainHeadingBox { 
+     display: flex;
+     align-items: center;
+
+  .spanMainHeading {
+    font-size: 30vw;
+    
+  }}}}
+
 #spanPrinciples {
  font-size: 6vw;
-}
-
-.portraitBox {
-
-.spanMainHeading {
- max-height: 50vh;
-}
-}
-
-.aboutMe {
-
-#spanMy {
-    margin-left: 50em;
 }}
-}
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 500px) {
 
 .aboutMe {
 
 .aboutMeBox {
 
+ #aboutMeSection {
+ flex-direction: row;
+ }
+
 .spanAboutMeBox {
  font-size: 8vw;
 }
-
- section {
-  flex-direction: row;
-  align-items: center;
-} 
  
  .principles {
  text-align: center;
+ width: 50%;
 }
 
  #spanPrinciples {
@@ -61,46 +60,63 @@
 }
 }}}
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 600px) {
 
 .mainsBox {
   flex-direction: row;
   flex-wrap: wrap;
+  display: flex;
   overflow: hidden;
  
   main {
-   max-width: 50%;
-
-   .portrait {
-    height: 100vh;
+ width: 50%;
+ overflow: visible;
+   .mainHeading {
 
      .spanMainHeading {
-      font-size: 22vw;
+      font-size: 20vw;
+      padding-bottom: 0.5em;
      }}
-  }
+    }
+
+.main2 {
+width: 50%;
+max-height: 100vh;
+flex-direction: column;
+
+.slidingBanner {
+  padding: 1em 0;
+}
  
-  .main2 {
-   width: 50%;
-   overflow: visible;
-  
-  .aboutMe {
-      section {
+ .aboutMe {
+  display: block;
+
+  .aboutMeBox {
+
+  #spanAbout {
+    float: right;
+  }
+
+   #aboutMeSection {
         flex-direction: column;
         width: 50%;
 
-        .initialContainer {
-          position: relative;
-          left: -2em;
+        .principles {
+          width: 48vw;
         }
+  }}
 
-     }}
-   
-   .spanMyJourneyBox {
-    padding: 0 1em;
-   }
-  }
+  .myJourneyBox {
+
   
+  .spanMyJourneyBox {
+    padding: 0 1em;
+    width: 50%;
+  }
+ }
+}
 }}
+}
 
 @media all and (min-width: 800px) {
 

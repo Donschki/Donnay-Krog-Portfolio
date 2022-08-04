@@ -1,39 +1,41 @@
 .mainsBox {
-  display: flex;
-  flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
 
 main {
+ overflow: hidden;
+ text-align: center;
+
+.slidingBanner {
+  padding-top: 0.5em;
+}
+
+.mainHeading {
  display: flex;
  flex-direction: column;
- 
 
-.portrait {
- 
- 
-.portraitBox{
- 
-    .mainHeading {
-     display: flex;
-     flex-direction: column;
-    }
+.mainHeadingBox{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
 
     .spanMainHeading {
-
-      min-height: 2em;
      font-size: 40vw;
-     height: 35vh;
-
     }
   }
 }
 }
 
 .main2 {
+  margin-top: 1em;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  overflow: hidden;
+  flex-direction: column;
+}
+
+.main3 {
+  display: flex;
+
 }
 
 

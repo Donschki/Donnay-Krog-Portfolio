@@ -91,24 +91,33 @@ header #navList .toggleLight img {
 }
 
 main {
+  overflow: hidden;
+  text-align: center;
+}
+main .slidingBanner {
+  padding-top: 0.5em;
+}
+main .mainHeading {
   display: flex;
   flex-direction: column;
 }
-main .portrait .portraitBox .mainHeading {
+main .mainHeading .mainHeadingBox {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
-main .portrait .portraitBox .spanMainHeading {
-  min-height: 2em;
+main .mainHeading .mainHeadingBox .spanMainHeading {
   font-size: 40vw;
-  height: 35vh;
 }
 
 .main2 {
+  margin-top: 1em;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  overflow: hidden;
+  flex-direction: column;
+}
+
+.main3 {
+  display: flex;
 }
 
 /* SIDEBAR START */
@@ -196,12 +205,7 @@ body body::-webkit-scrollbar {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.aboutMe .myJourneyBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.aboutMe .myJourneyBox section {
+.aboutMe .myJourneyBox #myJourneySection {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -219,14 +223,13 @@ body body::-webkit-scrollbar {
       writing-mode: vertical-rl;
   letter-spacing: 10px;
   float: right;
-  margin-top: 0.5em;
 }
 .aboutMe .myJourneyBox .myJourneyBoxParagraph {
   font-size: 0.7em;
   color: #2da8d8;
   letter-spacing: 2px;
   line-height: 1.4em;
-  padding: 0.5em;
+  padding: 0.3em;
 }
 .aboutMe .myJourneyBox .myJourneyBoxParagraph #bigWord {
   color: #d9524e;
@@ -250,25 +253,25 @@ body body::-webkit-scrollbar {
   text-align: center;
   margin: auto;
 }
-.aboutMe .aboutMeBox .aboutMeSection {
+.aboutMe .aboutMeBox #aboutMeSection {
   display: flex;
   flex-direction: column;
   color: #2da8d8;
 }
-.aboutMe .aboutMeBox .aboutMeSection .initialContainer {
+.aboutMe .aboutMeBox #aboutMeSection .initialContainer {
   width: 54%;
 }
-.aboutMe .aboutMeBox .aboutMeSection .initial {
+.aboutMe .aboutMeBox #aboutMeSection .initial {
   width: 10em;
   font-size: 1em;
 }
-.aboutMe .aboutMeBox .aboutMeSection .principles {
+.aboutMe .aboutMeBox #aboutMeSection .principles {
   line-height: 1.4em;
   letter-spacing: 2px;
   font-size: 0.7em;
   text-align: center;
 }
-.aboutMe .aboutMeBox .aboutMeSection .initial::first-letter {
+.aboutMe .aboutMeBox #aboutMeSection .initial::first-letter {
   color: #d9524e;
   font-size: 170px;
   float: left;
@@ -474,7 +477,6 @@ body body::-webkit-scrollbar {
   transform: translateX(100%);
   font-size: 40px;
   margin: 10px;
-  min-height: 1em;
 }
 .slidingBanner h2 {
   width: 18em;
@@ -593,26 +595,27 @@ body body::-webkit-scrollbar {
 }
 
 @media all and (min-width: 430px) {
+  main .mainHeading .mainHeadingBox {
+    display: flex;
+    align-items: center;
+  }
+  main .mainHeading .mainHeadingBox .spanMainHeading {
+    font-size: 30vw;
+  }
   #spanPrinciples {
     font-size: 6vw;
   }
-  .portraitBox .spanMainHeading {
-    max-height: 50vh;
-  }
-  .aboutMe #spanMy {
-    margin-left: 50em;
-  }
 }
-@media all and (min-width: 600px) {
+@media all and (min-width: 500px) {
+  .aboutMe .aboutMeBox #aboutMeSection {
+    flex-direction: row;
+  }
   .aboutMe .aboutMeBox .spanAboutMeBox {
     font-size: 8vw;
   }
-  .aboutMe .aboutMeBox section {
-    flex-direction: row;
-    align-items: center;
-  }
   .aboutMe .aboutMeBox .principles {
     text-align: center;
+    width: 50%;
   }
   .aboutMe .aboutMeBox #spanPrinciples {
     font-size: 5vw;
@@ -631,35 +634,45 @@ body body::-webkit-scrollbar {
     width: 100%;
   }
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 600px) {
   .mainsBox {
     flex-direction: row;
     flex-wrap: wrap;
+    display: flex;
     overflow: hidden;
   }
   .mainsBox main {
-    max-width: 50%;
-  }
-  .mainsBox main .portrait {
-    height: 100vh;
-  }
-  .mainsBox main .portrait .spanMainHeading {
-    font-size: 22vw;
-  }
-  .mainsBox .main2 {
     width: 50%;
     overflow: visible;
   }
-  .mainsBox .main2 .aboutMe section {
+  .mainsBox main .mainHeading .spanMainHeading {
+    font-size: 20vw;
+    padding-bottom: 0.5em;
+  }
+  .mainsBox .main2 {
+    width: 50%;
+    max-height: 100vh;
+    flex-direction: column;
+  }
+  .mainsBox .main2 .slidingBanner {
+    padding: 1em 0;
+  }
+  .mainsBox .main2 .aboutMe {
+    display: block;
+  }
+  .mainsBox .main2 .aboutMe .aboutMeBox #spanAbout {
+    float: right;
+  }
+  .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection {
     flex-direction: column;
     width: 50%;
   }
-  .mainsBox .main2 .aboutMe section .initialContainer {
-    position: relative;
-    left: -2em;
+  .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection .principles {
+    width: 48vw;
   }
-  .mainsBox .main2 .spanMyJourneyBox {
+  .mainsBox .main2 .aboutMe .myJourneyBox .spanMyJourneyBox {
     padding: 0 1em;
+    width: 50%;
   }
 }
 * {
