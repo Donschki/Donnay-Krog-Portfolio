@@ -18,11 +18,7 @@
 }}
 }
 
-@media all and (min-width: 480px) {
-}
-
 @media all and (min-width: 600px) {
-
 
 .aboutMe {
 
@@ -32,7 +28,7 @@
  font-size: 8vw;
 }
 
- #aboutMeboxSection {
+ section {
   flex-direction: row;
   align-items: center;
 } 
@@ -71,27 +67,24 @@
   flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
-  gap: 1em;
-  
  
   main {
    max-width: 50%;
-   height: 804px;
 
    .portrait {
+    height: 100vh;
+
      .spanMainHeading {
-      font-size: 20vw;
-      height: 20vh;
+      font-size: 22vw;
      }}
   }
  
   .main2 {
    width: 50%;
-   flex-direction: column-reverse;
    overflow: visible;
   
   .aboutMe {
-      #aboutMeboxSection {
+      section {
         flex-direction: column;
         width: 50%;
 
@@ -99,6 +92,7 @@
           position: relative;
           left: -2em;
         }
+
      }}
    
    .spanMyJourneyBox {

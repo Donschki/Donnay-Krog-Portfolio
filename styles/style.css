@@ -93,26 +93,20 @@ header #navList .toggleLight img {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 main .portrait .portraitBox .mainHeading {
   display: flex;
   flex-direction: column;
 }
 main .portrait .portraitBox .spanMainHeading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  min-height: 2em;
   font-size: 40vw;
-  height: 30vh;
-  min-height: 1em;
-  margin-top: 0.1em;
+  height: 35vh;
 }
 
 .main2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   overflow: hidden;
 }
@@ -202,6 +196,11 @@ body body::-webkit-scrollbar {
   flex-direction: column;
   flex-wrap: wrap;
 }
+.aboutMe .myJourneyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .aboutMe .myJourneyBox section {
   display: flex;
   flex-direction: column;
@@ -251,25 +250,25 @@ body body::-webkit-scrollbar {
   text-align: center;
   margin: auto;
 }
-.aboutMe .aboutMeBox section {
+.aboutMe .aboutMeBox .aboutMeSection {
   display: flex;
   flex-direction: column;
   color: #2da8d8;
 }
-.aboutMe .aboutMeBox section .initialContainer {
+.aboutMe .aboutMeBox .aboutMeSection .initialContainer {
   width: 54%;
 }
-.aboutMe .aboutMeBox section .initial {
+.aboutMe .aboutMeBox .aboutMeSection .initial {
   width: 10em;
   font-size: 1em;
 }
-.aboutMe .aboutMeBox section .principles {
+.aboutMe .aboutMeBox .aboutMeSection .principles {
   line-height: 1.4em;
   letter-spacing: 2px;
   font-size: 0.7em;
   text-align: center;
 }
-.aboutMe .aboutMeBox section .initial::first-letter {
+.aboutMe .aboutMeBox .aboutMeSection .initial::first-letter {
   color: #d9524e;
   font-size: 170px;
   float: left;
@@ -608,7 +607,7 @@ body body::-webkit-scrollbar {
   .aboutMe .aboutMeBox .spanAboutMeBox {
     font-size: 8vw;
   }
-  .aboutMe .aboutMeBox #aboutMeboxSection {
+  .aboutMe .aboutMeBox section {
     flex-direction: row;
     align-items: center;
   }
@@ -637,26 +636,25 @@ body body::-webkit-scrollbar {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
-    gap: 1em;
   }
   .mainsBox main {
     max-width: 50%;
-    height: 804px;
+  }
+  .mainsBox main .portrait {
+    height: 100vh;
   }
   .mainsBox main .portrait .spanMainHeading {
-    font-size: 20vw;
-    height: 20vh;
+    font-size: 22vw;
   }
   .mainsBox .main2 {
     width: 50%;
-    flex-direction: column-reverse;
     overflow: visible;
   }
-  .mainsBox .main2 .aboutMe #aboutMeboxSection {
+  .mainsBox .main2 .aboutMe section {
     flex-direction: column;
     width: 50%;
   }
-  .mainsBox .main2 .aboutMe #aboutMeboxSection .initialContainer {
+  .mainsBox .main2 .aboutMe section .initialContainer {
     position: relative;
     left: -2em;
   }
