@@ -92,22 +92,37 @@ header #navList .toggleLight img {
 
 main {
   overflow: hidden;
-  text-align: center;
 }
 main .slidingBanner {
   padding-top: 0.5em;
 }
 main .mainHeading {
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
-main .mainHeading .mainHeadingBox {
-  display: flex;
-  flex-direction: column;
+main h1 {
   justify-content: space-evenly;
 }
-main .mainHeading .mainHeadingBox .spanMainHeading {
-  font-size: 40vw;
+main h1 .spanFirstName {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+  font-size: 13.5vh;
+  text-orientation: upright;
+  letter-spacing: 1em;
+}
+main h1 .spanLastName {
+  font-size: 20vh;
+  letter-spacing: 1em;
+  text-orientation: upright;
+  display: flex;
+  align-items: center;
+}
+main h1 .spanLastName #spanKrog {
+  align-items: center;
+  display: flex;
+  width: 50vw;
 }
 
 .main2 {
@@ -260,22 +275,23 @@ body body::-webkit-scrollbar {
 }
 .aboutMe .aboutMeBox #aboutMeSection .initialContainer {
   width: 54%;
+  font-size: 50vw;
 }
-.aboutMe .aboutMeBox #aboutMeSection .initial {
-  width: 10em;
-  font-size: 1em;
+.aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial {
+  width: 8em;
+  font-size: 10vw;
 }
-.aboutMe .aboutMeBox #aboutMeSection .principles {
+.aboutMe .aboutMeBox #aboutMeSection .initialContainer .principles {
   line-height: 1.4em;
   letter-spacing: 2px;
   font-size: 0.7em;
   text-align: center;
 }
-.aboutMe .aboutMeBox #aboutMeSection .initial::first-letter {
+.aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial::first-letter {
   color: #d9524e;
-  font-size: 170px;
   float: left;
   line-height: 0.8em;
+  font-size: 50vw;
 }
 
 .portfolio {
@@ -356,6 +372,33 @@ body body::-webkit-scrollbar {
   transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
   transition: all 1s;
   width: 100%;
+}
+
+body {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #spanDon {
@@ -597,11 +640,8 @@ body body::-webkit-scrollbar {
 
 @media all and (min-width: 430px) {
   main .mainHeading .mainHeadingBox {
-    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-  }
-  main .mainHeading .mainHeadingBox .spanMainHeading {
-    font-size: 30vw;
   }
   #spanPrinciples {
     font-size: 6vw;
@@ -609,21 +649,24 @@ body body::-webkit-scrollbar {
 }
 @media all and (min-width: 500px) {
   .aboutMe .aboutMeBox {
-    max-width: 550px;
     margin: auto;
     border: saddlebrown;
   }
   .aboutMe .aboutMeBox #aboutMeSection {
     flex-direction: row;
   }
-  .aboutMe .aboutMeBox .spanAboutMeBox {
-    font-size: 8vw;
-  }
-  .aboutMe .aboutMeBox .principles {
+  .aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial .principles {
     text-align: center;
     width: 50%;
+    border: solid;
   }
-  .aboutMe .aboutMeBox #spanPrinciples {
+  .aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial .initial::first-letter {
+    font-size: 1vw;
+  }
+  .aboutMe .aboutMeBox #aboutMeSection .initialContainer .spanAboutMeBox {
+    font-size: 8vw;
+  }
+  .aboutMe .aboutMeBox #aboutMeSection .initialContainer #spanPrinciples {
     font-size: 5vw;
   }
   .aboutMe .myJourneyBox .spanMyJourneyBox {
@@ -686,6 +729,11 @@ body body::-webkit-scrollbar {
   }
   .portfolio #spanMyPortfolio {
     float: left;
+  }
+}
+@media all and (min-width: 880px) {
+  main .mainHeading .mainHeadingBox .spanMainHeading {
+    font-size: 5.5em;
   }
 }
 * {

@@ -1,20 +1,20 @@
 
                    
-// main { //                          FADE_IN_AT_PAGE_ENTER
-//     animation-duration: 5s;
-//     animation-name: animate-fade;
-//     animation-delay: 0.5s;
-//     animation-fill-mode: both;
+body { //                          FADE_IN_AT_PAGE_ENTER
+    animation-duration: 5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
   
   
-//   @keyframes animate-fade { //      
-//     0% {
-//       opacity: 0;
-//     }
-//     100% {
-//       opacity: 1;
-//     }
-//   }}
+  @keyframes animate-fade { //      
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }}
  
 
  #spanDon {

@@ -5,26 +5,45 @@
 
 main {
  overflow: hidden;
- text-align: center;
 
 .slidingBanner {
   padding-top: 0.5em;
 }
 
 .mainHeading {
- display: flex;
- flex-direction: column;
+ height: 100vh;
+ writing-mode: vertical-rl;
+}
 
-.mainHeadingBox{
- display: flex;
- flex-direction: column;
+h1 {
  justify-content: space-evenly;
+  
+.spanFirstName {
+  display: flex;
+  align-items: center;
+  width: 50vw;
+ font-size: 13.5vh;
+ text-orientation: upright;
+ letter-spacing: 1em;
 
-    .spanMainHeading {
-     font-size: 40vw;
-    }
+}
+
+
+.spanLastName {
+  font-size: 20vh;
+  letter-spacing: 1em;
+  text-orientation: upright;
+  display: flex;
+  align-items: center;
+
+  #spanKrog {
+    align-items: center;
+    display: flex;
+    width: 50vw;
   }
 }
+  }
+
 }
 
 .main2 {
@@ -35,7 +54,6 @@ main {
 
 .main3 {
   display: flex;
-
 }
 
 

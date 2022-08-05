@@ -1,17 +1,12 @@
 
 @media all and (min-width: 430px) {
 main {
- 
   .mainHeading {
-
-  .mainHeadingBox { 
-     display: flex;
+   .mainHeadingBox { 
+     flex-wrap: wrap;
      align-items: center;
-
-  .spanMainHeading {
-    font-size: 30vw;
-    
-  }}}}
+     }
+  }}
 
 #spanPrinciples {
  font-size: 6vw;
@@ -22,26 +17,34 @@ main {
 .aboutMe {
 
 .aboutMeBox {
- max-width: 550px;
  margin: auto;
 border: saddlebrown;
 
  #aboutMeSection {
  flex-direction: row;
- }
 
+ .initialContainer {
+ .initial {
+
+  .principles {
+  text-align: center;
+  width: 50%;
+  border: solid;
+ }
+ 
+ .initial::first-letter {
+   font-size: 1vw;
+ }
+ }
+ 
 .spanAboutMeBox {
  font-size: 8vw;
-}
- 
- .principles {
- text-align: center;
- width: 50%;
 }
 
  #spanPrinciples {
  font-size: 5vw; 
-}}
+}}}
+}
 
 .myJourneyBox {
 
@@ -132,9 +135,13 @@ border: saddlebrown;
 
 }
 
-
-
-@media all and (min-width: 800px) {
+@media all and (min-width: 880px) {
+  main {
+    .mainHeading {
+      .mainHeadingBox {
+        .spanMainHeading {
+          font-size: 5.5em;
+  }}}}
 
 }
 
