@@ -1,53 +1,47 @@
 .mainsBox {
  display: flex;
  flex-direction: column;
+ gap: 4em;
 }
 
 main {
- overflow: hidden;
+ height: 100vh;
 
 .slidingBanner {
   padding-top: 0.5em;
 }
 
 .mainHeading {
- height: 100vh;
  writing-mode: vertical-rl;
-}
+ height: 100vh;
 
-h1 {
- justify-content: space-evenly;
-  
+.mainHeadingBox {
+ width: 100vw;
+
 .spanFirstName {
   display: flex;
   align-items: center;
-  width: 50vw;
- font-size: 13.5vh;
+  width: 50%;
+ font-size: 13.3vh;
  text-orientation: upright;
- letter-spacing: 1em;
-
+ letter-spacing: 1.27em;
 }
 
-
 .spanLastName {
-  font-size: 20vh;
-  letter-spacing: 1em;
+  font-size: 19.8vh;
+  letter-spacing: 1.3em;
+  width: 50%;
   text-orientation: upright;
   display: flex;
   align-items: center;
 
-  #spanKrog {
-    align-items: center;
-    display: flex;
-    width: 50vw;
-  }
-}
-  }
+}}}
 
 }
+
 
 .main2 {
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }

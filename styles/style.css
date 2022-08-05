@@ -88,45 +88,42 @@ header #navList .toggleLight img {
 .mainsBox {
   display: flex;
   flex-direction: column;
+  gap: 4em;
 }
 
 main {
-  overflow: hidden;
+  height: 100vh;
 }
 main .slidingBanner {
   padding-top: 0.5em;
 }
 main .mainHeading {
-  height: 100vh;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
+  height: 100vh;
 }
-main h1 {
-  justify-content: space-evenly;
+main .mainHeading .mainHeadingBox {
+  width: 100vw;
 }
-main h1 .spanFirstName {
+main .mainHeading .mainHeadingBox .spanFirstName {
   display: flex;
   align-items: center;
-  width: 50vw;
-  font-size: 13.5vh;
+  width: 50%;
+  font-size: 13.3vh;
   text-orientation: upright;
-  letter-spacing: 1em;
+  letter-spacing: 1.27em;
 }
-main h1 .spanLastName {
-  font-size: 20vh;
-  letter-spacing: 1em;
+main .mainHeading .mainHeadingBox .spanLastName {
+  font-size: 19.8vh;
+  letter-spacing: 1.3em;
+  width: 50%;
   text-orientation: upright;
   display: flex;
   align-items: center;
-}
-main h1 .spanLastName #spanKrog {
-  align-items: center;
-  display: flex;
-  width: 50vw;
 }
 
 .main2 {
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
 }
@@ -207,6 +204,7 @@ body {
   font-family: "Edu NSW ACT Foundation", cursive;
   font-size: 1em;
   transition: 1s;
+  overflow-x: hidden;
   /* Hide scrollbar for Chrome, Safari and Opera */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -223,7 +221,20 @@ body body::-webkit-scrollbar {
 .aboutMe .myJourneyBox #myJourneySection {
   display: flex;
   flex-direction: column;
+}
+.aboutMe .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
+  font-size: 0.7em;
+  color: #2da8d8;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+  padding: 0.3em;
+}
+.aboutMe .myJourneyBox #myJourneySection .myJourneyBoxParagraph #bigWord {
+  color: #d9524e;
+}
+.aboutMe .myJourneyBox #myJourneySection #spanHungry {
   text-align: center;
+  font-size: 6.6vw;
 }
 .aboutMe .myJourneyBox #spanMy {
   letter-spacing: 20px;
@@ -239,16 +250,6 @@ body body::-webkit-scrollbar {
   letter-spacing: 10px;
   float: right;
 }
-.aboutMe .myJourneyBox .myJourneyBoxParagraph {
-  font-size: 0.7em;
-  color: #2da8d8;
-  letter-spacing: 2px;
-  line-height: 1.4em;
-  padding: 0.3em;
-}
-.aboutMe .myJourneyBox .myJourneyBoxParagraph #bigWord {
-  color: #d9524e;
-}
 .aboutMe .aboutMeBox #spanMe {
   letter-spacing: 20px;
   margin-left: 1em;
@@ -262,16 +263,11 @@ body body::-webkit-scrollbar {
   float: left;
   margin-top: 1em;
 }
-.aboutMe .aboutMeBox #spanHungry {
-  font-size: 8vw;
-  width: 8em;
-  text-align: center;
-  margin: auto;
-}
 .aboutMe .aboutMeBox #aboutMeSection {
   display: flex;
   flex-direction: column;
   color: #2da8d8;
+  font-size: 0.7em;
 }
 .aboutMe .aboutMeBox #aboutMeSection .initialContainer {
   width: 54%;
@@ -284,7 +280,7 @@ body body::-webkit-scrollbar {
 .aboutMe .aboutMeBox #aboutMeSection .initialContainer .principles {
   line-height: 1.4em;
   letter-spacing: 2px;
-  font-size: 0.7em;
+  font-size: 0.6em;
   text-align: center;
 }
 .aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial::first-letter {
@@ -372,33 +368,6 @@ body body::-webkit-scrollbar {
   transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
   transition: all 1s;
   width: 100%;
-}
-
-body {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-name: animate-fade;
-          animation-name: animate-fade;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-@-webkit-keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 #spanDon {
@@ -519,8 +488,7 @@ body {
   -webkit-animation: banner 7s linear infinite;
           animation: banner 7s linear infinite;
   transform: translateX(100%);
-  font-size: 40px;
-  margin: 10px;
+  font-size: 8vh;
 }
 .slidingBanner h2 {
   width: 18em;
@@ -639,10 +607,6 @@ body {
 }
 
 @media all and (min-width: 430px) {
-  main .mainHeading .mainHeadingBox {
-    flex-wrap: wrap;
-    align-items: center;
-  }
   #spanPrinciples {
     font-size: 6vw;
   }
@@ -652,11 +616,7 @@ body {
     margin: auto;
     border: saddlebrown;
   }
-  .aboutMe .aboutMeBox #aboutMeSection {
-    flex-direction: row;
-  }
   .aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial .principles {
-    text-align: center;
     width: 50%;
     border: solid;
   }
@@ -683,26 +643,29 @@ body {
     width: 100%;
   }
 }
-@media all and (min-width: 700px) {
+@media all and (min-width: 600px) {
   .mainsBox {
-    flex-direction: row;
-    flex-wrap: wrap;
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
   }
   .mainsBox main {
-    width: 50%;
-    overflow: visible;
+    width: 50vw;
   }
-  .mainsBox main .mainHeading .spanMainHeading {
-    font-size: 20vw;
-    padding-bottom: 0.5em;
+  .mainsBox main .mainHeadingBox {
+    width: 50vw;
+  }
+  .mainsBox main .mainHeadingBox .spanFirstName {
+    font-size: 13.5vh;
+  }
+  .mainsBox main .mainHeadingBox .spanLastName {
+    font-size: 20.1vh;
   }
   .mainsBox .main2 {
-    margin-top: 8em;
-    width: 50%;
     max-height: 100vh;
     flex-direction: column;
+    width: 50vw;
   }
   .mainsBox .main2 .slidingBanner {
     padding-top: 1em;
@@ -710,8 +673,16 @@ body {
   .mainsBox .main2 .aboutMe {
     display: block;
   }
-  .mainsBox .main2 .aboutMe .aboutMeBox #spanAbout {
+  .mainsBox .main2 .aboutMe .aboutMeBox .spanAboutMeBox {
+    font-size: 1.7em;
+  }
+  .mainsBox .main2 .aboutMe .aboutMeBox .spanAboutMeBox #spanAbout {
     float: right;
+    font-size: 10vw;
+  }
+  .mainsBox .main2 .aboutMe .aboutMeBox .spanAboutMeBox #spanMe {
+    float: right;
+    font-size: 10vw;
   }
   .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection {
     flex-direction: column;
@@ -727,13 +698,10 @@ body {
     padding: 0;
     text-align: center;
   }
-  .portfolio #spanMyPortfolio {
-    float: left;
-  }
 }
 @media all and (min-width: 880px) {
   main .mainHeading .mainHeadingBox .spanMainHeading {
-    font-size: 5.5em;
+    font-size: 20vh;
   }
 }
 * {

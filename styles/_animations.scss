@@ -1,20 +1,20 @@
 
                    
-body { //                          FADE_IN_AT_PAGE_ENTER
-    animation-duration: 5s;
-    animation-name: animate-fade;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
+// body { //                          FADE_IN_AT_PAGE_ENTER
+//     animation-duration: 5s;
+//     animation-name: animate-fade;
+//     animation-delay: 0.5s;
+//     animation-fill-mode: both;
   
   
-  @keyframes animate-fade { //      
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }}
+//   @keyframes animate-fade { //      
+//     0% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }}
  
 
  #spanDon {
@@ -137,11 +137,10 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 }}
 
 
-.slidingBanner {//                  ANIMATED_BANNER
+.slidingBanner {//                  SLIDING_BANNER
  animation: banner 7s linear infinite; 
  transform: translateX(100%);
- font-size: 40px;
- margin: 10px;
+ font-size: 8vh;
  
 h2 {
   width: 18em;

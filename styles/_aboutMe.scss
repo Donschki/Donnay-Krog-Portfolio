@@ -9,33 +9,37 @@
  #myJourneySection {
  display: flex;
  flex-direction: column;
- text-align: center;
- }
+
+ .myJourneyBoxParagraph {
+    font-size: 0.7em;
+    color: $fontColor;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    padding: 0.3em;
+    
+    #bigWord {
+    color: $headingColor;
+    }
+}
+
+#spanHungry {
+    text-align: center;
+    font-size: 6.6vw;
+
+}}
 
  #spanMy {
  letter-spacing: 20px;
  margin-left: 2em;
- @include flexCenter;
- }
+ @include flexCenter;}
 
  #spanJourney {
  text-orientation: sideways-left;
  writing-mode: vertical-rl; 
  letter-spacing: 10px;
- float: right; 
- }
+ float: right;}
 
- .myJourneyBoxParagraph {
-     font-size: 0.7em;
-     color: $fontColor;
-     letter-spacing: 2px;
-     line-height: 1.4em;
-     padding: 0.3em;
-     
-     #bigWord {
-     color: $headingColor;
-     }
-}}
+}
 
 .aboutMeBox {//                            ABOUT_ME_BOX
 
@@ -53,22 +57,16 @@
  margin-top: 1em;
 }
 
-#spanHungry {
- font-size: 8vw;
- width: 8em;
- text-align: center;
- margin: auto;
-}
 
 #aboutMeSection {
  display: flex;
  flex-direction: column;
  color: $fontColor;
+ font-size: 0.7em;
  
 .initialContainer {
  width: 54%;
  font-size: 50vw;
-
 
 .initial {
  width: 8em;
@@ -78,7 +76,7 @@
 .principles {
  line-height: 1.4em;
  letter-spacing: 2px;
- font-size: 0.7em;
+ font-size: 0.6em;
  text-align: center;
 }
 

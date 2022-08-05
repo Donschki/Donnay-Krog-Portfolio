@@ -1,12 +1,6 @@
 
 @media all and (min-width: 430px) {
-main {
-  .mainHeading {
-   .mainHeadingBox { 
-     flex-wrap: wrap;
-     align-items: center;
-     }
-  }}
+
 
 #spanPrinciples {
  font-size: 6vw;
@@ -14,20 +8,19 @@ main {
 
 @media all and (min-width: 500px) {
 
+
 .aboutMe {
 
 .aboutMeBox {
  margin: auto;
-border: saddlebrown;
+ border: saddlebrown;
 
  #aboutMeSection {
- flex-direction: row;
 
  .initialContainer {
  .initial {
 
   .principles {
-  text-align: center;
   width: 50%;
   border: solid;
  }
@@ -66,30 +59,35 @@ border: saddlebrown;
 }
 }}}
 
-@media all and (min-width: 700px) {
-
+@media all and (min-width: 600px) {
 .mainsBox {
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  overflow: hidden;
- 
-  main {
- width: 50%;
- overflow: visible;
-   .mainHeading {
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ gap: 0;
 
-     .spanMainHeading {
-      font-size: 20vw;
-      padding-bottom: 0.5em;
-     }}
+ main {
+  width: 50vw;
+ 
+.mainHeadingBox { 
+ width: 50vw;
+
+  .spanFirstName {
+    font-size: 13.5vh;
   }
 
-  .main2 {
-   margin-top: 8em;
-   width: 50%;
+  .spanLastName {
+    font-size: 20.1vh;
+  }
+
+}
+
+}
+
+.main2 {
    max-height: 100vh;
    flex-direction: column;
+   width: 50vw;
 
    .slidingBanner {
    padding-top: 1em;
@@ -99,10 +97,18 @@ border: saddlebrown;
    display: block;
 
    .aboutMeBox {
-  
+   .spanAboutMeBox {
+     font-size: 1.7em;
+    
    #spanAbout {
    float: right;
+   font-size: 10vw;
   }
+
+  #spanMe {
+    float: right;
+    font-size: 10vw;
+   }}
 
    #aboutMeSection {
         flex-direction: column;
@@ -125,22 +131,15 @@ border: saddlebrown;
   }
  }
 }
-}}
+}}}
 
-.portfolio {
-  #spanMyPortfolio {
-    float: left;
-  }
-}
-
-}
 
 @media all and (min-width: 880px) {
   main {
     .mainHeading {
       .mainHeadingBox {
         .spanMainHeading {
-          font-size: 5.5em;
+          font-size: 20vh;
   }}}}
 
 }
