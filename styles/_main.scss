@@ -1,11 +1,11 @@
 .mainsBox {
  display: flex;
  flex-direction: column;
- gap: 4em;
 }
 
 main {
  height: 100vh;
+ overflow-x: hidden;
 
 .slidingBanner {
   padding-top: 0.5em;

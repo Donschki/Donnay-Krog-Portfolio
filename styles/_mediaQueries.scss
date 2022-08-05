@@ -68,6 +68,7 @@
 
  main {
   width: 50vw;
+  overflow: visible;
  
 .mainHeadingBox { 
  width: 50vw;
@@ -96,19 +97,11 @@
    .aboutMe {
    display: block;
 
-   .aboutMeBox {
-   .spanAboutMeBox {
-     font-size: 1.7em;
-    
-   #spanAbout {
-   float: right;
-   font-size: 10vw;
-  }
-
-  #spanMe {
-    float: right;
-    font-size: 10vw;
-   }}
+  .aboutMeBox {
+   
+  .spanAboutMeBox {
+    font-size: 8vw;
+   }
 
    #aboutMeSection {
         flex-direction: column;

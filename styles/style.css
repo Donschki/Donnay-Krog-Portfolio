@@ -88,11 +88,11 @@ header #navList .toggleLight img {
 .mainsBox {
   display: flex;
   flex-direction: column;
-  gap: 4em;
 }
 
 main {
   height: 100vh;
+  overflow-x: hidden;
 }
 main .slidingBanner {
   padding-top: 0.5em;
@@ -652,6 +652,7 @@ body body::-webkit-scrollbar {
   }
   .mainsBox main {
     width: 50vw;
+    overflow: visible;
   }
   .mainsBox main .mainHeadingBox {
     width: 50vw;
@@ -674,15 +675,7 @@ body body::-webkit-scrollbar {
     display: block;
   }
   .mainsBox .main2 .aboutMe .aboutMeBox .spanAboutMeBox {
-    font-size: 1.7em;
-  }
-  .mainsBox .main2 .aboutMe .aboutMeBox .spanAboutMeBox #spanAbout {
-    float: right;
-    font-size: 10vw;
-  }
-  .mainsBox .main2 .aboutMe .aboutMeBox .spanAboutMeBox #spanMe {
-    float: right;
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection {
     flex-direction: column;
