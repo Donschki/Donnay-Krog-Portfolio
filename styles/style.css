@@ -116,6 +116,7 @@ main .mainHeading .mainHeadingBox .spanFirstName {
 main .mainHeading .mainHeadingBox .spanLastName {
   font-size: 19.8vh;
   letter-spacing: 1.3em;
+  -webkit-letter-spacing: 1.3em;
   width: 50%;
   text-orientation: upright;
   display: flex;
