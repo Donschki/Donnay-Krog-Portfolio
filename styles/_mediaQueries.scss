@@ -1,74 +1,52 @@
 
 @media all and (min-width: 430px) {
 
-
-#spanPrinciples {
- font-size: 6vw;
-}}
+  .aboutMe {
+    margin: auto auto;
+  }
+  .paragraphHeadings {
+    font-size: 8vh;
+}
+}
 
 @media all and (min-width: 500px) {
 
-
 .aboutMe {
 
-.aboutMeBox {
- margin: auto;
- border: saddlebrown;
+margin: 0 ;
+  .aboutMeBox {
 
- #aboutMeSection {
-
- .initialContainer {
- .initial {
-
-  .principles {
-  width: 50%;
-  border: solid;
- }
+    #aboutMeSection {
+     
+      .initialContainer {
+      .initial {
  
- .initial::first-letter {
-   font-size: 1vw;
- }
- }
+      .initial::first-letter {
+        font-size: 1vw;
+    }}
  
-.spanAboutMeBox {
- font-size: 8vw;
-}
-
- #spanPrinciples {
- font-size: 5vw; 
+} 
+ .principles {
+  padding: 0;
+  font-size: 4vw;
 }}}
 }
 
 .myJourneyBox {
 
-.spanMyJourneyBox {
- font-size: 8vw;
-}
-
-.myJourneyBoxParagraph {
- text-align: center;
- }
-
-#spanMy {
- margin-left: 6em;
-}
-
 #spanHungry {
  font-size: 5vw;
   width: 100%;
 }
-}}}
+}}
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 700px) {
+  
 .mainsBox {
  display: flex;
- flex-wrap: wrap;
- flex-direction: row;
- gap: 0;
-
+ flex-direction: row-reverse;
  main {
-  width: 50vw;
-  overflow: visible;
+  width: 50%;
  
 .mainHeadingBox { 
  width: 50vw;
@@ -80,52 +58,49 @@
   .spanLastName {
     font-size: 20.1vh;
   }
-
 }
-
 }
 
 .main2 {
-   max-height: 100vh;
-   flex-direction: column;
+
+.aboutMe { 
    width: 50vw;
 
-   .slidingBanner {
-   padding-top: 1em;
-}
- 
-   .aboutMe {
-   display: block;
-
+    .paragraphHeadings {
+      font-size: 10vw;
+    }
+    
   .aboutMeBox {
-   
-  .spanAboutMeBox {
-    font-size: 8vw;
-   }
 
-   #aboutMeSection {
-        flex-direction: column;
-        width: 50%;
+       #aboutMeSection {
+        display: block;
+        padding: 2em;
+        
+         .principles {
+           font-size: 4vh;
+           padding-top: 1em;
+         }
+       
+    .initialContainer { 
+    .initial {
+      font-size: 6.3vw;
+     }}
 
-        .principles {
-          width: 48vw;
-        }
-  }}
+  .initial::first-letter {
+   font-size: 5em;
+  }
+}}
+.myJourneyBox {
+width: 100%;
 
-  .myJourneyBox {
+ #myJourneySection .myJourneyBoxParagraph {
+  font-size: 4vw;
   
-  #spanMy {
-    margin: 0;
-  }
+}}
+}}
 
-  .myJourneyBoxParagraph {
-    padding: 0;
-    text-align: center;
-  }
- }
-}
+.main3 {
 }}}
-
 
 @media all and (min-width: 880px) {
   main {

@@ -1,5 +1,7 @@
 
-
+header {
+  overflow: hidden;
+}
 //MIXINS
 @mixin flexCenter {
   display: flex;

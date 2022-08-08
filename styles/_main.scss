@@ -1,15 +1,12 @@
 .mainsBox {
  display: flex;
- flex-direction: column;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
 }
 
 main {
- height: 100vh;
- overflow-x: hidden;
-
-.slidingBanner {
-  padding-top: 0.5em;
-}
+ overflow: visible;
 
 .mainHeading {
  writing-mode: vertical-rl;
@@ -22,16 +19,16 @@ main {
   display: flex;
   align-items: center;
   width: 50%;
- font-size: 13.3vh;
+  font-size: 11.3vh;
  text-orientation: upright;
  letter-spacing: 1.27em;
 }
 
 .spanLastName {
-  font-size: 19.8vh;
   letter-spacing: 1.3em;
   -webkit-letter-spacing: 1.3em;
   width: 50%;
+  font-size: 17vh;
   text-orientation: upright;
   display: flex;
   align-items: center;
@@ -40,11 +37,12 @@ main {
 
 }
 
-
 .main2 {
-  margin-top: 2em;
-  display: flex;
-  flex-direction: column;
+
+  .aboutMe{
+    display: flex;
+    gap: 2em;
+  }
 }
 
 .main3 {
