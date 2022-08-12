@@ -140,10 +140,10 @@
 .slidingBanner {//                  SLIDING_BANNER
  animation: banner 7s linear infinite; 
  transform: translateX(100%);
- font-size: 8vh;
- 
+ font-size: 4vh;
+ padding-top: 1em;
 h2 {
-  width: 18em;
+  width: 20em;
   color: rgba(65, 82, 241, 0.178);
   word-spacing: 3px;
   letter-spacing: 8px;

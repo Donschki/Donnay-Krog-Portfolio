@@ -1,13 +1,13 @@
 
 
 main {
- overflow: hidden;
  display: inline-flex;
  flex-direction: column;
  
 .mainHeading {
+ overflow: visible;
  display: flex;
- height: 85vh;
+ height: 90vh;
  flex-direction: row;
  justify-content:center;
  justify-content: space-evenly;

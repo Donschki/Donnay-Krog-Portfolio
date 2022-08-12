@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
 header {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header nav {
@@ -90,13 +90,13 @@ header #navList .toggleLight img {
 }
 
 main {
-  overflow: hidden;
   display: inline-flex;
   flex-direction: column;
 }
 main .mainHeading {
+  overflow: visible;
   display: flex;
-  height: 85vh;
+  height: 90vh;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
@@ -475,10 +475,11 @@ body body::-webkit-scrollbar {
   -webkit-animation: banner 7s linear infinite;
           animation: banner 7s linear infinite;
   transform: translateX(100%);
-  font-size: 8vh;
+  font-size: 4vh;
+  padding-top: 1em;
 }
 .slidingBanner h2 {
-  width: 18em;
+  width: 20em;
   color: rgba(65, 82, 241, 0.178);
   word-spacing: 3px;
   letter-spacing: 8px;
