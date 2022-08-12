@@ -7,7 +7,6 @@ main {
 .mainHeading {
  overflow: visible;
  display: flex;
- height: 90vh;
  flex-direction: row;
  justify-content:center;
  justify-content: space-evenly;
@@ -34,7 +33,7 @@ span {
 .main2 {
   .aboutMe{
     display: flex;
-    gap: 2em;
+    gap: 3em;
   }
 }
 

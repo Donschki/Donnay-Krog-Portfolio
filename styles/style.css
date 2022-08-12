@@ -96,7 +96,6 @@ main {
 main .mainHeading {
   overflow: visible;
   display: flex;
-  height: 90vh;
   flex-direction: row;
   justify-content: center;
   justify-content: space-evenly;
@@ -121,7 +120,7 @@ main .mainHeading .lastName span {
 
 .main2 .aboutMe {
   display: flex;
-  gap: 2em;
+  gap: 3em;
 }
 
 .main3 {
@@ -269,7 +268,7 @@ body body::-webkit-scrollbar {
 .myJourneyBox #myJourneySection {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 0.5em;
 }
 .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
   color: #2da8d8;
@@ -354,6 +353,33 @@ body body::-webkit-scrollbar {
   transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
   transition: all 1s;
   width: 100%;
+}
+
+body {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #DON {
@@ -580,11 +606,11 @@ body body::-webkit-scrollbar {
 
 .lightMode {
   background: hsl(0deg, 6%, 85%);
-  transition: 2s;
+  transition: 1s;
   color: rgb(27, 27, 27);
 }
 .lightMode span {
-  transition: 2s;
+  transition: 1s;
   color: rgb(24, 23, 23);
 }
 .lightMode p {
@@ -612,7 +638,6 @@ body body::-webkit-scrollbar {
 }
 @media screen and (min-width: 768px) {
   main {
-    width: 100vw;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
