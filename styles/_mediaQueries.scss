@@ -1,19 +1,15 @@
 
-@media all and (min-width: 430px) {
+@media screen and (min-width: 430px) {
 
-  .aboutMe {
-    margin: auto auto;
-  }
   .paragraphHeadings {
     font-size: 8vh;
 }
 }
 
-@media all and (min-width: 500px) {
+@media screen and (min-width: 500px) {
 
 .aboutMe {
 
-margin: 0 ;
   .aboutMeBox {
 
     #aboutMeSection {
@@ -40,48 +36,33 @@ margin: 0 ;
 }
 }}
 
-@media all and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   
-.mainsBox {
- display: flex;
- flex-direction: row-reverse;
  main {
-  width: 50%;
- 
-.mainHeadingBox { 
- width: 50vw;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
 
-  .spanFirstName {
-    font-size: 13.5vh;
-  }
-
-  .spanLastName {
-    font-size: 20.1vh;
-  }
-}
-}
+ .mainHeading {
+   width: 50vw;
+   height: 88vh;
+} 
 
 .main2 {
-
-.aboutMe { 
-   width: 50vw;
+  width: 50vw;
+  display: block;
 
     .paragraphHeadings {
-      font-size: 10vw;
+      font-size: 10vh;
     }
     
   .aboutMeBox {
 
        #aboutMeSection {
-        display: block;
-        padding: 2em;
         
          .principles {
-           font-size: 4vh;
-           padding-top: 1em;
+           padding-top: 0.7em;
          }
        
-    .initialContainer { 
     .initial {
       font-size: 6.3vw;
      }}
@@ -90,25 +71,32 @@ margin: 0 ;
    font-size: 5em;
   }
 }}
-.myJourneyBox {
-width: 100%;
+
+ .myJourneyBox {
 
  #myJourneySection .myJourneyBoxParagraph {
-  font-size: 4vw;
+  font-size: 3vw;
   
 }}
 }}
 
-.main3 {
-}}}
 
-@media all and (min-width: 880px) {
+@media screen and (min-width: 1200px) {
   main {
+    width: 1200px;
+
     .mainHeading {
-      .mainHeadingBox {
-        .spanMainHeading {
-          font-size: 20vh;
-  }}}}
+      width: 50%;
+      height: 100vh;
+      font-size: 1em;
+    }
+
+    .main2 {
+      width: 50%;
+      
+    }
+
+  }
 
 }
 

@@ -1,14 +1,12 @@
-.aboutMe {//                        ABOUT_ME_SECTION
+.main2{
  display: flex;
  flex-direction: column;
- width: 100vw;
 
 .paragraphHeadings {
     font-size: 15vw;
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
-
 #spanMe {
  letter-spacing: 15px;
 }
@@ -27,14 +25,18 @@
  display: flex;
  flex-direction: column;
  
-.initialContainer {
- width: 54%;
- font-size: 50vw;
-}
 
 .initial {
- width: 8em;
- font-size: 12vw;
+ width: 6.5em;
+ font-size: 11vw;
+}
+
+.initial::first-letter {
+   color: $salmon;
+   float: left;
+   line-height: 0.8em;
+   font-size: 5.1em;
+  }
 }
 
 .principles {
@@ -46,19 +48,13 @@
     font-size: 6vw;
  }
 }
-
-.initial::first-letter {
- color: $salmon;
- float: left;
- line-height: 0.8em;
- font-size: 50vw;
-}}}}
+}}
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
 
  #spanMy {//                       SPAN_MY
  letter-spacing: 15px;
- margin-left: 2em;
+ margin-left: 1em;
 }
 
  #spanJourney {//                       SPAN_JOURNEY

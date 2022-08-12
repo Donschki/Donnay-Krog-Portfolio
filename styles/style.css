@@ -89,40 +89,34 @@ header #navList .toggleLight img {
   right: 0;
 }
 
-.mainsBox {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 main {
-  overflow: visible;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
 }
 main .mainHeading {
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  display: flex;
   height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
 }
-main .mainHeading .mainHeadingBox {
-  width: 100vw;
-}
-main .mainHeading .mainHeadingBox .spanFirstName {
+main .mainHeading .firstName {
   display: flex;
-  align-items: center;
-  width: 50%;
-  font-size: 11.3vh;
-  text-orientation: upright;
-  letter-spacing: 1.27em;
+  flex-direction: column;
+  justify-content: space-around;
 }
-main .mainHeading .mainHeadingBox .spanLastName {
-  letter-spacing: 1.3em;
-  -webkit-letter-spacing: 1.3em;
-  width: 50%;
+main .mainHeading .firstName span {
+  justify-content: space-around;
+  font-size: 11vh;
+}
+main .mainHeading .lastName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .mainHeading .lastName span {
   font-size: 17vh;
-  text-orientation: upright;
-  display: flex;
-  align-items: center;
 }
 
 .main2 .aboutMe {
@@ -131,6 +125,7 @@ main .mainHeading .mainHeadingBox .spanLastName {
 }
 
 .main3 {
+  width: 100vw;
   display: flex;
 }
 
@@ -205,7 +200,7 @@ body {
   font-family: "Tapestry", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
   transition: 1s;
-  overflow-x: hidden;
+  text-align: center;
   /* Hide scrollbar for Chrome, Safari and Opera */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -214,18 +209,17 @@ body body::-webkit-scrollbar {
   display: none;
 }
 
-.aboutMe {
+.main2 {
   display: flex;
   flex-direction: column;
-  width: 100vw;
 }
-.aboutMe .paragraphHeadings {
+.main2 .paragraphHeadings {
   font-size: 15vw;
 }
-.aboutMe .aboutMeBox #spanMe {
+.main2 .aboutMeBox #spanMe {
   letter-spacing: 15px;
 }
-.aboutMe .aboutMeBox #spanAbout {
+.main2 .aboutMeBox #spanAbout {
   text-orientation: sideways-left;
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
@@ -234,37 +228,33 @@ body body::-webkit-scrollbar {
   float: left;
   margin-top: 1em;
 }
-.aboutMe .aboutMeBox #aboutMeSection {
+.main2 .aboutMeBox #aboutMeSection {
   color: #2da8d8;
   display: flex;
   flex-direction: column;
 }
-.aboutMe .aboutMeBox #aboutMeSection .initialContainer {
-  width: 54%;
-  font-size: 50vw;
+.main2 .aboutMeBox #aboutMeSection .initial {
+  width: 6.5em;
+  font-size: 11vw;
 }
-.aboutMe .aboutMeBox #aboutMeSection .initial {
-  width: 8em;
-  font-size: 12vw;
+.main2 .aboutMeBox #aboutMeSection .initial::first-letter {
+  color: #d9524e;
+  float: left;
+  line-height: 0.8em;
+  font-size: 5.1em;
 }
-.aboutMe .aboutMeBox #aboutMeSection .principles {
+.main2 .aboutMeBox .principles {
   letter-spacing: 2px;
   font-size: 4vh;
   padding: 1em;
 }
-.aboutMe .aboutMeBox #aboutMeSection .principles #spanPrinciples {
+.main2 .aboutMeBox .principles #spanPrinciples {
   font-size: 6vw;
-}
-.aboutMe .aboutMeBox #aboutMeSection .initial::first-letter {
-  color: #d9524e;
-  float: left;
-  line-height: 0.8em;
-  font-size: 50vw;
 }
 
 .myJourneyBox #spanMy {
   letter-spacing: 15px;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 .myJourneyBox #spanJourney {
   text-orientation: sideways-left;
@@ -367,7 +357,7 @@ body body::-webkit-scrollbar {
   width: 100%;
 }
 
-#spanDon {
+#DON {
   -webkit-animation: spanDon 3.1s infinite;
           animation: spanDon 3.1s infinite;
   color: rgba(158, 158, 158, 0.096);
@@ -389,7 +379,7 @@ body body::-webkit-scrollbar {
   }
 }
 
-#spanNay {
+#NAY {
   -webkit-animation: spanNay 3.5s infinite;
           animation: spanNay 3.5s infinite;
   color: rgba(134, 134, 134, 0.178);
@@ -411,7 +401,7 @@ body body::-webkit-scrollbar {
   }
 }
 
-#spanKrog {
+#KROG {
   -webkit-animation: spanKrog 3.8s infinite;
           animation: spanKrog 3.8s infinite;
   color: rgba(150, 54, 54, 0.123);
@@ -602,18 +592,12 @@ body body::-webkit-scrollbar {
   color: rgb(17, 16, 16);
 }
 
-@media all and (min-width: 430px) {
-  .aboutMe {
-    margin: auto auto;
-  }
+@media screen and (min-width: 430px) {
   .paragraphHeadings {
     font-size: 8vh;
   }
 }
-@media all and (min-width: 500px) {
-  .aboutMe {
-    margin: 0;
-  }
+@media screen and (min-width: 500px) {
   .aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial .initial::first-letter {
     font-size: 1vw;
   }
@@ -626,53 +610,46 @@ body body::-webkit-scrollbar {
     width: 100%;
   }
 }
-@media all and (min-width: 700px) {
-  .mainsBox {
-    display: flex;
+@media screen and (min-width: 768px) {
+  main {
     flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
-  .mainsBox main {
-    width: 50%;
-  }
-  .mainsBox main .mainHeadingBox {
+  main .mainHeading {
     width: 50vw;
+    height: 88vh;
   }
-  .mainsBox main .mainHeadingBox .spanFirstName {
-    font-size: 13.5vh;
-  }
-  .mainsBox main .mainHeadingBox .spanLastName {
-    font-size: 20.1vh;
-  }
-  .mainsBox .main2 .aboutMe {
+  main .main2 {
     width: 50vw;
-  }
-  .mainsBox .main2 .aboutMe .paragraphHeadings {
-    font-size: 10vw;
-  }
-  .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection {
     display: block;
-    padding: 2em;
   }
-  .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection .principles {
-    font-size: 4vh;
-    padding-top: 1em;
+  main .main2 .paragraphHeadings {
+    font-size: 10vh;
   }
-  .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection .initialContainer .initial {
+  main .main2 .aboutMeBox #aboutMeSection .principles {
+    padding-top: 0.7em;
+  }
+  main .main2 .aboutMeBox #aboutMeSection .initial {
     font-size: 6.3vw;
   }
-  .mainsBox .main2 .aboutMe .aboutMeBox #aboutMeSection .initial::first-letter {
+  main .main2 .aboutMeBox .initial::first-letter {
     font-size: 5em;
   }
-  .mainsBox .main2 .aboutMe .myJourneyBox {
-    width: 100%;
-  }
-  .mainsBox .main2 .aboutMe .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
-    font-size: 4vw;
+  main .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
+    font-size: 3vw;
   }
 }
-@media all and (min-width: 880px) {
-  main .mainHeading .mainHeadingBox .spanMainHeading {
-    font-size: 20vh;
+@media screen and (min-width: 1200px) {
+  main {
+    width: 1200px;
+  }
+  main .mainHeading {
+    width: 50%;
+    height: 100vh;
+    font-size: 1em;
+  }
+  main .main2 {
+    width: 50%;
   }
 }
 * {
