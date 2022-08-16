@@ -3,13 +3,15 @@
 main {
  display: flex;
  flex-direction: column;
+ overflow: hidden;
+ gap: 2em;
  
 .mainHeading {
  overflow: visible;
  display: flex;
  flex-direction: row;
- justify-content:center;
  justify-content: space-evenly;
+ height: 100vh;
 
 .firstName {//                   FIRST_NAME
   display: flex;
@@ -27,15 +29,8 @@ span {
   justify-content: space-around;
 
  span {
-  font-size: 17vh;
+  font-size: 20.5vh;
 }}}}
-
-.main2 {
-  .aboutMe{
-    display: flex;
-    gap: 3em;
-  }
-}
 
 .main3 {
   width: 100vw;

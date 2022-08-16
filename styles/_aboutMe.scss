@@ -1,16 +1,22 @@
-.main2{
+.main2 {
  display: flex;
  flex-direction: column;
+ gap: em;
 
 .paragraphHeadings {
-    font-size: 15vw;
+    font-size: 12vw;
+}
+
+.paragraphs {
+  font-size: 5vw;
+  text-align: center;
+  color: $blue;
+  letter-spacing: 3px;
+  margin: 1em 0;
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
-#spanMe {
- letter-spacing: 15px;
-}
-
+ 
 #spanAbout {
  text-orientation:sideways-left;
  writing-mode: vertical-lr;
@@ -20,40 +26,45 @@
  margin-top: 1em;
 }
 
+ #spanMe {
+ letter-spacing: 15px;
+ position: relative;
+ left: 0em;
+}
+
 #aboutMeSection {
  color: $fontColor;
  display: flex;
  flex-direction: column;
- 
 
 .initial {
- width: 6.5em;
  font-size: 11vw;
 }
 
 .initial::first-letter {
-   color: $salmon;
-   float: left;
-   line-height: 0.8em;
-   font-size: 5.1em;
+ color: $salmon;
+ float: left;
+ line-height: 0.8em;
+ font-size: 54vw;
   }
 }
 
-.principles {
- letter-spacing: 2px;
- font-size: 4vh;
-
  #spanPrinciples {
-    font-size: 6vw;
+ font-size: 10vw;
  }
 }
-}}
+}
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
 
+ h1 {
+ text-align: center;
+ 
+ 
  #spanMy {//                       SPAN_MY
  letter-spacing: 15px;
- margin-left: 3.7em;
+ position: relative;
+ left: -1em;
 }
 
  #spanJourney {//                       SPAN_JOURNEY
@@ -61,16 +72,18 @@
  writing-mode: vertical-rl; 
  letter-spacing: 10px;
  float: right;}
-   
+ }
+
  #spanHungry{
     text-align: center;
-    font-size: 6vw;
+    font-size: 10vw;
+    width: 8em;
  }
 
  #myJourneySection {//                       #JOURNEY_SECTION
  display: flex;
  flex-direction: column;
- padding: 0.5em;
+ padding: 0.5em 0.2em;
 
 
  .myJourneyBoxParagraph {//                       MY_JOURNEY_BOX

@@ -1,4 +1,4 @@
-
+  
                    
 body { //                          FADE_IN_AT_PAGE_ENTER
     animation-duration: 2s;
@@ -18,7 +18,7 @@ body { //                          FADE_IN_AT_PAGE_ENTER
   }}
  
 
- #DON {
+#DON {
  animation: spanDon 3.1s infinite;
  color: rgba(158, 158, 158, 0.096);
 
@@ -42,7 +42,7 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 }}
 
 
- #NAY {
+#NAY {
  animation: spanNay 3.5s infinite;
  color: rgba(134, 134, 134, 0.178);
 
@@ -68,7 +68,7 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 }}
 
 
- #KROG {
+#KROG {
  animation: spanKrog 3.8s infinite;
  color: rgba(150, 54, 54, 0.123);
 
@@ -96,31 +96,9 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 }}
 
 
-.spanMyJourneyBox {//                  SPAN_HEADINGS
-  animation: flicker1 5s infinite alternate;
-  color: rgba(255, 255, 255, 0.295);
-  font-size: 15vw;
-  text-orientation: sideways;
-
-@keyframes flicker1 {
-  0%,10%,20%,30%,40%,50%,60%,70%,80%,89%,91%, 100% {
-    
-    text-shadow: 
-    0 0 1px white,
-    0 0 5px white,
-    0 0 50px white,
-  }
-  
-  90%, 92%, 94%, 99% {
-    text-shadow: none;
-  }
-}}
-
-
-.spanAboutMeBox {//                  SPAN_HEADINGS
+#spanAbout, #spanMe {//                 SPAN_HEADINGS
   animation: flicker2 3s infinite alternate;
   color: rgba(255, 255, 255, 0.295);
-  font-size: 15vw;
   text-orientation: sideways;
 
 @keyframes flicker2 {
@@ -138,45 +116,23 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 }}
 
 
-.slidingBanner {//                  SLIDING_BANNER
- animation: banner 7s linear infinite; 
- transform: translateX(100%);
- font-size: 4vh;
- padding-top: 1em;
-h2 {
-  width: 20em;
-  color: rgba(65, 82, 241, 0.178);
-  word-spacing: 3px;
-  letter-spacing: 8px;
- }
+#spanMy, #spanJourney {//               SPAN_HEADINGS
+  animation: flicker1 5s infinite alternate;
+  color: rgba(255, 255, 255, 0.295);
+  text-orientation: sideways;
 
-@keyframes banner {
-  0% {
-    transform: translateX(140%); 
-  }
-  
-  100% {
-    transform: translateX(-330%); 
-  }
-  
-  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+@keyframes flicker1 {
+  0%,10%,20%,30%,40%,50%,60%,70%,80%,89%,91%, 100% {
     
     text-shadow: 
-    0 0 1px $blue,
-    0 0 1px $blue,
-    0 0 1px $blue,
-    0 0 1px $blue,
-    0 0 1px $blue,
-    0 0 1px $blue,
-    0 0 2px $blue,
-    0 0 2px $blue,
-    0 0 30px $blue,
+    0 0 1px white,
+    0 0 5px white,
+    0 0 50px white,
   }
   
-  1%,5%,9%, 90% {
+  90%, 92%, 94%, 99% {
     text-shadow: none;
   }
-
 }}
 
 
@@ -202,7 +158,7 @@ h2 {
   }}
  
 
-#spanPrinciples {//                         SPAN_PRINCIPLES_FLICKER
+#spanPrinciples {//                     SPAN_PRINCIPLES_FLICKER
  animation: flickerPrinciples 5s infinite linear;
  color: rgba(255, 255, 255, 0.295);
 
@@ -219,7 +175,7 @@ h2 {
 }}
 
 
-.portfolioHeading {//                         PORTFOLIO_HEADING
+.portfolioHeading {//                    PORTFOLIO_HEADING
    animation: headingFlicker 5s infinite alternate;
    color: rgba(255, 255, 255, 0.295);
 
@@ -236,6 +192,177 @@ h2 {
     text-shadow: none;
   }
 }}
+
+
+.slidingBanner {//                       SLIDING_BANNER
+ animation: banner 5s linear infinite; 
+ transform: translateX(100%);
+ font-size: 1.3em;
+ color: rgba(150, 54, 54, 0.123);
+
+h1 {
+  text-align: center;
+  border: solid;
+  width: 11em;
+  letter-spacing: 7px;
+ }
+
+@keyframes banner {
+  0% {
+    transform: translateX(110%); 
+  }
+  
+  100% {
+    transform: translateX(-120%); 
+  }
+  
+  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+    
+    text-shadow: 
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 2px $salmon,
+    0 0 2px $salmon,
+    0 0 7px $salmon,
+    0 0 30px $salmon,
+    }
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+
+}}
+
+
+@media screen and (min-width: 600px) {
+.slidingBanner {//                  SLIDING_BANNER
+ animation: banner2 7s linear infinite; 
+ transform: translateX(100%);
+
+h2 {
+  width: 20em;
+ }
+@keyframes banner2 {
+
+  0% {
+    transform: translateX(100%); 
+  }
+  
+  100% {
+    transform: translateX(-100%); 
+  }
+  
+  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+    
+    text-shadow: 
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 2px $salmon,
+    0 0 2px $salmon,
+    0 0 7px $salmon,
+    0 0 30px $salmon,
+    }
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+
+}}
+}
+
+@media screen and (min-width: 768px) {
+.slidingBanner {//                  SLIDING_BANNER
+ animation: banner3 5s linear infinite; 
+ transform: translateX(100%);
+ font-size: 2em;
+
+h2 {
+  width: 20em;
+ }
+ 
+@keyframes banner3 {
+
+  0% {
+    transform: translateX(100%); 
+  }
+  
+  100% {
+    transform: translateX(-150%); 
+  }
+  
+  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+    
+    text-shadow: 
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 2px $salmon,
+    0 0 2px $salmon,
+    0 0 7px $salmon,
+    0 0 30px $salmon,
+    }
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+
+}}
+}
+
+@media screen and (min-width: 920px) {
+.slidingBanner {//                  SLIDING_BANNER
+ animation: banner4 5.5s linear infinite; 
+ transform: translateX(100%);
+ font-size: 4vh;
+
+h2 {
+  width: 20em;
+  color: rgba(65, 82, 241, 0.178);
+  word-spacing: 3px;
+  letter-spacing: 8px;
+ }
+@keyframes banner4 {
+
+  0% {
+    transform: translateX(100%); 
+  }
+  
+  100% {
+    transform: translateX(-160%); 
+  }
+  
+  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+    
+    text-shadow: 
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 1px $salmon,
+    0 0 2px $salmon,
+    0 0 2px $salmon,
+    0 0 7px $salmon,
+    0 0 30px $salmon,
+    }
+  
+  1%,5%,9%, 90% {
+    text-shadow: none;
+  }
+
+}}
+}
 
 
 
