@@ -95,7 +95,7 @@ main {
   flex-direction: column;
   overflow: visible;
   gap: 2em;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
   max-width: 90vw;
   padding-top: 4em;
   margin: auto;
@@ -105,8 +105,8 @@ main .mainHeading {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 100vh;
-  box-shadow: 0 30px 3px rgba(0, 0, 0, 0.6);
+  height: 82vh;
+  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
 }
 main .mainHeading .firstName {
   display: flex;
@@ -115,7 +115,7 @@ main .mainHeading .firstName {
 }
 main .mainHeading .firstName span {
   justify-content: space-around;
-  font-size: 13vh;
+  font-size: 11vh;
 }
 main .mainHeading .lastName {
   display: flex;
@@ -123,7 +123,7 @@ main .mainHeading .lastName {
   justify-content: space-around;
 }
 main .mainHeading .lastName span {
-  font-size: 20.5vh;
+  font-size: 17vh;
 }
 main .banner {
   overflow-x: hidden;
@@ -138,7 +138,7 @@ main .banner .slidingBanner {
   padding: 0.5em;
 }
 main .main2 {
-  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   gap: 2em;
 }
@@ -239,17 +239,9 @@ body body::-webkit-scrollbar {
   padding: 1em;
 }
 .main2 .aboutMeBox {
-  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
 }
-.main2 .aboutMeBox .aboutMeBox::before {
-  content: "";
-  position: absolute;
-  box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-  filter: blur(10px);
-  background: inherit;
-  height: 100%;
-}
-.main2 .aboutMeBox #spanAbout {
+.main2 #spanAbout {
   text-orientation: sideways-left;
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
@@ -258,35 +250,26 @@ body body::-webkit-scrollbar {
   float: left;
   margin-top: 1em;
 }
-.main2 .aboutMeBox #spanMe {
+.main2 #spanMe {
   letter-spacing: 15px;
   position: relative;
   left: 0em;
 }
-.main2 .aboutMeBox #aboutMeSection {
+.main2 #aboutMeSection {
   color: #2da8d8;
   display: flex;
   flex-direction: column;
 }
-.main2 .aboutMeBox #aboutMeSection .initial {
+.main2 #aboutMeSection .initial {
   font-size: 11vw;
 }
-.main2 .aboutMeBox #aboutMeSection .initial::first-letter {
+.main2 #aboutMeSection .initial::first-letter {
   color: #d9524e;
   float: left;
   line-height: 0.8em;
   font-size: 54vw;
 }
-.main2 .aboutMeBox #aboutMeSection .aboutMeBox::before {
-  content: "";
-  box-shadow: inset 0 0 3000px 5px black;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.main2 .aboutMeBox #spanPrinciples {
+.main2 #spanPrinciples {
   font-size: 10vw;
 }
 
@@ -331,7 +314,6 @@ body body::-webkit-scrollbar {
   margin: auto;
 }
 .portfolio .portfolioBox {
-  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.5);
   width: 90vw;
   padding: 1em;
 }
@@ -611,8 +593,8 @@ body {
 }
 
 .slidingBanner {
-  -webkit-animation: banner 5s linear infinite;
-          animation: banner 5s linear infinite;
+  -webkit-animation: banner 4s linear infinite;
+          animation: banner 4s linear infinite;
   transform: translateX(100%);
   font-size: 1.3em;
   color: rgba(150, 54, 54, 0.123);
@@ -624,37 +606,37 @@ body {
 }
 @-webkit-keyframes banner {
   0% {
-    transform: translateX(110%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-120%);
+    transform: translateX(-160%);
   }
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
     text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
   }
-  1%, 5%, 9%, 90% {
+  5%, 9%, 15%, 90% {
     text-shadow: none;
   }
 }
 @keyframes banner {
   0% {
-    transform: translateX(110%);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-120%);
+    transform: translateX(-160%);
   }
   0%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
     text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
   }
-  1%, 5%, 9%, 90% {
+  5%, 9%, 15%, 90% {
     text-shadow: none;
   }
 }
 
 @media screen and (min-width: 600px) {
   .slidingBanner {
-    -webkit-animation: banner2 7s linear infinite;
-            animation: banner2 7s linear infinite;
+    -webkit-animation: banner2 5s linear infinite;
+            animation: banner2 5s linear infinite;
     transform: translateX(100%);
   }
   .slidingBanner h2 {
@@ -808,12 +790,20 @@ body {
   main {
     max-width: 570px;
   }
+  main .mainHeading {
+    height: 92vh;
+  }
   main .main2 .aboutMeBox .paragraphs #spanPrinciples {
     font-size: 1.5em;
   }
   main .main2 .myJourneyBox #myJourneySection #spanHungry {
     font-size: 2.5em;
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 700px;
   }
 }
 @media screen and (min-width: 1100px) {

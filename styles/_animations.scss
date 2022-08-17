@@ -195,7 +195,7 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 
 
 .slidingBanner {//                       SLIDING_BANNER
- animation: banner 5s linear infinite; 
+ animation: banner 4s linear infinite; 
  transform: translateX(100%);
  font-size: 1.3em;
  color: rgba(150, 54, 54, 0.123);
@@ -208,11 +208,11 @@ h1 {
 
 @keyframes banner {
   0% {
-    transform: translateX(110%); 
+    transform: translateX(100%); 
   }
   
   100% {
-    transform: translateX(-120%); 
+    transform: translateX(-160%); 
   }
   
   0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
@@ -230,7 +230,7 @@ h1 {
     0 0 30px $salmon,
     }
   
-  1%,5%,9%, 90% {
+  5%,9%,15%, 90% {
     text-shadow: none;
   }
 
@@ -239,7 +239,7 @@ h1 {
 
 @media screen and (min-width: 600px) {
 .slidingBanner {//                  SLIDING_BANNER
- animation: banner2 7s linear infinite; 
+ animation: banner2 5s linear infinite; 
  transform: translateX(100%);
 
 h2 {

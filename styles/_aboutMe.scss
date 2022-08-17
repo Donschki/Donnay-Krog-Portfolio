@@ -15,15 +15,7 @@
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
- box-shadow: 0 30px 5px rgba(0,0,0,.5);
-
- .aboutMeBox::before {
-  content: '';
-  position: absolute;
-  box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
-  filter: blur(10px);
-  background: inherit;
-    height: 100%;
+ @include boxShadow;
  }
 
  #spanAbout {
@@ -56,27 +48,14 @@
  line-height: 0.8em;
  font-size: 54vw;
   }
-
-  .aboutMeBox::before {
-    content: "";
-    box-shadow:  inset 0 0 3000px 5px black;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }
 
  #spanPrinciples {
  font-size: 10vw;
  }
 
-
 }
 
-
-}
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
 

@@ -80,6 +80,10 @@ a {///////////////////////SIDEBAR_LINKS
   color: white;
   border-radius: 6px;
 }}}
+
+@mixin boxShadow {
+  box-shadow: 0 40px 10px rgba(0,0,0,.5);
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                                             //HEADER NAV HAMBURGER
