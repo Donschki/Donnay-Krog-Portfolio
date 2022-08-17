@@ -1,7 +1,4 @@
 
-header {
-  overflow-x: hidden;
-}
 //MIXINS
 @mixin flexCenter {
   display: flex;
@@ -11,14 +8,18 @@ header {
 
 @mixin navBar {/////////NAV_BAR
   width: 100vw;
-  padding: 1em;
+  padding: 0.7em;
   display: flex;
   position: fixed;
   z-index: 1000; 
   background: linear-gradient();
   justify-content: space-between;
   top: 0;
-  left: 0;}
+  left: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  
+}
 
 @mixin sideBar {//////////SIDE_BAR
   @include flexCenter();
@@ -84,7 +85,7 @@ a {///////////////////////SIDEBAR_LINKS
                                             //HEADER NAV HAMBURGER
 
 header {///////////////HEADER
-
+  
 nav {///////////////////////NAV_BAR
   @include navBar();
 }
@@ -115,6 +116,11 @@ nav {///////////////////////NAV_BAR
       right: 0;
     }
   }
+}
+
+.iconBar {
+  display: flex;
+  flex-direction: row;
 }}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 

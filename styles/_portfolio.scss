@@ -5,15 +5,20 @@
 }
 
 .portfolio {//               PORTFOLIO
+ @include flexCenter();
+ margin: auto;
 
 .portfolioBox {//               PORTFOLIO_BOX
+ box-shadow: 0 30px 5px rgba(0,0,0,.5);
+ width: 90vw;
+ padding: 1em;
 
+ 
 .portfolioHeading {//               PORTFOLIO_HEADING
  padding-bottom: 3em;
  font-size: 7vw;
  word-spacing: 7px;
  letter-spacing: 4px;
- width: 100vw;
  text-align: center;
 
  #spanMyPortfolio {
@@ -27,6 +32,7 @@
 .downWithDough3DContainer {
  display: flex;
  justify-content: center;
+ height: 200px;
 }
 
 

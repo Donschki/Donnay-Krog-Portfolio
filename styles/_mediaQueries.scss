@@ -37,103 +37,29 @@
 
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 640px) {
+  main {
+  max-width: 570px;  
+
   .main2 {
-    max-width: 500px;
 
     .aboutMeBox{
 
       .paragraphs {
          #spanPrinciples {
-         font-size: 3em;
+         font-size: 1.5em;
     }}
   }
   .myJourneyBox{
     #myJourneySection{
-
     
      #spanHungry {
-      font-size: 3em;
+      font-size: 2.5em;
       width: 100%;
   } }
 
 } 
-}}
-
-
-
-@media screen and (min-width: 768px) {
-  
- main {
-   display: flex;
-   flex-direction: row-reverse;
-   flex-wrap: wrap;
-   gap: 0;
-
- .mainHeading {
-   width: 45%;
-   height: 100%;
-
-   #DON , #NAY{
-    font-size: 3.5em;
-   }
-
-   #KROG {
-    font-size: 5.5em;
-   }
-
-   #spanPrinciples {
-    font-size: 3em ;
-   }
-} 
-
-.main2 {
-   max-width: 55%;
-   display: flex;
-   margin: auto;
-
-    .paragraphHeadings {
-      font-size: 2em;
-    }
-    
-  .aboutMeBox {
-
-       #aboutMeSection {
-        
-        .initial {
-          font-size: 2.8em;
-          width: 7em;
-         }
-
-          .initial::first-letter {
-            font-size: 5.5em;
-           }
-         }
-         
-          #spanPrinciples {
-           font-size: 3em;
- }
-}}
-
- .myJourneyBox {
-  
- #spanMy {//                       SPAN_MY
-   letter-spacing: 10px;
-  }
-   
- #myJourneySection {
-
- .myJourneyBoxParagraph {
-  font-size: 1.5em;
-}
-#spanHungry {
-  font-size: 2em;
-}}
-
-
-
-}
-}}
+}}}
 
 
 @media screen and (min-width: 1100px) {

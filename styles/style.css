@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
-header {
-  overflow-x: hidden;
-}
-
 header nav {
   width: 100vw;
-  padding: 1em;
+  padding: 0.7em;
   display: flex;
   position: fixed;
   z-index: 1000;
@@ -13,6 +9,8 @@ header nav {
   justify-content: space-between;
   top: 0;
   left: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 header .hamburgerMenu {
   display: flex;
@@ -87,12 +85,20 @@ header #navList .toggleLight img {
   position: absolute;
   right: 0;
 }
+header .iconBar {
+  display: flex;
+  flex-direction: row;
+}
 
 main {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   gap: 2em;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
+  padding-top: 4em;
+  margin: auto;
 }
 main .mainHeading {
   overflow: visible;
@@ -100,6 +106,7 @@ main .mainHeading {
   flex-direction: row;
   justify-content: space-evenly;
   height: 100vh;
+  box-shadow: 0 30px 3px rgba(0, 0, 0, 0.6);
 }
 main .mainHeading .firstName {
   display: flex;
@@ -108,7 +115,7 @@ main .mainHeading .firstName {
 }
 main .mainHeading .firstName span {
   justify-content: space-around;
-  font-size: 11vh;
+  font-size: 13vh;
 }
 main .mainHeading .lastName {
   display: flex;
@@ -118,10 +125,25 @@ main .mainHeading .lastName {
 main .mainHeading .lastName span {
   font-size: 20.5vh;
 }
-
-.main3 {
-  width: 100vw;
+main .banner {
+  overflow-x: hidden;
+  box-shadow: -10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  background: inherit;
+  width: 100%;
+  margin: 1em auto;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+main .banner .slidingBanner {
+  padding: 0.5em;
+}
+main .main2 {
+  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.5);
   display: flex;
+  gap: 2em;
+}
+main .main3 {
+  width: 100%;
 }
 
 /* SIDEBAR START */
@@ -205,7 +227,6 @@ body body::-webkit-scrollbar {
 .main2 {
   display: flex;
   flex-direction: column;
-  gap: em;
 }
 .main2 .paragraphHeadings {
   font-size: 12vw;
@@ -215,7 +236,18 @@ body body::-webkit-scrollbar {
   text-align: center;
   color: #2da8d8;
   letter-spacing: 3px;
-  margin: 1em 0;
+  padding: 1em;
+}
+.main2 .aboutMeBox {
+  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.5);
+}
+.main2 .aboutMeBox .aboutMeBox::before {
+  content: "";
+  position: absolute;
+  box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+  filter: blur(10px);
+  background: inherit;
+  height: 100%;
 }
 .main2 .aboutMeBox #spanAbout {
   text-orientation: sideways-left;
@@ -245,12 +277,21 @@ body body::-webkit-scrollbar {
   line-height: 0.8em;
   font-size: 54vw;
 }
+.main2 .aboutMeBox #aboutMeSection .aboutMeBox::before {
+  content: "";
+  box-shadow: inset 0 0 3000px 5px black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 .main2 .aboutMeBox #spanPrinciples {
   font-size: 10vw;
 }
 
 .myJourneyBox h1 {
-  text-align: center;
+  text-align: right;
 }
 .myJourneyBox h1 #spanMy {
   letter-spacing: 15px;
@@ -263,6 +304,7 @@ body body::-webkit-scrollbar {
       writing-mode: vertical-rl;
   letter-spacing: 10px;
   float: right;
+  margin-top: 0.5em;
 }
 .myJourneyBox #spanHungry {
   text-align: center;
@@ -272,7 +314,6 @@ body body::-webkit-scrollbar {
 .myJourneyBox #myJourneySection {
   display: flex;
   flex-direction: column;
-  padding: 0.5em 0.2em;
 }
 .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
   color: #2da8d8;
@@ -283,12 +324,22 @@ body body::-webkit-scrollbar {
   color: #d9524e;
 }
 
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.portfolio .portfolioBox {
+  box-shadow: 0 30px 5px rgba(0, 0, 0, 0.5);
+  width: 90vw;
+  padding: 1em;
+}
 .portfolio .portfolioBox .portfolioHeading {
   padding-bottom: 3em;
   font-size: 7vw;
   word-spacing: 7px;
   letter-spacing: 4px;
-  width: 100vw;
   text-align: center;
 }
 .portfolio .portfolioBox .portfolioHeading #spanMyPortfolio {
@@ -300,6 +351,7 @@ body body::-webkit-scrollbar {
 .portfolio .portfolioBox .downWithDough3DContainer {
   display: flex;
   justify-content: center;
+  height: 200px;
 }
 .portfolio .portfolioBox .downWithDough3D {
   max-width: 60vw;
@@ -567,7 +619,6 @@ body {
 }
 .slidingBanner h1 {
   text-align: center;
-  border: solid;
   width: 11em;
   letter-spacing: 7px;
 }
@@ -753,64 +804,16 @@ body {
     font-size: 3em;
   }
 }
-@media screen and (min-width: 500px) {
-  .main2 {
-    max-width: 500px;
-  }
-  .main2 .aboutMeBox .paragraphs #spanPrinciples {
-    font-size: 3em;
-  }
-  .main2 .myJourneyBox #myJourneySection #spanHungry {
-    font-size: 3em;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   main {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    gap: 0;
+    max-width: 570px;
   }
-  main .mainHeading {
-    width: 45%;
-    height: 100%;
-  }
-  main .mainHeading #DON, main .mainHeading #NAY {
-    font-size: 3.5em;
-  }
-  main .mainHeading #KROG {
-    font-size: 5.5em;
-  }
-  main .mainHeading #spanPrinciples {
-    font-size: 3em;
-  }
-  main .main2 {
-    max-width: 55%;
-    display: flex;
-    margin: auto;
-  }
-  main .main2 .paragraphHeadings {
-    font-size: 2em;
-  }
-  main .main2 .aboutMeBox #aboutMeSection .initial {
-    font-size: 2.8em;
-    width: 7em;
-  }
-  main .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 5.5em;
-  }
-  main .main2 .aboutMeBox #spanPrinciples {
-    font-size: 3em;
-  }
-  main .myJourneyBox #spanMy {
-    letter-spacing: 10px;
-  }
-  main .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
+  main .main2 .aboutMeBox .paragraphs #spanPrinciples {
     font-size: 1.5em;
   }
-  main .myJourneyBox #myJourneySection #spanHungry {
-    font-size: 2em;
+  main .main2 .myJourneyBox #myJourneySection #spanHungry {
+    font-size: 2.5em;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1100px) {
