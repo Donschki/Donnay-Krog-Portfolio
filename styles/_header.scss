@@ -27,7 +27,7 @@
   @include flexCenter();
   width: 14em;
   height: 18em;
-  position: absolute;
+  position: fixed;
   top: 5em;
   transition: transform 0.7s, left 0.4s;
   left: -13em}
