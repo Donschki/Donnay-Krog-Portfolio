@@ -9,7 +9,7 @@
 
 .paragraphs {
   font-size: 5vw;
-  text-align: center;
+  text-align: left;
   color: $blue;
   letter-spacing: 3px;
   word-spacing: 5px;
@@ -46,8 +46,7 @@
 
  #aboutMeSection {
  color: $fontColor;
- display: flex;
- flex-direction: column;
+ padding: 1em;
 
 .initial {
  font-size: 9.5vw;
@@ -88,8 +87,8 @@
  margin-top: 0.5em;}
  }
 
- #spanHungry{
-    text-align: center;
+ #spanHungry {
+    text-align: left;
     font-size: 10vw;
     width: 8em;
  }

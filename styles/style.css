@@ -130,6 +130,7 @@ main .lastName {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .main2 {
@@ -250,7 +251,7 @@ body body::-webkit-scrollbar {
 }
 .main2 .paragraphs {
   font-size: 5vw;
-  text-align: center;
+  text-align: left;
   color: #2da8d8;
   letter-spacing: 3px;
   word-spacing: 5px;
@@ -282,8 +283,7 @@ body body::-webkit-scrollbar {
 }
 .main2 #aboutMeSection {
   color: #2da8d8;
-  display: flex;
-  flex-direction: column;
+  padding: 1em;
 }
 .main2 #aboutMeSection .initial {
   font-size: 9.5vw;
@@ -318,7 +318,7 @@ body body::-webkit-scrollbar {
   margin-top: 0.5em;
 }
 .myJourneyBox #spanHungry {
-  text-align: center;
+  text-align: left;
   font-size: 10vw;
   width: 8em;
 }
@@ -824,15 +824,19 @@ body {
   main {
     max-width: 570px;
   }
+  main .main2 .paragraphs {
+    text-align: center;
+  }
   main .main2 .aboutMeBox {
     padding: 3em;
   }
-  main .main2 .aboutMeBox .paragraphs #spanPrinciples {
+  main .main2 .aboutMeBox #spanPrinciples {
     font-size: 1.5em;
   }
   main .main2 .myJourneyBox #myJourneySection #spanHungry {
     font-size: 2.5em;
     width: 100%;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -843,9 +847,10 @@ body {
   }
   main .group {
     flex-direction: row;
+    gap: 1em;
   }
   main .mainHeading {
-    width: 50%;
+    width: 47.5%;
     height: 100%;
   }
   main .mainHeading .firstName {
@@ -855,20 +860,23 @@ body {
     font-size: 6.3em;
   }
   main .main2 {
-    width: 50%;
+    width: 47.5%;
   }
   main .main2 .paragraphs {
-    padding: 0px;
+    padding: 1px;
+    text-align: left;
   }
   main .main2 .aboutMeBox {
-    padding: 0em;
-    padding-bottom: 2em;
+    padding: 0.6em;
   }
   main .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 4.5em;
   }
   main .main2 .myJourneyBox {
     padding: 5px;
+  }
+  main .main2 .myJourneyBox #myJourneySection #spanHungry {
+    text-align: left;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -888,6 +896,9 @@ body {
   }
   main {
     max-width: 1500px;
+  }
+  main .group {
+    gap: 3em;
   }
 }
 * {

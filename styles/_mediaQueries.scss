@@ -43,13 +43,17 @@
   max-width: 570px;  
 
   .main2 {
+    .paragraphs {
+      text-align: center;
+    }
 
     .aboutMeBox{
       padding: 3em;
-      .paragraphs {
+
          #spanPrinciples {
          font-size: 1.5em;
-    }}
+    }
+
   }
   .myJourneyBox{
     #myJourneySection{
@@ -57,6 +61,7 @@
      #spanHungry {
       font-size: 2.5em;
       width: 100%;
+      text-align: center;
   } }
 
 } 
@@ -72,10 +77,11 @@ main {
   
   .group {
     flex-direction: row;
+    gap: 1em;
   }
 
   .mainHeading {
-    width: 50%;
+    width: 47.5%;
     height: 100%;
 
     .firstName {
@@ -88,14 +94,15 @@ main {
   }
 
   .main2 {
-    width: 50%;
+    width: 47.5%;
 
     .paragraphs {
-      padding: 0px;
+      padding: 1px;
+      text-align: left;
     }
+
     .aboutMeBox {
-      padding: 0em;
-      padding-bottom: 2em;
+      padding: 0.6em;
 
       #aboutMeSection{
         .initial::first-letter{
@@ -106,6 +113,12 @@ main {
 
     .myJourneyBox {
       padding: 5px;
+
+      #myJourneySection {
+        #spanHungry {
+        text-align: left;
+      }
+    }
   }
 
 }
@@ -136,6 +149,10 @@ nav {
 
 main {
   max-width: 1500px;
+
+  .group {
+    gap: 3em;
+  }
 }
 
 }
