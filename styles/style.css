@@ -360,7 +360,6 @@ body body::-webkit-scrollbar {
 .portfolio .portfolioBox .downWithDough3DContainer {
   display: flex;
   justify-content: center;
-  height: 200px;
 }
 .portfolio .portfolioBox .downWithDough3D {
   max-width: 60vw;
