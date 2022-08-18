@@ -7,7 +7,6 @@
 }
 
 @mixin navBar {/////////NAV_BAR
-  width: 100vw;
   padding: 0.7em;
   display: flex;
   position: fixed;
@@ -16,8 +15,11 @@
   justify-content: space-between;
   top: 0;
   left: 0;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  right: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px 1px black;
+  margin: auto;
   
 }
 
@@ -28,7 +30,7 @@
   position: absolute;
   top: 5em;
   transition: transform 0.7s, left 0.4s;
-  left: -16em}
+  left: -13em}
 
 @mixin hamburger {//////////HAMBURGER
   display: flex;
@@ -82,14 +84,13 @@ a {///////////////////////SIDEBAR_LINKS
 }}}
 
 @mixin boxShadow {
-  box-shadow: 0 40px 10px rgba(0,0,0,.5);
+  box-shadow: 0 40px 10px rgba(0,0,0,0.5);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
                                             //HEADER NAV HAMBURGER
 
 header {///////////////HEADER
-  
 nav {///////////////////////NAV_BAR
   @include navBar();
 }
@@ -125,6 +126,9 @@ nav {///////////////////////NAV_BAR
 .iconBar {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 1.5em;
+  margin-right: 1em;
 }}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 

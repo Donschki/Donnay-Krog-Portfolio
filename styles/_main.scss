@@ -4,53 +4,40 @@ main {
  display: flex;
  flex-direction: column;
  overflow: visible;
- gap: 2em;
- @include boxShadow;
  max-width: 90vw;
- padding-top: 4em ;
- margin: auto;
- 
+ margin: 2em auto;
+ gap: 2.5em;
+
 .mainHeading {
- overflow: visible;
  display: flex;
  flex-direction: row;
  justify-content: space-evenly;
- height: 82vh;
  @include boxShadow;
+ background-color: $backgroundColor;
+ height: 100vh;
+
 
 .firstName {//                   FIRST_NAME
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-size: 11vh;
+}
   
 span {
   justify-content: space-around;
-  font-size: 11vh;
 }}
 
 .lastName {//       LAST_NAME
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
- span {
   font-size: 17vh;
-}}}
+}}
 
-.banner {
-  overflow-x: hidden;
-  box-shadow: -10px 10px 20px 5px rgba(0,0,0,.5);
-  background: inherit;
-  width: 90%;
-  margin: 1em auto ;
-
-  backdrop-filter: blur(40px) ;
-
-  .slidingBanner {
-    padding: 0.5em;
-    
-  }
- 
+.group {
+  display: flex;
+  flex-direction: column
 }
 
 .main2 {
@@ -59,9 +46,23 @@ span {
   gap: 2em;
 }
 
+.banner {
+  overflow-x: hidden;
+  box-shadow: -10px 10px 20px 5px rgba(0,0,0,.5);
+  width: 90%;
+  margin: 1em auto ;
+  background-color: $backgroundColor;
+
+
+  backdrop-filter: blur(40px) ;
+
+  .slidingBanner {
+    padding: 0.5em;
+  }
+}
+
 .main3 {
   width: 100%;
-}
 }
 
 

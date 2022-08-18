@@ -6,12 +6,15 @@
 
 .portfolio {//               PORTFOLIO
  @include flexCenter();
+ @include boxShadow;
+ background-color: $backgroundColor;
  margin: auto;
 
-.portfolioBox {//               PORTFOLIO_BOX
- width: 90vw;
- padding: 1em;
 
+.portfolioBox {//               PORTFOLIO_BOX
+ width: 70vw;
+ padding: 1em;
+ width: 50vw;
  
 .portfolioHeading {//               PORTFOLIO_HEADING
  padding-bottom: 3em;

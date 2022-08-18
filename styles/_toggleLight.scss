@@ -1,7 +1,7 @@
 
 .lightMode {////////////////////////// TOGGLE_LIGHT_MODE
- background: hsl(0, 6%, 85%);
- transition: 1s;
+ background: rgb(211, 211, 211);
+ transition: all 1s ease;
  color: rgb(27, 27, 27);
     
     span {

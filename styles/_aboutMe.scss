@@ -1,6 +1,7 @@
 .main2 {
  display: flex;
  flex-direction: column;
+ background-color: $backgroundColor;
 
 .paragraphHeadings {
     font-size: 12vw;
@@ -11,11 +12,11 @@
   text-align: center;
   color: $blue;
   letter-spacing: 3px;
-  padding: 1em;
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
  @include boxShadow;
+ padding: 1em;
  }
 
  #spanAbout {
@@ -33,7 +34,15 @@
  left: 0em;
 }
 
-#aboutMeSection {
+.group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  
+}
+
+ #aboutMeSection {
  color: $fontColor;
  display: flex;
  flex-direction: column;
@@ -53,11 +62,11 @@
  #spanPrinciples {
  font-size: 10vw;
  }
-
 }
 
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
+
 
  h1 {
  text-align: right;
@@ -84,7 +93,8 @@
  }
 
  #myJourneySection {//                       #JOURNEY_SECTION
- display: flex;
+  padding: 1em;
+  display: flex;
  flex-direction: column;
 
 

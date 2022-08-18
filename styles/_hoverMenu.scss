@@ -28,7 +28,7 @@ a {
 }
 
 .hoverMenu .menuItem:hover {
-    background: $headingColor;
+    background: $salmon;
     transform: translateX(50px);
     cursor: pointer;
     text-decoration: none;    
@@ -47,7 +47,8 @@ a {
     transform: skewY(45deg);
     transform-origin: right;
     transition: 0.5s;
-    box-shadow: 0 0 150px 10px $blue;
+
+  
 }
 
 .hoverMenu .menuItem::after {
@@ -63,4 +64,12 @@ a {
     transition: 0.5s;
   
 }
+
+.hoverMenu .menuItem:hover::before {
+    background: $blue;
+}
+.hoverMenu .menuItem:hover::after {
+    background: $salmon;
+}
+
 /* SIDEBAR END */

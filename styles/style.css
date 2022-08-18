@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
 header nav {
-  width: 100vw;
   padding: 0.7em;
   display: flex;
   position: fixed;
@@ -9,8 +8,11 @@ header nav {
   justify-content: space-between;
   top: 0;
   left: 0;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  right: 0;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px 1px black;
+  margin: auto;
 }
 header .hamburgerMenu {
   display: flex;
@@ -43,7 +45,7 @@ header .sideBar {
   position: absolute;
   top: 5em;
   transition: transform 0.7s, left 0.4s;
-  left: -16em;
+  left: -13em;
 }
 header .change {
   opacity: 1;
@@ -88,61 +90,68 @@ header #navList .toggleLight img {
 header .iconBar {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  gap: 1.5em;
+  margin-right: 1em;
 }
 
 main {
   display: flex;
   flex-direction: column;
   overflow: visible;
-  gap: 2em;
-  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
   max-width: 90vw;
-  padding-top: 4em;
-  margin: auto;
+  margin: 2em auto;
+  gap: 2.5em;
 }
 main .mainHeading {
-  overflow: visible;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 82vh;
   box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
+  background-color: #242f33;
+  height: 100vh;
 }
 main .mainHeading .firstName {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-main .mainHeading .firstName span {
-  justify-content: space-around;
   font-size: 11vh;
 }
-main .mainHeading .lastName {
+main .mainHeading span {
+  justify-content: space-around;
+}
+main .lastName {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-main .mainHeading .lastName span {
   font-size: 17vh;
 }
-main .banner {
-  overflow-x: hidden;
-  box-shadow: -10px 10px 20px 5px rgba(0, 0, 0, 0.5);
-  background: inherit;
-  width: 90%;
-  margin: 1em auto;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+
+.group {
+  display: flex;
+  flex-direction: column;
 }
-main .banner .slidingBanner {
-  padding: 0.5em;
-}
-main .main2 {
+
+.main2 {
   box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   gap: 2em;
 }
-main .main3 {
+
+.banner {
+  overflow-x: hidden;
+  box-shadow: -10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: 1em auto;
+  background-color: #242f33;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+.banner .slidingBanner {
+  padding: 0.5em;
+}
+
+.main3 {
   width: 100%;
 }
 
@@ -193,7 +202,6 @@ a {
   transform: skewY(45deg);
   transform-origin: right;
   transition: 0.5s;
-  box-shadow: 0 0 150px 10px #2da8d8;
 }
 
 .hoverMenu .menuItem::after {
@@ -209,9 +217,17 @@ a {
   transition: 0.5s;
 }
 
+.hoverMenu .menuItem:hover::before {
+  background: #2da8d8;
+}
+
+.hoverMenu .menuItem:hover::after {
+  background: #d9524e;
+}
+
 /* SIDEBAR END */
 body {
-  background-color: #242f33;
+  background-color: #34414e;
   font-family: "Oswald", sans-serif;
   font-family: "Tapestry", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
@@ -227,6 +243,7 @@ body body::-webkit-scrollbar {
 .main2 {
   display: flex;
   flex-direction: column;
+  background-color: #242f33;
 }
 .main2 .paragraphHeadings {
   font-size: 12vw;
@@ -236,10 +253,10 @@ body body::-webkit-scrollbar {
   text-align: center;
   color: #2da8d8;
   letter-spacing: 3px;
-  padding: 1em;
 }
 .main2 .aboutMeBox {
   box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
+  padding: 1em;
 }
 .main2 #spanAbout {
   text-orientation: sideways-left;
@@ -254,6 +271,12 @@ body body::-webkit-scrollbar {
   letter-spacing: 15px;
   position: relative;
   left: 0em;
+}
+.main2 .group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
 }
 .main2 #aboutMeSection {
   color: #2da8d8;
@@ -295,6 +318,7 @@ body body::-webkit-scrollbar {
   width: 8em;
 }
 .myJourneyBox #myJourneySection {
+  padding: 1em;
   display: flex;
   flex-direction: column;
 }
@@ -311,11 +335,14 @@ body body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.5);
+  background-color: #242f33;
   margin: auto;
 }
 .portfolio .portfolioBox {
-  width: 90vw;
+  width: 70vw;
   padding: 1em;
+  width: 50vw;
 }
 .portfolio .portfolioBox .portfolioHeading {
   padding-bottom: 3em;
@@ -753,8 +780,8 @@ body {
   }
 }
 .lightMode {
-  background: hsl(0deg, 6%, 85%);
-  transition: 1s;
+  background: rgb(211, 211, 211);
+  transition: all 1s ease;
   color: rgb(27, 27, 27);
 }
 .lightMode span {
@@ -767,9 +794,6 @@ body {
 }
 
 @media screen and (min-width: 450px) {
-  .main2 {
-    margin: auto;
-  }
   .main2 .paragraphHeadings {
     font-size: 2em;
   }
@@ -790,9 +814,6 @@ body {
   main {
     max-width: 570px;
   }
-  main .mainHeading {
-    height: 92vh;
-  }
   main .main2 .aboutMeBox .paragraphs #spanPrinciples {
     font-size: 1.5em;
   }
@@ -803,13 +824,51 @@ body {
 }
 @media screen and (min-width: 768px) {
   main {
-    max-width: 700px;
+    max-width: 880px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .group {
+    flex-direction: row;
+  }
+  main .mainHeading {
+    width: 50%;
+    height: 960px;
+  }
+  main .mainHeading .firstName {
+    font-size: 4em;
+  }
+  main .mainHeading .lastName {
+    font-size: 6.3em;
+  }
+  main .main2 {
+    width: 50%;
+    height: 960px;
+  }
+  main .main2 .paragraphs {
+    padding: 0px;
+  }
+  main .main2 .aboutMeBox {
+    padding: 4px;
+  }
+  main .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
+    font-size: 4.5em;
+  }
+  main .main2 .myJourneyBox {
+    padding: 5px;
   }
 }
 @media screen and (min-width: 1100px) {
   main {
     max-width: 1100px;
-    margin: auto;
+  }
+}
+@media screen and (min-width: 1500px) {
+  nav {
+    max-width: 1700px;
+  }
+  main {
+    max-width: 1500px;
   }
 }
 * {
