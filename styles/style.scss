@@ -17,6 +17,15 @@
     box-sizing: border-box;
 }
 
+html {
+ -ms-scrollbar-style:none;
+ scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 

@@ -16,7 +16,7 @@
  @include boxShadow; 
  background-color: $backgroundColor;
  padding: 1em;
-
+ margin: auto 1em;
  transform: skewY(-5deg);
  }
 
@@ -28,7 +28,7 @@
   top: 0;
   position: absolute;
   transform: skewY(35deg);
-  background-color: $salmon;
+  background-color: $blue;
   transform-origin: right ;
  }
 
@@ -38,7 +38,7 @@
   width: 100%;
   position: absolute;
   transform: skewX(55deg);
-  background-color: $blue;
+  background-color: $salmon;
   transform-origin: bottom;
   top: -10px;
   left: 0;
@@ -73,7 +73,7 @@
 
 .initial {
  font-size: 8vw;
- line-height: 2;
+ line-height: 1.7;
 }
 
 .initial::first-letter {
@@ -94,6 +94,7 @@
  @include boxShadow;
  background-color: $backgroundColor;
  transform: skewY(-5deg);
+ margin: auto 1em;
 
  h1 {
  text-align: right;
@@ -113,7 +114,7 @@
 
  #spanHungry {
     text-align: left;
-    font-size: 10vw;
+    font-size: 9vw;
     width: 8em;
  }
 

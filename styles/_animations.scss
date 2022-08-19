@@ -195,7 +195,7 @@ body { //                          FADE_IN_AT_PAGE_ENTER
 
 
 .slidingBanner {//                       SLIDING_BANNER
- animation: banner 4s linear infinite; 
+ animation: banner 5s linear infinite; 
  transform: translateX(100%);
  font-size: 1.3em;
  color: rgba(150, 54, 54, 0.123);
@@ -208,26 +208,26 @@ h1 {
 
 @keyframes banner {
   0% {
-    transform: translateX(100%); 
+    transform: translateX(80%); 
   }
   
   100% {
-    transform: translateX(-160%); 
+    transform: translateX(-320%); 
   }
   
   0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
     
     text-shadow: 
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 2px $salmon,
-    0 0 2px $salmon,
-    0 0 7px $salmon,
-    0 0 30px $salmon,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 2px $blue,
+    0 0 2px $blue,
+    0 0 7px $blue,
+    0 0 30px $blue,
     }
   
   5%,9%,15%, 90% {
@@ -237,49 +237,10 @@ h1 {
 }}
 
 
-@media screen and (min-width: 600px) {
-.slidingBanner {//                  SLIDING_BANNER
- animation: banner2 5s linear infinite; 
- transform: translateX(100%);
-
-h2 {
-  width: 20em;
- }
-@keyframes banner2 {
-
-  0% {
-    transform: translateX(100%); 
-  }
-  
-  100% {
-    transform: translateX(-100%); 
-  }
-  
-  0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
-    
-    text-shadow: 
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 2px $salmon,
-    0 0 2px $salmon,
-    0 0 7px $salmon,
-    0 0 30px $salmon,
-    }
-  
-  1%,5%,9%, 90% {
-    text-shadow: none;
-  }
-
-}}
-}
 
 @media screen and (min-width: 768px) {
 .slidingBanner {//                  SLIDING_BANNER
- animation: banner3 5s linear infinite; 
+ animation: banner3 7s linear infinite; 
  transform: translateX(100%);
  font-size: 2em;
 
@@ -290,26 +251,26 @@ h2 {
 @keyframes banner3 {
 
   0% {
-    transform: translateX(100%); 
+    transform: translateX(80%); 
   }
   
   100% {
-    transform: translateX(-150%); 
+    transform: translateX(-220%); 
   }
   
   0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
     
     text-shadow: 
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 2px $salmon,
-    0 0 2px $salmon,
-    0 0 7px $salmon,
-    0 0 30px $salmon,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 2px $blue,
+    0 0 2px $blue,
+    0 0 7px $blue,
+    0 0 30px $blue,
     }
   
   1%,5%,9%, 90% {
@@ -321,7 +282,7 @@ h2 {
 
 @media screen and (min-width: 920px) {
 .slidingBanner {//                  SLIDING_BANNER
- animation: banner4 5.5s linear infinite; 
+ animation: banner4 7s linear infinite; 
  transform: translateX(100%);
  font-size: 4vh;
 
@@ -334,7 +295,7 @@ h2 {
 @keyframes banner4 {
 
   0% {
-    transform: translateX(100%); 
+    transform: translateX(80%); 
   }
   
   100% {
@@ -344,16 +305,16 @@ h2 {
   0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
     
     text-shadow: 
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 1px $salmon,
-    0 0 2px $salmon,
-    0 0 2px $salmon,
-    0 0 7px $salmon,
-    0 0 30px $salmon,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 1px $blue,
+    0 0 2px $blue,
+    0 0 2px $blue,
+    0 0 7px $blue,
+    0 0 30px $blue,
     }
   
   1%,5%,9%, 90% {

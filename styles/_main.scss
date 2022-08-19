@@ -6,7 +6,7 @@ main {
  overflow: visible;
  max-width: 450px;
 
- margin: 6em auto;
+ margin: 4em auto;
  gap: 3em;
 
 .mainHeading {
@@ -15,12 +15,9 @@ main {
  justify-content: space-evenly;
  @include boxShadow;
  background-color: $backgroundColor;
- height: 90vh;
 
  transform: skewY(-5deg);
- margin: auto 1em;
-
-
+ margin: auto 0.5em;
 
 .firstName {//                   FIRST_NAME
   display: flex;
@@ -72,17 +69,29 @@ span {
 .main2 {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 
 .banner {
   @include boxShadow;
-  margin: auto;
+  margin: auto ;
   background-color: $backgroundColor;
-  width: 100%;
+  width: 90%;
   transform: skewY(-5deg);
-  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 1em;
 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .slidingBanner h1 {
+    width: 30em;
+  }
+
+}
+
+.banner::-webkit-scrollbar {
+  display: none;
 }
 
 .banner::before {
