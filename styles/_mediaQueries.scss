@@ -1,7 +1,7 @@
 
 @media screen and (min-width: 450px) {
 
-main {
+ main {
 
   .main2 {
     .paragraphHeadings {
@@ -40,7 +40,18 @@ main {
   }
   
 }
+
+.main3{
+  .portfolio {
+    .portfolioBox {
+      .portfolioHeading {
+        font-size: 2em;
+    }
+
   }
+}
+  }
+}
 
 @media screen and (min-width: 550px) {
   main {

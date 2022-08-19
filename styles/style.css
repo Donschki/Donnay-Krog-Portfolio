@@ -442,13 +442,11 @@ body body::-webkit-scrollbar {
   align-items: center;
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
   background-color: #242f33;
-  margin: auto;
+  margin: auto 1em;
   transform: skewY(-5deg);
 }
 .portfolio .portfolioBox {
-  width: 70vw;
   padding: 1em;
-  width: 50vw;
 }
 .portfolio .portfolioBox .portfolioHeading {
   padding-bottom: 3em;
@@ -904,6 +902,9 @@ body {
   }
   main .main2 .myJourneyBox #spanHungry {
     font-size: 2.5em;
+  }
+  .main3 .portfolio .portfolioBox .portfolioHeading {
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 550px) {

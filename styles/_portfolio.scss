@@ -8,14 +8,12 @@
  @include flexCenter();
  @include boxShadow;
  background-color: $backgroundColor;
- margin: auto;
+ margin: auto 1em;
  transform: skewY(-5deg);
 
 
 .portfolioBox {//               PORTFOLIO_BOX
- width: 70vw;
  padding: 1em;
- width: 50vw;
  
 .portfolioHeading {//               PORTFOLIO_HEADING
  padding-bottom: 3em;
