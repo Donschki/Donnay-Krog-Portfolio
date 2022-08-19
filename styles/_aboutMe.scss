@@ -1,7 +1,4 @@
 .main2 {
- display: flex;
- flex-direction: column;
- background-color: $backgroundColor;
 
 .paragraphHeadings {
     font-size: 12vw;
@@ -12,13 +9,39 @@
   text-align: left;
   color: $blue;
   letter-spacing: 3px;
-  word-spacing: 5px;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
- @include boxShadow;
+ @include boxShadow; 
+ background-color: $backgroundColor;
  padding: 1em;
+
+ transform: skewY(-5deg);
+ }
+
+ .aboutMeBox::before {
+  content: '';
+  height: 100%;
+  width: 14.4px;
+  left: -14px;
+  top: 0;
+  position: absolute;
+  transform: skewY(35deg);
+  background-color: $salmon;
+  transform-origin: right ;
+ }
+
+ .aboutMeBox::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  transform: skewX(55deg);
+  background-color: $blue;
+  transform-origin: bottom;
+  top: -10px;
+  left: 0;
  }
 
  #spanAbout {
@@ -49,14 +72,15 @@
  padding: 1em;
 
 .initial {
- font-size: 9.5vw;
+ font-size: 8vw;
+ line-height: 2;
 }
 
 .initial::first-letter {
  color: $salmon;
  float: left;
  line-height: 0.8em;
- font-size: 54vw;
+ font-size: 55vw;
   }
 }
 
@@ -65,18 +89,18 @@
  }
 }
 
-
 .myJourneyBox {//                       MY_JOURNEY_BOX
  padding: 1em;
+ @include boxShadow;
+ background-color: $backgroundColor;
+ transform: skewY(-5deg);
 
  h1 {
  text-align: right;
  
- 
  #spanMy {//                       SPAN_MY
  letter-spacing: 15px;
- position: relative;
- left: -1em;
+ margin-right: 1em;
 }
 
  #spanJourney {//                       SPAN_JOURNEY
@@ -108,9 +132,35 @@
  color: $headingColor;
  }
 }
+
+
 }
 
 
 }
+
+.myJourneyBox::before {
+  content: '';
+  height: 100%;
+  width: 14.4px;
+  left: -14px;
+  top: 0;
+  position: absolute;
+  transform: skewY(35deg);
+  background-color: $salmon;
+  transform-origin: right ;
+ }
+
+ .myJourneyBox::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  transform: skewX(55deg);
+  background-color: $blue;
+  transform-origin: bottom;
+  top: -10px;
+  left: 0;
+ }
 
 

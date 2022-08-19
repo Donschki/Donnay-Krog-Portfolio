@@ -9,6 +9,7 @@
  @include boxShadow;
  background-color: $backgroundColor;
  margin: auto;
+ transform: skewY(-5deg);
 
 
 .portfolioBox {//               PORTFOLIO_BOX
@@ -96,5 +97,27 @@ content: "";
  transition: all 1s;
  width: 100%;
 }}}
+
+ .portfolio::before {
+  content: '';
+  height: 100%;
+  width: 14.4px;
+  left: -14px;
+  position: absolute;
+  transform: skewY(35deg);
+  background-color: $salmon;
+  transform-origin: right ;
+ }
+
+ .portfolio::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  transform: skewX(55deg);
+  background-color: $blue;
+  transform-origin: bottom;
+  top: -10px;
+ }
 
 

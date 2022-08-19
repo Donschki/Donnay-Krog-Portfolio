@@ -30,7 +30,9 @@
   position: fixed;
   top: 5em;
   transition: transform 0.7s, left 0.4s;
-  left: -13em}
+  left: -13em;
+  z-index: 100;
+}
 
 @mixin hamburger {//////////HAMBURGER
   display: flex;
@@ -84,7 +86,7 @@ a {///////////////////////SIDEBAR_LINKS
 }}}
 
 @mixin boxShadow {
-  box-shadow: 0 40px 10px rgba(0, 0, 0, 0.281);
+  box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -4,9 +4,10 @@ main {
  display: flex;
  flex-direction: column;
  overflow: visible;
- max-width: 90vw;
- margin: 4em auto;
- gap: 2.5em;
+ max-width: 450px;
+
+ margin: 6em auto;
+ gap: 3em;
 
 .mainHeading {
  display: flex;
@@ -15,6 +16,10 @@ main {
  @include boxShadow;
  background-color: $backgroundColor;
  height: 90vh;
+
+ transform: skewY(-5deg);
+ margin: auto 1em;
+
 
 
 .firstName {//                   FIRST_NAME
@@ -28,6 +33,28 @@ span {
   justify-content: space-around;
 }}
 
+ .mainHeading::before {
+  content: '';
+  height: 100%;
+  width: 14.4px;
+  left: -14px;
+  position: absolute;
+  transform: skewY(35deg);
+  background-color: $salmon;
+  transform-origin: right ;
+ }
+
+ .mainHeading::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  transform: skewX(55deg);
+  background-color: $blue;
+  transform-origin: bottom;
+  top: -10px;
+ }
+
 .lastName {//       LAST_NAME
   display: flex;
   flex-direction: column;
@@ -39,28 +66,48 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 3em;
 }
 
 .main2 {
-  @include boxShadow;
   display: flex;
+  flex-direction: column;
   gap: 2em;
 }
 
 .banner {
-  overflow-x: hidden;
-  box-shadow: -10px 10px 20px 5px rgba(0,0,0,.5);
-  width: 90%;
-  margin: 1em auto ;
+  @include boxShadow;
+  margin: auto;
   background-color: $backgroundColor;
+  width: 100%;
+  transform: skewY(-5deg);
+  overflow-x: hidden;
 
-
-  backdrop-filter: blur(40px) ;
-
-  .slidingBanner {
-    padding: 0.5em;
-  }
 }
+
+.banner::before {
+  content: '';
+  height: 100%;
+  width: 20px;
+  left: -14px;
+  top: 0;
+  position: absolute;
+  transform: skewY(35deg);
+  background-color: $salmon;
+  transform-origin: right ;
+ }
+
+ .banner::after {
+  content: '';
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  transform: skewX(55deg);
+  background-color: $blue;
+  transform-origin: bottom;
+  top: -10px;
+  left: 0;
+ }
 
 .main3 {
   width: 100%;
