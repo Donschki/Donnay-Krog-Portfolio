@@ -70,17 +70,20 @@
  #aboutMeSection {
  color: $fontColor;
  padding: 1em;
+ display: flex;
 
 .initial {
- font-size: 8vw;
- line-height: 1.7;
+ font-size: 6vw;
+ line-height: 2;
+ letter-spacing: 4px;
+ text-align: center;
 }
 
 .initial::first-letter {
  color: $salmon;
  float: left;
  line-height: 0.8em;
- font-size: 55vw;
+ font-size: 50vw;
   }
 }
 

@@ -76,7 +76,7 @@ span {
   @include boxShadow;
   margin: auto ;
   background-color: $backgroundColor;
-  width: 90%;
+  width: 100%;
   transform: skewY(-5deg);
   overflow-y: hidden;
   padding: 1em;
@@ -119,7 +119,10 @@ span {
  }
 
 .main3 {
-  width: 100%;
+  display: flex;
+  gap: 3em;
+  flex-direction: column-reverse;
+
 }
 
 
