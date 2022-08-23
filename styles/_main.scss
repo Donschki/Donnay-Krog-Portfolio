@@ -3,11 +3,8 @@
 main {
  display: flex;
  flex-direction: column;
- overflow: visible;
- max-width: 450px;
-
- margin: 4em auto;
- gap: 3em;
+ max-width: 400px;
+ margin: 5em 1em ;
 
 .mainHeading {
  display: flex;
@@ -17,18 +14,14 @@ main {
  background-color: $backgroundColor;
 
  transform: skewY(-5deg);
- margin: auto 0.5em;
 
 .firstName {//                   FIRST_NAME
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   font-size: 11vh;
 }
   
-span {
-  justify-content: space-around;
-}}
+}
 
  .mainHeading::before {
   content: '';
@@ -55,14 +48,13 @@ span {
 .lastName {//       LAST_NAME
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   font-size: 17vh;
 }}
 
 .group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+    justify-content: space-evenly;
   gap: 3em;
 }
 
@@ -80,6 +72,7 @@ span {
   transform: skewY(-5deg);
   overflow-y: hidden;
   padding: 1em;
+  margin: 3em auto;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -120,9 +113,8 @@ span {
 
 .main3 {
   display: flex;
-  gap: 3em;
-  flex-direction: column-reverse;
-
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 

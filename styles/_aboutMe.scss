@@ -9,14 +9,13 @@
   text-align: left;
   color: $blue;
   letter-spacing: 3px;
-  line-height: 1.5em;
+  line-height: 1.8em;
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
  @include boxShadow; 
  background-color: $backgroundColor;
  padding: 1em;
- margin: auto 1em;
  transform: skewY(-5deg);
  }
 
@@ -59,24 +58,15 @@
  left: 0em;
 }
 
-.group {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100vw;
-  
-}
-
  #aboutMeSection {
  color: $fontColor;
- padding: 1em;
  display: flex;
 
 .initial {
  font-size: 6vw;
  line-height: 2;
  letter-spacing: 4px;
- text-align: center;
+ text-align: left;
 }
 
 .initial::first-letter {
@@ -97,7 +87,6 @@
  @include boxShadow;
  background-color: $backgroundColor;
  transform: skewY(-5deg);
- margin: auto 1em;
 
  h1 {
  text-align: right;

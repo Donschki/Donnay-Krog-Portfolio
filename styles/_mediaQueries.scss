@@ -1,10 +1,13 @@
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 430px) {
 
  main {
+  margin: 5em auto;
+  max-width: 400px;
+
   .main2 {
     .paragraphHeadings {
-      font-size: 2em;
+      font-size: 1.5em;
     }
 
     .paragraphs {
@@ -17,12 +20,12 @@
       #aboutMeSection {
 
       .initial {
-        font-size: 2.3em;
+        font-size: 1em;
         line-height: 1.5;
       }
 
       .initial::first-letter {
-        font-size: 5.8em;
+        font-size: 6em;
       }
       
     }
@@ -45,7 +48,6 @@
       .portfolioHeading {
         font-size: 2em;
     }
-
   }
 }
   }
@@ -55,18 +57,11 @@
   main {
 
   .main2 {
-    .paragraphs {
-      text-align: center;
-    }
 
     .aboutMeBox{
       padding: 1em;
-
-         #spanPrinciples {
-         font-size: 1.5em;
-    }
-
   }
+  
   .myJourneyBox{
     #myJourneySection{
     
@@ -81,55 +76,63 @@
 }}}
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { 
 
 main {
-  max-width: 100%;
-  flex-direction: column;
+ flex-direction: column;
+ margin: 6em 2em;
+ max-width: 100vw;
 
-  .group {
-    flex-direction: row;
-    gap: 1em;
-  }
 
-  .mainHeading {
-    width:50%;
-    margin: 0 1.5em;
-    min-height: 100vh;
+ .group {
+   flex-direction: row;
+   gap: 4em;
+  min-height: 100vh;
 
+  .mainHeading{
+   max-width: 450px;
+    
+   span {
+    display: flex;
+    justify-content: center;
+   }
+ 
     .firstName {
-      font-size: 15vw;
-      margin: 0 auto;
-    }
+     font-size: 8em;
 
-    .lastName {
-      font-size: 25vw;
-      margin: 0 auto;
-    }
-  }
+     span {
+     }
+   }
+ 
+   .lastName {
+     font-size: 12em;
+   }
+ }
 
   .main2 {
-    width: 50%;
-    
+    max-width: 60%;
+
     .paragraphs {
-      padding: 1px;
-      text-align: left;
+      font-size: 1.5em;
     }
 
     .aboutMeBox {
-      padding: 0.6em;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+
 
       #aboutMeSection{
         .initial {
-          font-size: 3.55vw;
+          font-size: 1.2em;
           width: 14em;
-          line-height: 1.2;
         }
       } 
     }
 
     .myJourneyBox {
-      padding: 0.6em;
+      height: 60%;
+   
 
       #myJourneySection {
         #spanHungry {
@@ -143,40 +146,44 @@ main {
 
 }}
 
+.banner {
+  margin-top: 3em;
+}
+}
 
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1200px) {
 
  main {
-  
-  .mainHeading{
+
+  .mainHeading {
+
      .firstName {
-      font-size: 5.5em;
      }
      .lastName {
-      font-size: 7em;
      }
   }
 
   .main2 {
+  max-width: 450px;
 
     .paragraphs {
       font-size: 1.5em;
     }
 
    .aboutMeBox {
-    padding: 3em;
+    padding: 1em;
 
     #aboutMeSection {
       .initial {
         line-height: 1.5;
-        font-size: 3vw;
-        width: 9.5em;
+        font-size: 2.5em;
         }
       }
     }
 
     .myJourneyBox {
-       padding: 2em;
+       padding: 1em;
     }
     }
   }
@@ -186,8 +193,8 @@ main {
 @media screen and (min-width: 1500px) {
 
 main {
+  margin: 6em 4em;
    flex-wrap: nowrap;
-   margin: auto;
    flex-direction: row;
 
    .main2 {
@@ -202,7 +209,6 @@ main {
    }
 
   .group {
-    gap: 3em;
     width: 60vw;
   }
 
