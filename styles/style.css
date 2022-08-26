@@ -110,7 +110,7 @@ header .iconBar #resumeIcon {
 .one {
   max-width: 90vw;
   flex-direction: column;
-  margin: auto;
+  margin: auto 2em;
   display: flex;
   justify-content: center;
 }
@@ -461,9 +461,6 @@ body body::-webkit-scrollbar {
 }
 .portfolio .portfolioHeading #spanPortfolio {
   letter-spacing: 15px;
-}
-.portfolio .portfolioBox {
-  border: solid;
 }
 .portfolio .portfolioBox .downWithDough3DContainer {
   display: flex;
@@ -864,6 +861,7 @@ body body::-webkit-scrollbar {
 @media screen and (min-width: 430px) {
   .one {
     max-width: 410px;
+    margin: auto;
   }
   .one .main2 .paragraphHeadings {
     font-size: 1.5em;
@@ -897,6 +895,7 @@ body body::-webkit-scrollbar {
   }
   .one main {
     width: 35vw;
+    margin: auto;
   }
   .one main .headingContainer {
     height: 100%;
@@ -914,7 +913,8 @@ body body::-webkit-scrollbar {
   }
   .one .main2 {
     justify-content: space-around;
-    width: 40vw;
+    max-width: 450px;
+    margin: 0 auto;
   }
   .one .main2 .paragraphHeadings {
     font-size: 5vh;
@@ -932,10 +932,11 @@ body body::-webkit-scrollbar {
   }
   .one .main2 .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 10px;
-    font-size: 3.5vw;
+    font-size: 3vh;
+    line-height: 2;
   }
   .one .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 20vw;
+    font-size: 22vh;
     padding: 10px 0;
   }
   .one .main2 .myJourneyBox #myJourneySection {
@@ -966,10 +967,10 @@ body body::-webkit-scrollbar {
     margin: 1em;
   }
   .one main .headingContainer .mainHeading .firstName {
-    font-size: 6.5em;
+    font-size: 12.5vh;
   }
   .one main .headingContainer .mainHeading .lastName {
-    font-size: 8.5em;
+    font-size: 20vh;
   }
   .one .main2 {
     width: 30vw;
@@ -1005,20 +1006,23 @@ body body::-webkit-scrollbar {
   main {
     width: 90vw;
   }
-  main .group .main2 .paragraphs {
+  .main2 .paragraphs {
     font-size: 2vh;
   }
-  main .group .main2 .aboutMeBox {
+  .main2 .aboutMeBox {
     height: 42%;
   }
-  main .group .main2 .aboutMeBox #aboutMeSection .initial {
+  .main2 .aboutMeBox #aboutMeSection .initial {
     font-size: 2vw;
   }
-  main .group .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
+  .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 10vw;
   }
-  main .group .main2 .myJourneyBox {
+  .main2 .myJourneyBox {
     height: 47%;
+  }
+  .main3 .portfolioHeading {
+    font-size: large;
   }
 }
 * {

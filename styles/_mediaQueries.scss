@@ -3,6 +3,7 @@
 
  .one {
  max-width: 410px;
+ margin: auto;
  
 .main2 {
    .paragraphHeadings {
@@ -61,7 +62,7 @@
 
  main {
  width: 35vw;
- 
+ margin: auto;
 .headingContainer {
  height: 100%;
  margin:  1em 0;
@@ -82,7 +83,8 @@
 
 .main2 {
  justify-content: space-around;
- width: 40vw;
+ max-width: 450px;
+ margin: 0 auto;
  
   .paragraphHeadings {
     font-size: 5vh;
@@ -99,13 +101,15 @@
       flex-direction: column;
 
       #aboutMeSection{
+
         .initial {
           letter-spacing: 10px;
-          font-size: 3.5vw;
+          font-size: 3vh;
+          line-height: 2;
         }
 
         .initial::first-letter {
-          font-size: 20vw;
+          font-size: 22vh;
           padding: 10px 0;
         }
       } 
@@ -145,14 +149,15 @@
 
  .headingContainer {
   margin: 1em;
+  
  .mainHeading {
     
   .firstName {
-   font-size: 6.5em;
+   font-size: 12.5vh;
   }
 
   .lastName {
-   font-size: 8.5em;
+   font-size: 20vh;
   }
 }}
 }
@@ -210,12 +215,11 @@
 @media screen and (min-width: 1500px) {
  main {
   width: 90vw;
+}
 
-  .group {
-
-  .main2 {
+ .main2 {
    .paragraphs {
- font-size: 2vh
+     font-size: 2vh
    }
    
   .aboutMeBox {
@@ -238,8 +242,13 @@
     height: 47%;
   }
 }
-}
+
+.main3 {
+  .portfolioHeading {
+    font-size: large;
+  }
 }
 
 }
+
 
