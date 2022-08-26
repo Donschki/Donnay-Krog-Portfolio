@@ -9,13 +9,14 @@
 @mixin navBar {/////////NAV_BAR
   padding: 0.7em;
   display: flex;
+  flex-direction: column;
   position: fixed;
   z-index: 1000; 
   background: linear-gradient();
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 1em;
   top: 0;
   left: 0;
-  right: 0;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 0 10px 1px black;
@@ -30,7 +31,7 @@
   position: fixed;
   top: 5em;
   transition: transform 0.7s, left 0.4s;
-  left: -13em;
+  left: -15em;
   z-index: 100;
 }
 
@@ -40,6 +41,8 @@
   justify-content: space-around;
   cursor: pointer;
   list-style: none;
+  height: 2em;
+  margin: auto;
 
   .lines {////////////////HAMBURGER LINES
     width: 1.5em;
@@ -93,6 +96,7 @@ a {///////////////////////SIDEBAR_LINKS
                                             //HEADER NAV HAMBURGER
 
 header {///////////////HEADER
+
 nav {///////////////////////NAV_BAR
   @include navBar();
 }
@@ -127,11 +131,28 @@ nav {///////////////////////NAV_BAR
 
 .iconBar {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  gap: 1.5em;
-  margin-right: 1em;
-}}
+  gap: 1em;
+
+#instagramIcon {
+  fill: $salmon;
+}
+
+#facebookIcon {
+  fill: $blue;
+}
+
+#resumeIcon {
+  fill: whitesmoke;
+}
+
+}
+
+}
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 

@@ -10,12 +10,13 @@
   color: $blue;
   letter-spacing: 3px;
   line-height: 1.8em;
+  padding: 10px;
+
 }
 
 .aboutMeBox {//                            ABOUT_ME_BOX
  @include boxShadow; 
  background-color: $backgroundColor;
- padding: 1em;
  transform: skewY(-5deg);
  }
 
@@ -61,11 +62,12 @@
  #aboutMeSection {
  color: $fontColor;
  display: flex;
+ height: 70%;
 
 .initial {
  font-size: 6vw;
  line-height: 2;
- letter-spacing: 4px;
+ letter-spacing: 0.9vw;
  text-align: left;
 }
 
@@ -73,7 +75,7 @@
  color: $salmon;
  float: left;
  line-height: 0.8em;
- font-size: 50vw;
+ font-size: 45vw;
   }
 }
 
@@ -83,7 +85,6 @@
 }
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
- padding: 1em;
  @include boxShadow;
  background-color: $backgroundColor;
  transform: skewY(-5deg);

@@ -96,6 +96,8 @@
 }}
 
 
+
+
 #spanAbout, #spanMe {//                 SPAN_HEADINGS
   animation: flicker2 3s infinite alternate;
   color: rgba(255, 255, 255, 0.295);
@@ -194,6 +196,8 @@
 }}
 
 
+
+
 .slidingBanner {//                       SLIDING_BANNER
  animation: banner 5s linear infinite; 
  transform: translateX(100%);
@@ -236,10 +240,8 @@ h1 {
 
 }}
 
-
-
-@media screen and (min-width: 768px) {
-.slidingBanner {//                  SLIDING_BANNER
+@media screen and (min-width: 768px) {// SLIDING_BANNER
+.slidingBanner {
  animation: banner3 7s linear infinite; 
  transform: translateX(100%);
  font-size: 2em;
@@ -280,8 +282,8 @@ h2 {
 }}
 }
 
-@media screen and (min-width: 920px) {
-.slidingBanner {//                  SLIDING_BANNER
+@media screen and (min-width: 920px) {// SLIDING_BANNER 
+.slidingBanner {
  animation: banner4 7s linear infinite; 
  transform: translateX(100%);
  font-size: 4vh;
@@ -323,7 +325,6 @@ h2 {
 
 }}
 }
-
 
 
 

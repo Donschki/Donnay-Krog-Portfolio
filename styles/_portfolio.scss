@@ -9,24 +9,25 @@
  @include boxShadow;
  background-color: $backgroundColor;
  transform: skewY(-5deg);
+ flex-direction: column;
+ height: 50vh;
+ 
+
+ .portfolioHeading {//               PORTFOLIO_HEADING
+      font-size: 5vw;
+      word-spacing: 7px;
+      letter-spacing: 4px;
+     
+      #spanMyPortfolio {
+      letter-spacing: 20px;
+      }
+             
+      #spanPortfolio {
+      letter-spacing: 15px;
+     }}
 
 .portfolioBox {//               PORTFOLIO_BOX
- padding: 1em;
- 
-.portfolioHeading {//               PORTFOLIO_HEADING
- padding-bottom: 3em;
- font-size: 7vw;
- word-spacing: 7px;
- letter-spacing: 4px;
- text-align: center;
-
- #spanMyPortfolio {
- letter-spacing: 20px;
- }
-        
- #spanPortfolio {
- letter-spacing: 15px;
-}}
+ border: solid;
 
 .downWithDough3DContainer {
  display: flex;

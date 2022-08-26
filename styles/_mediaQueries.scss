@@ -1,48 +1,45 @@
 
 @media screen and (min-width: 430px) {
 
- main {
-  margin: 5em auto;
-  max-width: 400px;
+ .one {
+ max-width: 410px;
+ 
+.main2 {
+   .paragraphHeadings {
+     font-size: 1.5em;
+   }
 
-  .main2 {
-    .paragraphHeadings {
-      font-size: 1.5em;
-    }
+   .paragraphs {
+     font-size: 1.5em;
+   }
 
-    .paragraphs {
-      font-size: 1.5em;
-    }
+   .aboutMeBox {
 
-    .aboutMeBox {
-       padding: 1em;
+     #aboutMeSection {
 
-      #aboutMeSection {
+     .initial {
+       font-size: 1em;
+       line-height: 1.5;
+     }
 
-      .initial {
-        font-size: 1em;
-        line-height: 1.5;
-      }
+     .initial::first-letter {
+       font-size: 6em;
+     }
+     
+   }
 
-      .initial::first-letter {
-        font-size: 6em;
-      }
-      
-    }
+   #spanPrinciples {
+     font-size: 2em;
+   }}
 
-    #spanPrinciples {
-      font-size: 2em;
-    }}
-
-    .myJourneyBox {
-      #spanHungry {
-        font-size: 2.5em;
-      }
-    }
-  }
+   .myJourneyBox {
+     #spanHungry {
+       font-size: 2.5em;
+     }
+   }
 }
 
-.main3{
+.main3 {
   .portfolio {
     .portfolioBox {
       .portfolioHeading {
@@ -50,175 +47,198 @@
     }
   }
 }
-  }
 }
-
-@media screen and (min-width: 550px) {
-  main {
-
-  .main2 {
-
-    .aboutMeBox{
-      padding: 1em;
-  }
-  
-  .myJourneyBox{
-    #myJourneySection{
-    
-     #spanHungry {
-      font-size: 2.2em;
-      width: 101%;
-      text-align: center;
-      margin: auto;
-  } }
-
-} 
-}}}
-
+}
+}
 
 @media screen and (min-width: 768px) { 
 
-main {
- flex-direction: column;
- margin: 6em 2em;
- max-width: 100vw;
+  .one {
+    max-width: 100vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-
- .group {
-   flex-direction: row;
-   gap: 4em;
-  min-height: 100vh;
-
-  .mainHeading{
-   max-width: 450px;
-    
-   span {
-    display: flex;
-    justify-content: center;
-   }
+ main {
+ width: 35vw;
  
-    .firstName {
-     font-size: 8em;
+.headingContainer {
+ height: 100%;
+ margin:  1em 0;
 
-     span {
-     }
-   }
+ .mainHeading {
+ height: 100%;
  
-   .lastName {
-     font-size: 12em;
-   }
- }
+   .firstName {
+ font-size: 10vh;
+ padding: 20px;
+  }
 
-  .main2 {
-    max-width: 60%;
+  .lastName {
+ font-size: 15vh;
+  }
+}}
+}
+
+.main2 {
+ justify-content: space-around;
+ width: 40vw;
+ 
+  .paragraphHeadings {
+    font-size: 5vh;
+  }
 
     .paragraphs {
-      font-size: 1.5em;
+      font-size: 2.1vh;
+      letter-spacing: 3px;
     }
 
     .aboutMeBox {
-      height: 50%;
+      height: fit-content;
       display: flex;
       flex-direction: column;
 
-
       #aboutMeSection{
         .initial {
-          font-size: 1.2em;
-          width: 14em;
+          letter-spacing: 10px;
+          font-size: 3.5vw;
+        }
+
+        .initial::first-letter {
+          font-size: 20vw;
+          padding: 10px 0;
         }
       } 
     }
 
     .myJourneyBox {
-      height: 60%;
-   
-
       #myJourneySection {
+        display: flex;
+        justify-content: space-around;
+
         #spanHungry {
         text-align: left;
+        font-size: 3vw;
+        width: 100%;
       }
     }
   }
-
 }
-
-
-}}
+}
 
 .banner {
   margin-top: 3em;
 }
+
+.main3 {
+  width: 100%;
+}}
+
+@media screen and (min-width: 1280px) {
+  
+.one {
+ justify-content: space-evenly;
+ 
+ main {
+  margin: 0 auto;
+  width: 25vw;
+
+ .headingContainer {
+  margin: 1em;
+ .mainHeading {
+    
+  .firstName {
+   font-size: 6.5em;
+  }
+
+  .lastName {
+   font-size: 8.5em;
+  }
+}}
 }
 
-
-@media screen and (min-width: 1200px) {
-
- main {
-
-  .mainHeading {
-
-     .firstName {
-     }
-     .lastName {
-     }
+ .main2 {
+ width: 30vw;
+ margin: 0 auto;
+ 
+  .paragraphs {
+      font-size: 1.4vw;
   }
 
-  .main2 {
-  max-width: 450px;
+  .aboutMeBox {
+           #aboutMeSection {
+             .initial {
+                font-size: 2.3vw;
+             }
 
-    .paragraphs {
-      font-size: 1.5em;
-    }
-
-   .aboutMeBox {
-    padding: 1em;
-
-    #aboutMeSection {
-      .initial {
-        line-height: 1.5;
-        font-size: 2.5em;
-        }
-      }
-    }
-
-    .myJourneyBox {
-       padding: 1em;
-    }
-    }
-  }
-  }
-
-
-@media screen and (min-width: 1500px) {
-
-main {
-  margin: 6em 4em;
-   flex-wrap: nowrap;
-   flex-direction: row;
-
-   .main2 {
-     .aboutMeBox {
-      
-      #aboutMeSection {
-        .initial {
-          font-size: 1.8vw;
+        .initial::first-letter {
+          font-size: 15vw;
         }
       }
   }
-   }
+   
+  .myJourneyBox {
 
-  .group {
-    width: 60vw;
+    #myJourneySection{
+      #spanHungry {
+        font-size: 2vw;
+        width: 100%;
+
+
+      }
+    } 
   }
+}
 
-  .main3 {
-     width: 36%;
+.banner {
+  margin: 0.5em auto ;
+}
+
+ .main3 {
+     width: 30vw;
+     height: 100vh;
+     justify-content: center;
+     margin: 0 auto;
 
      .portfolio {
-     height: 50vh;
+     height: 100%;
     }
+}
+  
+}}
+
+@media screen and (min-width: 1500px) {
+ main {
+  width: 90vw;
+
+  .group {
+
+  .main2 {
+   .paragraphs {
+ font-size: 2vh
+   }
+   
+  .aboutMeBox {
+    height: 42%;
+    #aboutMeSection{
+
+      .initial {
+        font-size: 2vw;
+      }
+    
+      .initial::first-letter {
+        font-size: 10vw;
+      }
+  
+      
+    }
+  } 
+
+  .myJourneyBox {
+    height: 47%;
   }
+}
+}
 }
 
 }
