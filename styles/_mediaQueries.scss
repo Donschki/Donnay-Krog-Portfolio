@@ -43,16 +43,6 @@
    }
 }}
 
-.main3 {
-  margin: auto;
-  width: 90%;
-
-  .portfolio {
-      .portfolioHeading {
-        font-size: 2em;
-    }
-  }
-}
 }
 }
 
@@ -83,7 +73,7 @@
 
 .main2 {
   height: 100vh;
-  max-width: 450px;
+  max-width: 40vw;
 
   .aboutContainer {
   display: grid;
@@ -95,7 +85,7 @@
   }
 
     .paragraphs {
-      font-size: 2vh;
+      font-size: 1.8vh;
       letter-spacing: 3px;
     }
 
@@ -112,7 +102,7 @@
         
         .initial {
           letter-spacing: 8px;
-          font-size: 2.4vh;
+          font-size: 2vh;
           line-height: 2;
           
         }
@@ -138,7 +128,6 @@
   }
 }
 }
-}
 
 .banner {
   margin-top: 3em;
@@ -151,7 +140,7 @@
     font-size: 10vw;
   }
 }
-}}
+}}}
 
 @media screen and (min-width: 1280px) {
   
@@ -159,16 +148,15 @@
 
  main {
   margin: 0 auto;
-  max-width: 25vw;
   height: 100vh;
   justify-content: center;
-
+  width: 25vw;
 
  .headingContainer {
   margin: 1.5em;
   
  .mainHeading {
-    
+
   .firstName {
    font-size: 10.8vh;
   }
@@ -181,6 +169,7 @@
 
  .main2 {
   height: 100vh;
+  width: 30vw;
 
 .aboutContainer {
   height: 100%;
@@ -192,17 +181,18 @@
  }
  
   .paragraphs {
-      font-size: 2vh;
+      font-size: 1.8vh;
   }
 
   .aboutMeBox {
     padding: 1em;
 
     #aboutMeSection{
+
       .initial {
         letter-spacing: 8px;
         line-height: 1.7;
-        font-size: 2.5vw;
+        font-size: 2.8vh;
       }
 
       .initial::first-letter {
@@ -241,30 +231,35 @@
  .one {
   gap: 0;
 
+main {
+  max-width: 30vw;
+}
 
  .main2 {
-  max-width: 500px;
 
-.aboutContainer {
+ .aboutContainer { 
+
   .paragraphs {
-    font-size: 1.5em;
+    font-size: 2vh;
     line-height: 1.5;
   }
 
   .paragraphHeadings {
-    font-size: 1.5em
+    font-size: 1vh;
   }
 
   .aboutMeBox {
+
     #aboutMeSection {
+
       .initial {
-        font-size: 1em;
+        font-size: 3vh;
+        width: 12em;
       }
     }
   } 
 
-  .myJourneyBox {
-  }
+
 }}
 
 .main3 {

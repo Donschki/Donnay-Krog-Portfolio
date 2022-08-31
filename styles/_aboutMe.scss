@@ -86,7 +86,7 @@
  #spanPrinciples {
  font-size: 10vw;
  }
-}
+
 
 .myJourneyBox {//                       MY_JOURNEY_BOX
  @include boxShadow;
@@ -154,17 +154,23 @@
   left: 0;
  }
 
- .socialIconContainer {
+
+}
+
+.socialIconContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
+
+.socialIcons {
+  padding: 0.5em;
+}
 
  .iconBar {
   display: flex;
  
   .socialIcons {
-  padding: 0.5em;
+  padding: 1em;
   }
  
  #instagramIcon {
@@ -182,4 +188,6 @@
  #linkedInIcon {
    fill: #0a66c2;
  }}}
+
+
 }

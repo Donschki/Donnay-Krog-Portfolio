@@ -164,9 +164,8 @@ header #navList a:hover {
 .one .main3 {
   display: flex;
   flex-direction: column;
-  gap: 3em;
   height: 100vh;
-  width: 90vw;
+  width: 100%;
   margin: auto;
 }
 .one .main3 .banner {
@@ -369,19 +368,19 @@ body body::-webkit-scrollbar {
 .main2 .aboutContainer #spanPrinciples {
   font-size: 10vw;
 }
-.main2 .myJourneyBox {
+.main2 .aboutContainer .myJourneyBox {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
   background-color: #242f33;
   transform: skewY(-5deg);
 }
-.main2 .myJourneyBox h1 {
+.main2 .aboutContainer .myJourneyBox h1 {
   text-align: right;
 }
-.main2 .myJourneyBox h1 #spanMy {
+.main2 .aboutContainer .myJourneyBox h1 #spanMy {
   letter-spacing: 15px;
   margin-right: 1em;
 }
-.main2 .myJourneyBox h1 #spanJourney {
+.main2 .aboutContainer .myJourneyBox h1 #spanJourney {
   text-orientation: sideways-left;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -389,22 +388,22 @@ body body::-webkit-scrollbar {
   float: right;
   margin-top: 0.5em;
 }
-.main2 .myJourneyBox #spanHungry {
+.main2 .aboutContainer .myJourneyBox #spanHungry {
   font-size: 5.2vw;
   width: 100%;
 }
-.main2 .myJourneyBox #myJourneySection {
+.main2 .aboutContainer .myJourneyBox #myJourneySection {
   flex-direction: column;
 }
-.main2 .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
+.main2 .aboutContainer .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
   color: #2da8d8;
   letter-spacing: 2px;
   font-size: 4vh;
 }
-.main2 .myJourneyBox #myJourneySection .myJourneyBoxParagraph #bigWord {
+.main2 .aboutContainer .myJourneyBox #myJourneySection .myJourneyBoxParagraph #bigWord {
   color: #d9524e;
 }
-.main2 .myJourneyBox::before {
+.main2 .aboutContainer .myJourneyBox::before {
   content: "";
   height: 100%;
   width: 14.4px;
@@ -415,7 +414,7 @@ body body::-webkit-scrollbar {
   background-color: #d9524e;
   transform-origin: right;
 }
-.main2 .myJourneyBox::after {
+.main2 .aboutContainer .myJourneyBox::after {
   content: "";
   height: 10px;
   width: 100%;
@@ -428,17 +427,17 @@ body body::-webkit-scrollbar {
 }
 .main2 .socialIconContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
+}
+.main2 .socialIconContainer .socialIcons {
+  padding: 0.5em;
 }
 .main2 .socialIconContainer .iconBar {
   display: flex;
 }
 .main2 .socialIconContainer .iconBar .socialIcons {
-  padding: 0.5em;
+  padding: 1em;
 }
 .main2 .socialIconContainer .iconBar #instagramIcon {
   fill: #d9524e;
@@ -944,13 +943,6 @@ body body::-webkit-scrollbar {
   .one .main2 .aboutContainer .myJourneyBox #spanHungry {
     font-size: 2em;
   }
-  .one .main3 {
-    margin: auto;
-    width: 90%;
-  }
-  .one .main3 .portfolio .portfolioHeading {
-    font-size: 2em;
-  }
 }
 @media screen and (min-width: 768px) {
   .one {
@@ -970,7 +962,7 @@ body body::-webkit-scrollbar {
   }
   .one .main2 {
     height: 100vh;
-    max-width: 450px;
+    max-width: 40vw;
   }
   .one .main2 .aboutContainer {
     display: grid;
@@ -981,7 +973,7 @@ body body::-webkit-scrollbar {
     font-size: 4vh;
   }
   .one .main2 .aboutContainer .paragraphs {
-    font-size: 2vh;
+    font-size: 1.8vh;
     letter-spacing: 3px;
   }
   .one .main2 .aboutContainer .aboutMeBox {
@@ -994,7 +986,7 @@ body body::-webkit-scrollbar {
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
-    font-size: 2.4vh;
+    font-size: 2vh;
     line-height: 2;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
@@ -1011,19 +1003,19 @@ body body::-webkit-scrollbar {
     font-size: 3vh;
     width: 100%;
   }
-  .banner {
+  .one .banner {
     margin-top: 3em;
   }
-  .main3 .portfolio .portfolioHeading {
+  .one .main3 .portfolio .portfolioHeading {
     font-size: 10vw;
   }
 }
 @media screen and (min-width: 1280px) {
   .one main {
     margin: 0 auto;
-    max-width: 25vw;
     height: 100vh;
     justify-content: center;
+    width: 25vw;
   }
   .one main .headingContainer {
     margin: 1.5em;
@@ -1036,6 +1028,7 @@ body body::-webkit-scrollbar {
   }
   .one .main2 {
     height: 100vh;
+    width: 30vw;
   }
   .one .main2 .aboutContainer {
     height: 100%;
@@ -1046,7 +1039,7 @@ body body::-webkit-scrollbar {
     font-size: 3.5vh;
   }
   .one .main2 .aboutContainer .paragraphs {
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
   .one .main2 .aboutContainer .aboutMeBox {
     padding: 1em;
@@ -1054,7 +1047,7 @@ body body::-webkit-scrollbar {
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
     line-height: 1.7;
-    font-size: 2.5vw;
+    font-size: 2.8vh;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 7em;
@@ -1078,18 +1071,19 @@ body body::-webkit-scrollbar {
   .one {
     gap: 0;
   }
-  .one .main2 {
-    max-width: 500px;
+  .one main {
+    max-width: 30vw;
   }
   .one .main2 .aboutContainer .paragraphs {
-    font-size: 1.5em;
+    font-size: 2vh;
     line-height: 1.5;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
-    font-size: 1.5em;
+    font-size: 1vh;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
-    font-size: 1em;
+    font-size: 3vh;
+    width: 12em;
   }
   .one .main3 .portfolioHeading {
     font-size: large;
