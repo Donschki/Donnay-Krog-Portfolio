@@ -294,7 +294,7 @@ body body::-webkit-scrollbar {
 
 .main2 .aboutContainer {
   display: grid;
-  gap: 3em;
+  gap: 2em;
 }
 .main2 .aboutContainer .paragraphHeadings {
   font-size: 12vw;
