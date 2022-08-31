@@ -4,116 +4,67 @@
  align-items: center;
 }
 
+.main3 {
+ width: 100%;
+ margin: auto;
 .portfolio {//               PORTFOLIO
- @include flexCenter();
- @include boxShadow;
- background-color: $backgroundColor;
+ display: flex;
  transform: skewY(-5deg);
  flex-direction: column;
- height: 50vh;
- 
-
- .portfolioHeading {//               PORTFOLIO_HEADING
-      font-size: 5vw;
-      word-spacing: 7px;
-      letter-spacing: 4px;
-     
-      #spanMyPortfolio {
-      letter-spacing: 20px;
-      }
-             
-      #spanPortfolio {
-      letter-spacing: 15px;
-     }}
-
-.portfolioBox {//               PORTFOLIO_BOX
-
-.downWithDough3DContainer {
- display: flex;
- justify-content: center;
-}
-
+ @include boxShadow;
 
 .downWithDough3D {
- max-width: 60vw;
- -moz-transform: skewY(-10deg);
- -ms-transform: skewY(-10deg);
- transform: skewY(-10deg);
- transition: all 0.8s;
+ -moz-transform: skewY(-5deg);
+ -ms-transform: skewY(-5deg);
+ transform: skewY(-5deg);
+ transition: all 0.2s;
 
      img {
       width: 100%;
-      transition: all 1s;
+      transition: all 0.2s;
      }
 }
 
 .downWithDough3D img:hover {
- transition: all 1.5s;
- width: 70vw;
+ transition: all 0.3s;
+ width: 108%;
 }
 
 .downWithDough3D::before {
-content: "";
- width: 40px;
- height: 100%;
- background-color: $blue;
- position: absolute;
- left: -40px;
- top: -20px;
- transform:  skewY(45deg);
- transition: all 1s;
-}
-
-.downWithDough3D::after {
-      content: "";
-      display: flex;
-      align-items: center;
-      color: white;
-      width: 100%;
-      height: 40px;
-      top: -40px;
-      left: -0px;
-      background-color: $salmon;
-      position: absolute;
-      transform:  skewX(45deg);
-      transform-origin: bottom;
-      overflow: none;
-      transition: all 1s;
-}
-
-.downWithDough3D:hover::before {
- color: black;
- transform: rotateY(160deg) translateX(8vw) skewY(30deg);
- transition: all 1s;
-}
-
-.downWithDough3D:hover::after {
- color: black;
- transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
- transition: all 1s;
- width: 100%;
-}}}
-
- .portfolio::before {
   content: '';
   height: 100%;
   width: 14.4px;
   left: -14px;
+  top: 0;
   position: absolute;
   transform: skewY(35deg);
-  background-color: $blue;
+  background-color: $salmon;
   transform-origin: right ;
  }
 
- .portfolio::after {
+ .downWithDough3D::after {
   content: '';
   height: 10px;
   width: 100%;
   position: absolute;
   transform: skewX(55deg);
-  background-color: $salmon;
+  background-color: $blue;
   transform-origin: bottom;
   top: -10px;
+  left: 0;
  }
+
+.downWithDough3D:hover::before {
+ color: black;
+ transform: rotateY(160deg) translateZ(-6em) skewY(30deg);
+ transition: all 0.5s;
+}
+
+.downWithDough3D:hover::after {
+ color: black;
+ transform: rotateX(130deg) translateZ(4em) skewX(30deg) translateX(-1em);
+ transition: all 0.5s;
+}}
+}
 
 

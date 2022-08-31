@@ -1,10 +1,14 @@
 .main2 {
 
-.paragraphHeadings {
+.aboutContainer {
+  display: grid;
+  gap: 3em;
+
+.paragraphHeadings {//                            PARAGRAPH_HEADINGS
     font-size: 12vw;
 }
 
-.paragraphs {
+.paragraphs {//                                   PARAGRAPHS
   font-size: 5vw;
   text-align: left;
   color: $blue;
@@ -14,13 +18,13 @@
 
 }
 
-.aboutMeBox {//                            ABOUT_ME_BOX
+.aboutMeBox {//                                    ABOUT_ME_BOX
  @include boxShadow; 
  background-color: $backgroundColor;
  transform: skewY(-5deg);
  }
 
- .aboutMeBox::before {
+ .aboutMeBox::before {//                          RED_CONTAINER_TOP
   content: '';
   height: 100%;
   width: 14.4px;
@@ -32,7 +36,7 @@
   transform-origin: right ;
  }
 
- .aboutMeBox::after {
+ .aboutMeBox::after {//                          BLUE_CONTAINER_LEFT
   content: '';
   height: 10px;
   width: 100%;
@@ -106,14 +110,11 @@
  }
 
  #spanHungry {
-    text-align: left;
-    font-size: 9vw;
-    width: 8em;
+    font-size: 5.2vw;
+    width: 100%;
  }
 
  #myJourneySection {//                       #JOURNEY_SECTION
-  padding: 1em 0;
-  display: flex;
  flex-direction: column;
 
 
@@ -126,11 +127,7 @@
  color: $headingColor;
  }
 }
-
-
 }
-
-
 }
 
 .myJourneyBox::before {
@@ -145,7 +142,7 @@
   transform-origin: right ;
  }
 
- .myJourneyBox::after {
+ .myJourneyBox::after {//                          BLUE_CONTAINER_LEFT
   content: '';
   height: 10px;
   width: 100%;
@@ -157,4 +154,32 @@
   left: 0;
  }
 
+ .socialIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
 
+ .iconBar {
+  display: flex;
+ 
+  .socialIcons {
+  padding: 0.5em;
+  }
+ 
+ #instagramIcon {
+   fill: $salmon;
+ }
+ 
+ #facebookIcon {
+   fill: $blue;
+ }
+ 
+ #resumeIcon {
+   fill: whitesmoke;
+ }
+ 
+ #linkedInIcon {
+   fill: #0a66c2;
+ }}}
+}

@@ -96,8 +96,6 @@
 }}
 
 
-
-
 #spanAbout, #spanMe {//                 SPAN_HEADINGS
   animation: flicker2 3s infinite alternate;
   color: rgba(255, 255, 255, 0.295);
@@ -196,8 +194,6 @@
 }}
 
 
-
-
 .slidingBanner {//                       SLIDING_BANNER
  animation: banner 5s linear infinite; 
  transform: translateX(100%);
@@ -238,6 +234,48 @@ h1 {
     text-shadow: none;
   }
 
+}}
+
+
+#facebookIcon {
+  animation: facebook 1.5s infinite alternate;
+  animation-delay: 0.5s;
+  
+  @keyframes facebook {
+  0% {fill: $blue(205, 80%, 23%);}
+  100% {fill: rgb(58, 55, 55);}
+  }
+  }
+
+#instagramIcon {
+  animation: instagram 1.5s infinite alternate;
+  animation-delay: 1s;
+  
+  @keyframes instagram {
+  0% {fill: $salmon(245, 90, 90);}
+  100% {fill: rgb(58, 55, 55);}
+}}
+
+#linkedInIcon {
+  animation: linkedIn 1.5s infinite alternate;
+  animation-delay: 1.5s;
+ 
+  
+  @keyframes linkedIn {
+  0%{fill: #0a66c2(205, 80%, 23%);}
+  100% {fill: rgb(58, 55, 55);};
+
+}
+
+}
+
+#resumeIcon {
+  animation: resume 1.5s infinite alternate;
+  animation-delay: 2s;
+  
+  @keyframes resume {
+  0% {fill: hsl(0, 0%, 100%);}
+  100% {fill: rgb(58, 55, 55);}
 }}
 
 @media screen and (min-width: 768px) {// SLIDING_BANNER
@@ -325,6 +363,10 @@ h2 {
 
 }}
 }
+
+    
+
+
 
 
 

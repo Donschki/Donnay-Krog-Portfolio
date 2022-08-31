@@ -1,28 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
+header {
+  position: absolute;
+  height: 10em;
+  z-index: 11;
+}
+header .toggleLight {
+  cursor: pointer;
+}
 header nav {
-  padding: 0.7em;
-  display: flex;
+  padding: 0.3em;
+  display: grid;
   flex-direction: column;
   position: fixed;
   z-index: 1000;
   background: linear-gradient();
-  justify-content: space-around;
-  gap: 1em;
   top: 0;
   left: 0;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 0 10px 1px black;
-  margin: auto;
+  box-shadow: 0 0 3px 1px black;
+}
+header nav .toggleLight {
+  width: 100%;
+  height: 100%;
 }
 header .hamburgerMenu {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   cursor: pointer;
   list-style: none;
-  height: 2em;
-  margin: auto;
+  height: 3em;
+  padding: 10px;
 }
 header .hamburgerMenu .lines {
   width: 1.5em;
@@ -52,7 +61,6 @@ header .sideBar {
   z-index: 100;
 }
 header .change {
-  opacity: 1;
   left: 1em;
 }
 header #navList {
@@ -82,61 +90,31 @@ header #navList a:hover {
   color: white;
   border-radius: 6px;
 }
-header #navList .toggleLight {
-  height: 2.5em;
-  width: 2.5em;
-  cursor: pointer;
-}
-header #navList .toggleLight img {
-  position: absolute;
-  right: 0;
-}
-header .iconBar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1em;
-}
-header .iconBar #instagramIcon {
-  fill: #d9524e;
-}
-header .iconBar #facebookIcon {
-  fill: #2da8d8;
-}
-header .iconBar #resumeIcon {
-  fill: whitesmoke;
-}
-header .iconBar #facebookIcon:hover {
-  filter: drop-shadow(0px 0px 10px rgb(252, 101, 101));
-}
-header .iconBar #instagramIcon:hover {
-  filter: drop-shadow(0px 0px 10px rgb(30, 199, 250));
-}
-header .iconBar #resumeIcon:hover {
-  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
-}
 
 .one {
   max-width: 90vw;
   flex-direction: column;
-  margin: auto 2em;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  gap: 3em;
+  position: relative;
+  left: 0.5em;
 }
 .one main {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  margin: 0 auto;
+  gap: 3em;
 }
 .one main .headingContainer {
-  height: 100vh;
+  height: 90%;
   display: flex;
-  align-items: center;
+  margin: auto 0;
 }
 .one main .headingContainer .mainHeading {
-  width: 100%;
-  height: 90%;
+  width: 100vh;
   display: flex;
   justify-content: space-evenly;
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
@@ -181,17 +159,18 @@ header .iconBar #resumeIcon:hover {
 .one .main2 {
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  margin: 0 auto;
 }
 .one .main3 {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
   gap: 3em;
+  height: 100vh;
+  width: 90vw;
+  margin: auto;
 }
-.one .banner {
+.one .main3 .banner {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-  margin-top: 2em;
   background-color: #242f33;
   width: 100%;
   transform: skewY(-5deg);
@@ -200,13 +179,13 @@ header .iconBar #resumeIcon:hover {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.one .banner .slidingBanner h1 {
+.one .main3 .banner .slidingBanner h1 {
   width: 30em;
 }
-.one .banner::-webkit-scrollbar {
+.one .main3 .banner::-webkit-scrollbar {
   display: none;
 }
-.one .banner::before {
+.one .main3 .banner::before {
   content: "";
   height: 100%;
   width: 20px;
@@ -217,7 +196,7 @@ header .iconBar #resumeIcon:hover {
   background-color: #d9524e;
   transform-origin: right;
 }
-.one .banner::after {
+.one .main3 .banner::after {
   content: "";
   height: 10px;
   width: 100%;
@@ -246,7 +225,7 @@ header .iconBar #resumeIcon:hover {
   height: 100%;
   background-color: #4c4e57;
   z-index: var(--i);
-  transition: 0.5s;
+  transition: 0.1s;
   padding: 0.5em;
   font-size: 1.5em;
 }
@@ -314,10 +293,14 @@ body body::-webkit-scrollbar {
   display: none;
 }
 
-.main2 .paragraphHeadings {
+.main2 .aboutContainer {
+  display: grid;
+  gap: 3em;
+}
+.main2 .aboutContainer .paragraphHeadings {
   font-size: 12vw;
 }
-.main2 .paragraphs {
+.main2 .aboutContainer .paragraphs {
   font-size: 5vw;
   text-align: left;
   color: #2da8d8;
@@ -325,12 +308,12 @@ body body::-webkit-scrollbar {
   line-height: 1.8em;
   padding: 10px;
 }
-.main2 .aboutMeBox {
+.main2 .aboutContainer .aboutMeBox {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
   background-color: #242f33;
   transform: skewY(-5deg);
 }
-.main2 .aboutMeBox::before {
+.main2 .aboutContainer .aboutMeBox::before {
   content: "";
   height: 100%;
   width: 14.4px;
@@ -341,7 +324,7 @@ body body::-webkit-scrollbar {
   background-color: #2da8d8;
   transform-origin: right;
 }
-.main2 .aboutMeBox::after {
+.main2 .aboutContainer .aboutMeBox::after {
   content: "";
   height: 10px;
   width: 100%;
@@ -352,7 +335,7 @@ body body::-webkit-scrollbar {
   top: -10px;
   left: 0;
 }
-.main2 #spanAbout {
+.main2 .aboutContainer #spanAbout {
   text-orientation: sideways-left;
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
@@ -361,45 +344,44 @@ body body::-webkit-scrollbar {
   float: left;
   margin-top: 1em;
 }
-.main2 #spanMe {
+.main2 .aboutContainer #spanMe {
   letter-spacing: 15px;
   position: relative;
   left: 0em;
 }
-.main2 #aboutMeSection {
+.main2 .aboutContainer #aboutMeSection {
   color: #2da8d8;
   display: flex;
   height: 70%;
 }
-.main2 #aboutMeSection .initial {
+.main2 .aboutContainer #aboutMeSection .initial {
   font-size: 6vw;
   line-height: 2;
   letter-spacing: 0.9vw;
   text-align: left;
 }
-.main2 #aboutMeSection .initial::first-letter {
+.main2 .aboutContainer #aboutMeSection .initial::first-letter {
   color: #d9524e;
   float: left;
   line-height: 0.8em;
   font-size: 45vw;
 }
-.main2 #spanPrinciples {
+.main2 .aboutContainer #spanPrinciples {
   font-size: 10vw;
 }
-
-.myJourneyBox {
+.main2 .myJourneyBox {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
   background-color: #242f33;
   transform: skewY(-5deg);
 }
-.myJourneyBox h1 {
+.main2 .myJourneyBox h1 {
   text-align: right;
 }
-.myJourneyBox h1 #spanMy {
+.main2 .myJourneyBox h1 #spanMy {
   letter-spacing: 15px;
   margin-right: 1em;
 }
-.myJourneyBox h1 #spanJourney {
+.main2 .myJourneyBox h1 #spanJourney {
   text-orientation: sideways-left;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -407,26 +389,22 @@ body body::-webkit-scrollbar {
   float: right;
   margin-top: 0.5em;
 }
-.myJourneyBox #spanHungry {
-  text-align: left;
-  font-size: 9vw;
-  width: 8em;
+.main2 .myJourneyBox #spanHungry {
+  font-size: 5.2vw;
+  width: 100%;
 }
-.myJourneyBox #myJourneySection {
-  padding: 1em 0;
-  display: flex;
+.main2 .myJourneyBox #myJourneySection {
   flex-direction: column;
 }
-.myJourneyBox #myJourneySection .myJourneyBoxParagraph {
+.main2 .myJourneyBox #myJourneySection .myJourneyBoxParagraph {
   color: #2da8d8;
   letter-spacing: 2px;
   font-size: 4vh;
 }
-.myJourneyBox #myJourneySection .myJourneyBoxParagraph #bigWord {
+.main2 .myJourneyBox #myJourneySection .myJourneyBoxParagraph #bigWord {
   color: #d9524e;
 }
-
-.myJourneyBox::before {
+.main2 .myJourneyBox::before {
   content: "";
   height: 100%;
   width: 14.4px;
@@ -437,8 +415,7 @@ body body::-webkit-scrollbar {
   background-color: #d9524e;
   transform-origin: right;
 }
-
-.myJourneyBox::after {
+.main2 .myJourneyBox::after {
   content: "";
   height: 10px;
   width: 100%;
@@ -449,104 +426,86 @@ body body::-webkit-scrollbar {
   top: -10px;
   left: 0;
 }
-
-.portfolio {
+.main2 .socialIconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-  background-color: #242f33;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.main2 .socialIconContainer .iconBar {
+  display: flex;
+}
+.main2 .socialIconContainer .iconBar .socialIcons {
+  padding: 0.5em;
+}
+.main2 .socialIconContainer .iconBar #instagramIcon {
+  fill: #d9524e;
+}
+.main2 .socialIconContainer .iconBar #facebookIcon {
+  fill: #2da8d8;
+}
+.main2 .socialIconContainer .iconBar #resumeIcon {
+  fill: whitesmoke;
+}
+.main2 .socialIconContainer .iconBar #linkedInIcon {
+  fill: #0a66c2;
+}
+
+.main3 {
+  width: 100%;
+  margin: auto;
+}
+.main3 .portfolio {
+  display: flex;
   transform: skewY(-5deg);
   flex-direction: column;
-  height: 50vh;
+  box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
 }
-.portfolio .portfolioHeading {
-  font-size: 5vw;
-  word-spacing: 7px;
-  letter-spacing: 4px;
+.main3 .portfolio .downWithDough3D {
+  transform: skewY(-5deg);
+  transition: all 0.2s;
 }
-.portfolio .portfolioHeading #spanMyPortfolio {
-  letter-spacing: 20px;
-}
-.portfolio .portfolioHeading #spanPortfolio {
-  letter-spacing: 15px;
-}
-.portfolio .portfolioBox .downWithDough3DContainer {
-  display: flex;
-  justify-content: center;
-}
-.portfolio .portfolioBox .downWithDough3D {
-  max-width: 60vw;
-  transform: skewY(-10deg);
-  transition: all 0.8s;
-}
-.portfolio .portfolioBox .downWithDough3D img {
+.main3 .portfolio .downWithDough3D img {
   width: 100%;
-  transition: all 1s;
+  transition: all 0.2s;
 }
-.portfolio .portfolioBox .downWithDough3D img:hover {
-  transition: all 1.5s;
-  width: 70vw;
+.main3 .portfolio .downWithDough3D img:hover {
+  transition: all 0.3s;
+  width: 108%;
 }
-.portfolio .portfolioBox .downWithDough3D::before {
-  content: "";
-  width: 40px;
-  height: 100%;
-  background-color: #2da8d8;
-  position: absolute;
-  left: -40px;
-  top: -20px;
-  transform: skewY(45deg);
-  transition: all 1s;
-}
-.portfolio .portfolioBox .downWithDough3D::after {
-  content: "";
-  display: flex;
-  align-items: center;
-  color: white;
-  width: 100%;
-  height: 40px;
-  top: -40px;
-  left: 0px;
-  background-color: #d9524e;
-  position: absolute;
-  transform: skewX(45deg);
-  transform-origin: bottom;
-  overflow: none;
-  transition: all 1s;
-}
-.portfolio .portfolioBox .downWithDough3D:hover::before {
-  color: black;
-  transform: rotateY(160deg) translateX(8vw) skewY(30deg);
-  transition: all 1s;
-}
-.portfolio .portfolioBox .downWithDough3D:hover::after {
-  color: black;
-  transform: rotateX(130deg) translateZ(4.5em) skewX(30deg) translateX(-1em);
-  transition: all 1s;
-  width: 100%;
-}
-
-.portfolio::before {
+.main3 .portfolio .downWithDough3D::before {
   content: "";
   height: 100%;
   width: 14.4px;
   left: -14px;
+  top: 0;
   position: absolute;
   transform: skewY(35deg);
-  background-color: #2da8d8;
+  background-color: #d9524e;
   transform-origin: right;
 }
-
-.portfolio::after {
+.main3 .portfolio .downWithDough3D::after {
   content: "";
   height: 10px;
   width: 100%;
   position: absolute;
   transform: skewX(55deg);
-  background-color: #d9524e;
+  background-color: #2da8d8;
   transform-origin: bottom;
   top: -10px;
+  left: 0;
+}
+.main3 .portfolio .downWithDough3D:hover::before {
+  color: black;
+  transform: rotateY(160deg) translateZ(-6em) skewY(30deg);
+  transition: all 0.5s;
+}
+.main3 .portfolio .downWithDough3D:hover::after {
+  color: black;
+  transform: rotateX(130deg) translateZ(4em) skewX(30deg) translateX(-1em);
+  transition: all 0.5s;
 }
 
 #DON {
@@ -768,6 +727,98 @@ body body::-webkit-scrollbar {
   }
 }
 
+#facebookIcon {
+  -webkit-animation: facebook 1.5s infinite alternate;
+          animation: facebook 1.5s infinite alternate;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes facebook {
+  0% {
+    fill: #2da8d8 205, 80%, 23%;
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+@keyframes facebook {
+  0% {
+    fill: #2da8d8 205, 80%, 23%;
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+
+#instagramIcon {
+  -webkit-animation: instagram 1.5s infinite alternate;
+          animation: instagram 1.5s infinite alternate;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes instagram {
+  0% {
+    fill: #d9524e 245, 90, 90;
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+@keyframes instagram {
+  0% {
+    fill: #d9524e 245, 90, 90;
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+
+#linkedInIcon {
+  -webkit-animation: linkedIn 1.5s infinite alternate;
+          animation: linkedIn 1.5s infinite alternate;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+@-webkit-keyframes linkedIn {
+  0% {
+    fill: #0a66c2 205, 80%, 23%;
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+@keyframes linkedIn {
+  0% {
+    fill: #0a66c2 205, 80%, 23%;
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+
+#resumeIcon {
+  -webkit-animation: resume 1.5s infinite alternate;
+          animation: resume 1.5s infinite alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@-webkit-keyframes resume {
+  0% {
+    fill: hsl(0deg, 0%, 100%);
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+@keyframes resume {
+  0% {
+    fill: hsl(0deg, 0%, 100%);
+  }
+  100% {
+    fill: rgb(58, 55, 55);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .slidingBanner {
     -webkit-animation: banner3 7s linear infinite;
@@ -869,29 +920,35 @@ body body::-webkit-scrollbar {
 
 @media screen and (min-width: 430px) {
   .one {
-    max-width: 410px;
-    margin: auto;
+    max-width: 500px;
   }
-  .one .main2 .paragraphHeadings {
+  .one .main2 {
+    width: 100%;
+  }
+  .one .main2 .aboutContainer .paragraphHeadings {
     font-size: 1.5em;
   }
-  .one .main2 .paragraphs {
-    font-size: 1.5em;
-  }
-  .one .main2 .aboutMeBox #aboutMeSection .initial {
-    font-size: 1em;
+  .one .main2 .aboutContainer .paragraphs {
+    font-size: 1.2em;
     line-height: 1.5;
   }
-  .one .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
+    font-size: 1em;
+  }
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 6em;
   }
-  .one .main2 .aboutMeBox #spanPrinciples {
+  .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
     font-size: 2em;
   }
-  .one .main2 .myJourneyBox #spanHungry {
-    font-size: 2.5em;
+  .one .main2 .aboutContainer .myJourneyBox #spanHungry {
+    font-size: 2em;
   }
-  .one .main3 .portfolio .portfolioBox .portfolioHeading {
+  .one .main3 {
+    margin: auto;
+    width: 90%;
+  }
+  .one .main3 .portfolio .portfolioHeading {
     font-size: 2em;
   }
 }
@@ -900,101 +957,112 @@ body body::-webkit-scrollbar {
     max-width: 100vw;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: auto 0;
   }
   .one main {
     width: 35vw;
-    margin: auto;
-  }
-  .one main .headingContainer {
-    height: 100%;
-    margin: 1em 0;
-  }
-  .one main .headingContainer .mainHeading {
-    height: 100%;
   }
   .one main .headingContainer .mainHeading .firstName {
-    font-size: 10vh;
-    padding: 20px;
+    font-size: 11vh;
   }
   .one main .headingContainer .mainHeading .lastName {
-    font-size: 15vh;
+    font-size: 16vh;
   }
   .one .main2 {
-    justify-content: space-around;
+    height: 100vh;
     max-width: 450px;
-    margin: 0 auto;
   }
-  .one .main2 .paragraphHeadings {
-    font-size: 5vh;
+  .one .main2 .aboutContainer {
+    display: grid;
+    height: 100%;
+    margin: 3em 0;
   }
-  .one .main2 .paragraphs {
-    font-size: 2.1vh;
+  .one .main2 .aboutContainer .paragraphHeadings {
+    font-size: 4vh;
+  }
+  .one .main2 .aboutContainer .paragraphs {
+    font-size: 2vh;
     letter-spacing: 3px;
   }
-  .one .main2 .aboutMeBox {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .one .main2 .aboutContainer .aboutMeBox {
     display: flex;
     flex-direction: column;
+    margin: auto 0;
   }
-  .one .main2 .aboutMeBox #aboutMeSection .initial {
-    letter-spacing: 10px;
+  .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
     font-size: 3vh;
+  }
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
+    letter-spacing: 8px;
+    font-size: 2.4vh;
     line-height: 2;
   }
-  .one .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 22vh;
-    padding: 10px 0;
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
+    font-size: 8em;
   }
-  .one .main2 .myJourneyBox #myJourneySection {
+  .one .main2 .aboutContainer .myJourneyBox {
+    margin: auto 0;
+  }
+  .one .main2 .aboutContainer .myJourneyBox #myJourneySection {
     display: flex;
-    justify-content: space-around;
   }
-  .one .main2 .myJourneyBox #myJourneySection #spanHungry {
+  .one .main2 .aboutContainer .myJourneyBox #myJourneySection #spanHungry {
     text-align: left;
-    font-size: 3vw;
+    font-size: 3vh;
     width: 100%;
   }
   .banner {
     margin-top: 3em;
   }
-  .main3 {
-    width: 100%;
+  .main3 .portfolio .portfolioHeading {
+    font-size: 10vw;
   }
 }
 @media screen and (min-width: 1280px) {
-  .one {
-    justify-content: space-evenly;
-  }
   .one main {
     margin: 0 auto;
-    width: 25vw;
+    max-width: 25vw;
+    height: 100vh;
+    justify-content: center;
   }
   .one main .headingContainer {
-    margin: 1em;
+    margin: 1.5em;
   }
   .one main .headingContainer .mainHeading .firstName {
-    font-size: 12.5vh;
+    font-size: 10.8vh;
   }
   .one main .headingContainer .mainHeading .lastName {
-    font-size: 20vh;
+    font-size: 15vh;
   }
   .one .main2 {
-    width: 30vw;
-    margin: 0 auto;
+    height: 100vh;
   }
-  .one .main2 .paragraphs {
-    font-size: 1.4vw;
+  .one .main2 .aboutContainer {
+    height: 100%;
+    display: grid;
+    margin: 3em 0;
   }
-  .one .main2 .aboutMeBox #aboutMeSection .initial {
-    font-size: 2.3vw;
+  .one .main2 .aboutContainer .paragraphHeadings {
+    font-size: 3.5vh;
   }
-  .one .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 15vw;
+  .one .main2 .aboutContainer .paragraphs {
+    font-size: 2vh;
   }
-  .one .main2 .myJourneyBox #myJourneySection #spanHungry {
+  .one .main2 .aboutContainer .aboutMeBox {
+    padding: 1em;
+  }
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
+    letter-spacing: 8px;
+    line-height: 1.7;
+    font-size: 2.5vw;
+  }
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
+    font-size: 7em;
+  }
+  .one .main2 .aboutContainer .myJourneyBox {
+    padding: 1em;
+  }
+  .one .main2 .aboutContainer .myJourneyBox #myJourneySection #spanHungry {
     font-size: 2vw;
     width: 100%;
   }
@@ -1004,33 +1072,26 @@ body body::-webkit-scrollbar {
   .one .main3 {
     width: 30vw;
     height: 100vh;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  .one .main3 .portfolio {
-    height: 100%;
   }
 }
 @media screen and (min-width: 1500px) {
-  main {
-    width: 90vw;
+  .one {
+    gap: 0;
   }
-  .main2 .paragraphs {
-    font-size: 2vh;
+  .one .main2 {
+    max-width: 500px;
   }
-  .main2 .aboutMeBox {
-    height: 42%;
+  .one .main2 .aboutContainer .paragraphs {
+    font-size: 1.5em;
+    line-height: 1.5;
   }
-  .main2 .aboutMeBox #aboutMeSection .initial {
-    font-size: 2vw;
+  .one .main2 .aboutContainer .paragraphHeadings {
+    font-size: 1.5em;
   }
-  .main2 .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 10vw;
+  .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
+    font-size: 1em;
   }
-  .main2 .myJourneyBox {
-    height: 47%;
-  }
-  .main3 .portfolioHeading {
+  .one .main3 .portfolioHeading {
     font-size: large;
   }
 }
