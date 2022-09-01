@@ -96,7 +96,6 @@ header #navList a:hover {
   flex-direction: column;
   margin: auto;
   display: flex;
-  gap: 3em;
   position: relative;
   left: 0.5em;
 }
@@ -114,7 +113,7 @@ header #navList a:hover {
   margin: auto 0;
 }
 .one main .headingContainer .mainHeading {
-  width: 100vh;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
@@ -157,16 +156,14 @@ header #navList a:hover {
   top: -10px;
 }
 .one .main2 {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
+  display: grid;
 }
 .one .main3 {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
-  margin: auto;
+  margin: 0 auto;
 }
 .one .main3 .banner {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
@@ -294,7 +291,8 @@ body body::-webkit-scrollbar {
 
 .main2 .aboutContainer {
   display: grid;
-  gap: 2em;
+  gap: 3em;
+  justify-content: center;
 }
 .main2 .aboutContainer .paragraphHeadings {
   font-size: 12vw;
@@ -378,7 +376,6 @@ body body::-webkit-scrollbar {
 }
 .main2 .aboutContainer .myJourneyBox h1 #spanMy {
   letter-spacing: 15px;
-  margin-right: 1em;
 }
 .main2 .aboutContainer .myJourneyBox h1 #spanJourney {
   text-orientation: sideways-left;
@@ -386,7 +383,7 @@ body body::-webkit-scrollbar {
       writing-mode: vertical-rl;
   letter-spacing: 10px;
   float: right;
-  margin-top: 0.5em;
+  padding-top: 1.5em;
 }
 .main2 .aboutContainer .myJourneyBox #spanHungry {
   font-size: 5.2vw;
@@ -426,18 +423,13 @@ body body::-webkit-scrollbar {
   left: 0;
 }
 .main2 .socialIconContainer {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.main2 .socialIconContainer .socialIcons {
-  padding: 0.5em;
+  display: grid;
 }
 .main2 .socialIconContainer .iconBar {
   display: flex;
 }
 .main2 .socialIconContainer .iconBar .socialIcons {
-  padding: 1em;
+  padding: 0.5em;
 }
 .main2 .socialIconContainer .iconBar #instagramIcon {
   fill: #d9524e;
@@ -454,27 +446,35 @@ body body::-webkit-scrollbar {
 
 .main3 {
   width: 100%;
-  margin: auto;
+  height: 100vh;
 }
-.main3 .portfolio {
+.main3 .portfolioContainer {
+  height: 100%;
+  width: 100%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.main3 .portfolioContainer .portfolio {
   display: flex;
   transform: skewY(-5deg);
   flex-direction: column;
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
 }
-.main3 .portfolio .downWithDough3D {
+.main3 .portfolioContainer .portfolio .downWithDough3D {
   transform: skewY(-5deg);
   transition: all 0.2s;
 }
-.main3 .portfolio .downWithDough3D img {
+.main3 .portfolioContainer .portfolio .downWithDough3D img {
   width: 100%;
   transition: all 0.2s;
 }
-.main3 .portfolio .downWithDough3D img:hover {
+.main3 .portfolioContainer .portfolio .downWithDough3D img:hover {
   transition: all 0.3s;
   width: 108%;
 }
-.main3 .portfolio .downWithDough3D::before {
+.main3 .portfolioContainer .portfolio .downWithDough3D::before {
   content: "";
   height: 100%;
   width: 14.4px;
@@ -485,7 +485,7 @@ body body::-webkit-scrollbar {
   background-color: #d9524e;
   transform-origin: right;
 }
-.main3 .portfolio .downWithDough3D::after {
+.main3 .portfolioContainer .portfolio .downWithDough3D::after {
   content: "";
   height: 10px;
   width: 100%;
@@ -496,12 +496,12 @@ body body::-webkit-scrollbar {
   top: -10px;
   left: 0;
 }
-.main3 .portfolio .downWithDough3D:hover::before {
+.main3 .portfolioContainer .portfolio .downWithDough3D:hover::before {
   color: black;
   transform: rotateY(160deg) translateZ(-6em) skewY(30deg);
   transition: all 0.5s;
 }
-.main3 .portfolio .downWithDough3D:hover::after {
+.main3 .portfolioContainer .portfolio .downWithDough3D:hover::after {
   color: black;
   transform: rotateX(130deg) translateZ(4em) skewX(30deg) translateX(-1em);
   transition: all 0.5s;
@@ -917,11 +917,14 @@ body body::-webkit-scrollbar {
   fill: whitesmoke;
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 500px) {
   .one {
-    max-width: 500px;
+    max-width: 450px;
+    margin: auto;
+    left: 0;
   }
-  .one .main2 {
+  .one main .mainHeading {
+    margin: 1em auto;
     width: 100%;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
@@ -935,7 +938,7 @@ body body::-webkit-scrollbar {
     font-size: 1em;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 6em;
+    font-size: 7.5em;
   }
   .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
     font-size: 2em;
@@ -943,16 +946,23 @@ body body::-webkit-scrollbar {
   .one .main2 .aboutContainer .myJourneyBox #spanHungry {
     font-size: 2em;
   }
+  .one .main3 .portfolioContainer {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .one {
     max-width: 100vw;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: auto 0;
   }
   .one main {
     width: 35vw;
+    margin: auto 4em;
+  }
+  .one main .headingContainer {
+    margin: 1em 0;
+    height: 100vh;
   }
   .one main .headingContainer .mainHeading .firstName {
     font-size: 11vh;
@@ -961,64 +971,68 @@ body body::-webkit-scrollbar {
     font-size: 16vh;
   }
   .one .main2 {
+    max-width: 45vw;
     height: 100vh;
-    max-width: 40vw;
   }
   .one .main2 .aboutContainer {
+    margin: 2em auto;
     display: grid;
-    height: 100%;
-    margin: 3em 0;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
-    font-size: 4vh;
+    font-size: 3vh;
   }
   .one .main2 .aboutContainer .paragraphs {
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     letter-spacing: 3px;
+    line-height: 2;
   }
   .one .main2 .aboutContainer .aboutMeBox {
+    max-width: 350px;
     display: flex;
     flex-direction: column;
-    margin: auto 0;
+    margin: auto;
   }
   .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
-    font-size: 3vh;
+    font-size: 2vh;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
     font-size: 2vh;
-    line-height: 2;
+    line-height: 2.5;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 8em;
+    padding: 0.1em 0;
   }
   .one .main2 .aboutContainer .myJourneyBox {
-    margin: auto 0;
+    margin: auto;
+    max-width: 400px;
   }
   .one .main2 .aboutContainer .myJourneyBox #myJourneySection {
     display: flex;
   }
   .one .main2 .aboutContainer .myJourneyBox #myJourneySection #spanHungry {
     text-align: left;
-    font-size: 3vh;
+    font-size: 2vh;
     width: 100%;
   }
   .one .banner {
     margin-top: 3em;
   }
-  .one .main3 .portfolio .portfolioHeading {
-    font-size: 10vw;
+  .one .main3 {
+    width: 85vw;
   }
 }
 @media screen and (min-width: 1280px) {
+  .one {
+    gap: 0;
+  }
   .one main {
-    margin: 0 auto;
     height: 100vh;
-    justify-content: center;
     width: 25vw;
   }
   .one main .headingContainer {
-    margin: 1.5em;
+    margin: 1em 0;
   }
   .one main .headingContainer .mainHeading .firstName {
     font-size: 10.8vh;
@@ -1028,65 +1042,78 @@ body body::-webkit-scrollbar {
   }
   .one .main2 {
     height: 100vh;
-    width: 30vw;
+    max-width: 30vw;
   }
   .one .main2 .aboutContainer {
-    height: 100%;
     display: grid;
-    margin: 3em 0;
+    height: 100%;
+    gap: 0;
+    margin: 0em auto;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
     font-size: 3.5vh;
   }
   .one .main2 .aboutContainer .paragraphs {
-    font-size: 1.8vh;
+    font-size: 2vh;
+    line-height: 1.5;
   }
   .one .main2 .aboutContainer .aboutMeBox {
-    padding: 1em;
+    max-width: 300px;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
     line-height: 1.7;
-    font-size: 2.8vh;
+    font-size: 2.5vh;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 7em;
+    font-size: 6em;
   }
   .one .main2 .aboutContainer .myJourneyBox {
-    padding: 1em;
+    max-width: 350px;
   }
   .one .main2 .aboutContainer .myJourneyBox #myJourneySection #spanHungry {
-    font-size: 2vw;
+    font-size: 1em;
     width: 100%;
   }
   .one .banner {
     margin: 0.5em auto;
   }
   .one .main3 {
-    width: 30vw;
+    width: 34.5vw;
     height: 100vh;
+  }
+  .one .main3 .portfolioContainer {
+    width: 90%;
+    margin: 1.25em auto;
   }
 }
 @media screen and (min-width: 1500px) {
   .one {
-    gap: 0;
+    max-width: 1900px;
   }
-  .one main {
-    max-width: 30vw;
+  .one main .headingContainer .mainHeading .firstName {
+    font-size: 10vh;
   }
-  .one .main2 .aboutContainer .paragraphs {
-    font-size: 2vh;
-    line-height: 1.5;
+  .one main .headingContainer .mainHeading .lastName {
+    font-size: 17.5vh;
+  }
+  .one .main2 .aboutContainer {
+    margin: 0.5em auto;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
-    font-size: 1vh;
+    font-size: 4vh;
+  }
+  .one .main2 .aboutContainer .paragraphs {
+    font-size: 2.2vh;
+  }
+  .one .main2 .aboutContainer .aboutMeBox {
+    max-width: 400px;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
-    font-size: 3vh;
-    width: 12em;
+    font-size: 0.9em;
   }
-  .one .main3 .portfolioHeading {
-    font-size: large;
+  .one .main2 .aboutContainer .myJourneyBox {
+    max-width: 500px;
   }
 }
 * {

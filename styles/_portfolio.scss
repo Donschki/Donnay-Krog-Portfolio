@@ -6,7 +6,16 @@
 
 .main3 {
  width: 100%;
- margin: auto;
+ height: 100vh;
+
+ .portfolioContainer {
+  height: 100%;
+  width: 100%;
+  margin: 2em auto ;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+
 .portfolio {//               PORTFOLIO
  display: flex;
  transform: skewY(-5deg);
@@ -66,5 +75,5 @@
  transition: all 0.5s;
 }}
 }
-
+}
 
