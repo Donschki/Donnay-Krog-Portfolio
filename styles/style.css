@@ -422,25 +422,25 @@ body body::-webkit-scrollbar {
   top: -10px;
   left: 0;
 }
-.main2 .socialIconContainer {
+.main2 .aboutContainer .socialIconContainer {
   display: grid;
 }
-.main2 .socialIconContainer .iconBar {
+.main2 .aboutContainer .socialIconContainer .iconBar {
   display: flex;
 }
-.main2 .socialIconContainer .iconBar .socialIcons {
+.main2 .aboutContainer .socialIconContainer .iconBar .socialIcons {
   padding: 0.5em;
 }
-.main2 .socialIconContainer .iconBar #instagramIcon {
+.main2 .aboutContainer .socialIconContainer .iconBar #instagramIcon {
   fill: #d9524e;
 }
-.main2 .socialIconContainer .iconBar #facebookIcon {
+.main2 .aboutContainer .socialIconContainer .iconBar #facebookIcon {
   fill: #2da8d8;
 }
-.main2 .socialIconContainer .iconBar #resumeIcon {
+.main2 .aboutContainer .socialIconContainer .iconBar #resumeIcon {
   fill: whitesmoke;
 }
-.main2 .socialIconContainer .iconBar #linkedInIcon {
+.main2 .aboutContainer .socialIconContainer .iconBar #linkedInIcon {
   fill: #0a66c2;
 }
 
@@ -727,21 +727,23 @@ body body::-webkit-scrollbar {
 }
 
 #facebookIcon {
-  -webkit-animation: facebook 1.5s infinite alternate;
-          animation: facebook 1.5s infinite alternate;
+  animation-name: facebook;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  -webkit-animation-name: facebook;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
 }
-@-webkit-keyframes facebook {
-  0% {
-    fill: #2da8d8 205, 80%, 23%;
-  }
+@keyframes facebook {
   100% {
     fill: rgb(58, 55, 55);
   }
 }
-@keyframes facebook {
-  0% {
-    fill: #2da8d8 205, 80%, 23%;
-  }
+@-webkit-keyframes facebook {
   100% {
     fill: rgb(58, 55, 55);
   }
@@ -1118,6 +1120,7 @@ body body::-webkit-scrollbar {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: solid 1px black;
 }
 
 html {

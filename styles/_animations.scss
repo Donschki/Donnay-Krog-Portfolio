@@ -238,14 +238,28 @@ h1 {
 
 
 #facebookIcon {
-  animation: facebook 1.5s infinite alternate;
   
+  animation-name: facebook;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  
+  -webkit-animation-name: facebook;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+
   @keyframes facebook {
-  0% {fill: $blue(205, 80%, 23%);}
   100% {fill: rgb(58, 55, 55);}
-
-  }}
-
+  }
+  
+  @-webkit-keyframes facebook {
+  100% {fill: rgb(58, 55, 55);}
+  }
+}
+  
 #instagramIcon {
   animation: instagram 1.5s infinite alternate;
   animation-delay: 1s;
@@ -264,7 +278,9 @@ h1 {
   0%{fill: #0a66c2(205, 80%, 23%);}
   100% {fill: rgb(58, 55, 55);};
 
-}}
+}
+
+}
 
 #resumeIcon {
   animation: resume 1.5s infinite alternate;
