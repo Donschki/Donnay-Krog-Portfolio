@@ -1120,7 +1120,6 @@ body body::-webkit-scrollbar {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: solid 1px black;
 }
 
 html {
