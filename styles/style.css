@@ -424,9 +424,8 @@ body body::-webkit-scrollbar {
 }
 .main2 .aboutContainer .iconBar {
   display: flex;
-}
-.main2 .aboutContainer .iconBar .socialIcons {
-  padding: 0.5em;
+  flex-direction: row;
+  width: 100%;
 }
 .main2 .aboutContainer .iconBar #instagramIcon {
   fill: #d9524e;

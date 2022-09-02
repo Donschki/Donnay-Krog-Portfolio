@@ -156,10 +156,9 @@
  
   .iconBar {
    display: flex;
+   flex-direction: row;
+   width: 100%;
   
-   .socialIcons {
-   padding: 0.5em;
-   }
   
   #instagramIcon {
     fill: $salmon;
