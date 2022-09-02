@@ -153,8 +153,6 @@
   left: 0;
  }
 
- .socialIconContainer {
-   display: grid;
  
   .iconBar {
    display: flex;
@@ -169,6 +167,7 @@
   
   #facebookIcon {
     fill: $blue;
+    -webkit-fill: $blue
   }
   
   #resumeIcon {
@@ -179,6 +178,5 @@
     fill: #0a66c2;
   }}}
  
- }
 }
 

@@ -237,30 +237,17 @@ h1 {
 }}
 
 
-#facebookIcon {
+#facebook {
+  animation: facebook 1.5s infinite alternate;
+  animation-delay: 0.5s;
   
-  animation-name: facebook;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  
-  -webkit-animation-name: facebook;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
-
   @keyframes facebook {
+  0% {fill: $blue(205, 80%, 23%);}
   100% {fill: rgb(58, 55, 55);}
   }
-  
-  @-webkit-keyframes facebook {
-  100% {fill: rgb(58, 55, 55);}
   }
-}
-  
-#instagramIcon {
+
+#instagram {
   animation: instagram 1.5s infinite alternate;
   animation-delay: 1s;
   
@@ -269,7 +256,7 @@ h1 {
   100% {fill: rgb(58, 55, 55);}
 }}
 
-#linkedInIcon {
+#linkedIn {
   animation: linkedIn 1.5s infinite alternate;
   animation-delay: 1.5s;
  
@@ -282,7 +269,7 @@ h1 {
 
 }
 
-#resumeIcon {
+#resume {
   animation: resume 1.5s infinite alternate;
   animation-delay: 2s;
   

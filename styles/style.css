@@ -422,25 +422,23 @@ body body::-webkit-scrollbar {
   top: -10px;
   left: 0;
 }
-.main2 .aboutContainer .socialIconContainer {
-  display: grid;
-}
-.main2 .aboutContainer .socialIconContainer .iconBar {
+.main2 .aboutContainer .iconBar {
   display: flex;
 }
-.main2 .aboutContainer .socialIconContainer .iconBar .socialIcons {
+.main2 .aboutContainer .iconBar .socialIcons {
   padding: 0.5em;
 }
-.main2 .aboutContainer .socialIconContainer .iconBar #instagramIcon {
+.main2 .aboutContainer .iconBar #instagramIcon {
   fill: #d9524e;
 }
-.main2 .aboutContainer .socialIconContainer .iconBar #facebookIcon {
+.main2 .aboutContainer .iconBar #facebookIcon {
   fill: #2da8d8;
+  -webkit-fill: #2da8d8;
 }
-.main2 .aboutContainer .socialIconContainer .iconBar #resumeIcon {
+.main2 .aboutContainer .iconBar #resumeIcon {
   fill: whitesmoke;
 }
-.main2 .aboutContainer .socialIconContainer .iconBar #linkedInIcon {
+.main2 .aboutContainer .iconBar #linkedInIcon {
   fill: #0a66c2;
 }
 
@@ -726,30 +724,30 @@ body body::-webkit-scrollbar {
   }
 }
 
-#facebookIcon {
-  animation-name: facebook;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-  -webkit-animation-name: facebook;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
+#facebook {
+  -webkit-animation: facebook 1.5s infinite alternate;
+          animation: facebook 1.5s infinite alternate;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
-@keyframes facebook {
+@-webkit-keyframes facebook {
+  0% {
+    fill: #2da8d8 205, 80%, 23%;
+  }
   100% {
     fill: rgb(58, 55, 55);
   }
 }
-@-webkit-keyframes facebook {
+@keyframes facebook {
+  0% {
+    fill: #2da8d8 205, 80%, 23%;
+  }
   100% {
     fill: rgb(58, 55, 55);
   }
 }
 
-#instagramIcon {
+#instagram {
   -webkit-animation: instagram 1.5s infinite alternate;
           animation: instagram 1.5s infinite alternate;
   -webkit-animation-delay: 1s;
@@ -772,7 +770,7 @@ body body::-webkit-scrollbar {
   }
 }
 
-#linkedInIcon {
+#linkedIn {
   -webkit-animation: linkedIn 1.5s infinite alternate;
           animation: linkedIn 1.5s infinite alternate;
   -webkit-animation-delay: 1.5s;
@@ -795,7 +793,7 @@ body body::-webkit-scrollbar {
   }
 }
 
-#resumeIcon {
+#resume {
   -webkit-animation: resume 1.5s infinite alternate;
           animation: resume 1.5s infinite alternate;
   -webkit-animation-delay: 2s;
