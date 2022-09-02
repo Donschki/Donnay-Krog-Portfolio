@@ -2,7 +2,7 @@
 
 .aboutContainer {
   display: grid;
-  gap: 3em;
+  gap: 2em;
   justify-content: center;
 
 .paragraphHeadings {//                            PARAGRAPH_HEADINGS
@@ -157,8 +157,8 @@
    display: flex;
    flex-direction: row;
    width: 100%;
-   height: 100%;
-  
+   height: 50%;
+   justify-content: space-around;
   
   #instagramIcon {
     fill: $salmon;

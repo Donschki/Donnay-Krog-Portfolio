@@ -291,7 +291,7 @@ body body::-webkit-scrollbar {
 
 .main2 .aboutContainer {
   display: grid;
-  gap: 3em;
+  gap: 2em;
   justify-content: center;
 }
 .main2 .aboutContainer .paragraphHeadings {
@@ -426,7 +426,8 @@ body body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  height: 50%;
+  justify-content: space-around;
 }
 .main2 .aboutContainer .iconBar #instagramIcon {
   fill: #d9524e;
@@ -724,13 +725,6 @@ body body::-webkit-scrollbar {
   }
 }
 
-#facebook,
-#instagram,
-#linkedIn,
-#resume {
-  padding: 1em;
-}
-
 #facebook {
   -webkit-animation: facebook 1.5s infinite alternate;
           animation: facebook 1.5s infinite alternate;
@@ -907,7 +901,6 @@ body body::-webkit-scrollbar {
 .lightMode {
   background: rgb(211, 211, 211);
   transition: all 0.5s ease;
-  color: rgb(27, 27, 27);
 }
 .lightMode span {
   transition: 0.5s;
@@ -1031,9 +1024,10 @@ body body::-webkit-scrollbar {
 @media screen and (min-width: 1280px) {
   .one {
     gap: 0;
+    height: 100vh;
+    overflow: hidden;
   }
   .one main {
-    height: 100vh;
     width: 25vw;
   }
   .one main .headingContainer {
@@ -1046,14 +1040,12 @@ body body::-webkit-scrollbar {
     font-size: 15vh;
   }
   .one .main2 {
-    height: 100vh;
     max-width: 30vw;
   }
   .one .main2 .aboutContainer {
     display: grid;
     height: 100%;
-    gap: 0;
-    margin: 0em auto;
+    margin: 2em auto;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
     font-size: 3.5vh;
@@ -1085,7 +1077,6 @@ body body::-webkit-scrollbar {
   }
   .one .main3 {
     width: 34.5vw;
-    height: 100vh;
   }
   .one .main3 .portfolioContainer {
     width: 90%;
@@ -1096,6 +1087,9 @@ body body::-webkit-scrollbar {
   .one {
     max-width: 1900px;
   }
+  .one main {
+    max-width: 300px;
+  }
   .one main .headingContainer .mainHeading .firstName {
     font-size: 10vh;
   }
@@ -1103,7 +1097,7 @@ body body::-webkit-scrollbar {
     font-size: 17.5vh;
   }
   .one .main2 .aboutContainer {
-    margin: 0.5em auto;
+    margin: 1.5em auto;
   }
   .one .main2 .aboutContainer .paragraphHeadings {
     font-size: 4vh;

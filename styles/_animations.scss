@@ -237,13 +237,6 @@ h1 {
 }}
 
 
-#facebook, 
-#instagram,
-#linkedIn,
-#resume {
-  padding: 1em;
-}
-
 #facebook {
   animation: facebook 1.5s infinite alternate;
   animation-delay: 0.5s;
@@ -259,7 +252,7 @@ h1 {
   animation-delay: 1s;
   
   @keyframes instagram {
-  0% {fill: $salmon;}
+  0% {fill: #D9524EFF;}
   100% {fill: rgb(58, 55, 55);}
 }}
 

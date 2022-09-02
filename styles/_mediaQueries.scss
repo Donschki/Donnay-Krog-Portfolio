@@ -161,9 +161,10 @@
   
 .one {
  gap: 0;
- 
+ height: 100vh;
+ overflow: hidden;
+
  main {
-  height: 100vh;
   width: 25vw;
 
  .headingContainer {
@@ -181,15 +182,14 @@
 }}
 }
 
+
  .main2 {
-  height: 100vh;
   max-width: 30vw;
 
 .aboutContainer {
   display: grid;
   height: 100%;
-  gap: 0;
-  margin: 0em auto;
+  margin: 2em auto;
 
  
  .paragraphHeadings {
@@ -229,15 +229,16 @@
     } 
   }
 }
+
  }
 
 .banner {
   margin: 0.5em auto ;
 }
 
+
  .main3 {
      width: 34.5vw;
-     height: 100vh;
 
      .portfolioContainer {
      width: 90%;
@@ -254,9 +255,9 @@
   max-width: 1900px;
 
  main {
+  max-width: 300px;
 
   .headingContainer {
-
   .mainHeading {
 
     .firstName {
@@ -272,7 +273,7 @@
 .main2 {
 
  .aboutContainer { 
-  margin: 0.5em auto ;
+  margin: 1.5em auto ;
 
   .paragraphHeadings {
     font-size: 4vh;
