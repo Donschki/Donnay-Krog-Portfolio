@@ -24,6 +24,6 @@ $email_body = "User Name: $name.\n".
 
                   mail($to, $email_subject, $email_body, $headers);
 
-                  header("Location: index.html");
+                  header("Location: contactForm.html");
 
 ?>
