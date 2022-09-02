@@ -729,8 +729,6 @@ body body::-webkit-scrollbar {
 #facebookIcon {
   -webkit-animation: facebook 1.5s infinite alternate;
           animation: facebook 1.5s infinite alternate;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
 }
 @-webkit-keyframes facebook {
   0% {

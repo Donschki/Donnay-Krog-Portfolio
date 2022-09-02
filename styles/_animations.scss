@@ -239,13 +239,12 @@ h1 {
 
 #facebookIcon {
   animation: facebook 1.5s infinite alternate;
-  animation-delay: 0.5s;
   
   @keyframes facebook {
   0% {fill: $blue(205, 80%, 23%);}
   100% {fill: rgb(58, 55, 55);}
-  }
-  }
+
+  }}
 
 #instagramIcon {
   animation: instagram 1.5s infinite alternate;
@@ -265,9 +264,7 @@ h1 {
   0%{fill: #0a66c2(205, 80%, 23%);}
   100% {fill: rgb(58, 55, 55);};
 
-}
-
-}
+}}
 
 #resumeIcon {
   animation: resume 1.5s infinite alternate;
