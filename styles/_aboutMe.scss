@@ -1,9 +1,9 @@
 .main2 {
 
 .aboutContainer {
-  display: grid;
-  gap: 2em;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 
 .paragraphHeadings {//                            PARAGRAPH_HEADINGS
     font-size: 12vw;
@@ -157,24 +157,10 @@
    display: flex;
    flex-direction: row;
    width: 100%;
-   height: 50%;
+   height: 100%;
    justify-content: space-around;
+   align-items: center;
   
-  #instagramIcon {
-    fill: $salmon;
-  }
-  
-  #facebookIcon {
-    fill: $blue;
-    -webkit-fill: $blue
-  }
-  
-  #resumeIcon {
-    fill: whitesmoke;
-  }
-  
-  #linkedInIcon {
-    fill: #0a66c2;
   }}}
-}
+
 

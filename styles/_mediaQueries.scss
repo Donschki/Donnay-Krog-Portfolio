@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 500px) {
 
  .one {
   max-width: 450px;
@@ -15,8 +15,7 @@
 
 .main2 {
 
-  .aboutContainer {
-
+.aboutContainer {
    .paragraphHeadings {
      font-size: 1.5em;
    }
@@ -51,7 +50,6 @@
    }
 }}
 
-
 .main3 {
   .portfolioContainer {
     width: 100%;
@@ -61,7 +59,7 @@
 }
 }
 
-@media screen and (min-width: 768px) { 
+@media only screen and (min-width: 768px) { 
 
   .one {
    max-width: 100vw;
@@ -93,7 +91,9 @@
   height: 100vh;
 
 .aboutContainer {
-    margin: 2em auto;
+    margin: 1em auto;
+    gap: 0;
+
 
    display: grid;
  
@@ -157,7 +157,7 @@
 }
 }}
 
-@media screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
   
 .one {
  gap: 0;
@@ -188,9 +188,6 @@
 
 .aboutContainer {
   display: grid;
-  height: 100%;
-  margin: 2em auto;
-
  
  .paragraphHeadings {
   font-size: 3.5vh;
@@ -249,7 +246,7 @@
   
 }}
 
-@media screen and (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
 
  .one {
   max-width: 1900px;
@@ -293,6 +290,7 @@
       }
     }
   } 
+
 .myJourneyBox {
   max-width: 500px;
 }
