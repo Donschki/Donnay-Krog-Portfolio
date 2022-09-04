@@ -428,9 +428,9 @@ body body::-webkit-scrollbar {
 .main3 .portfolioContainer .downWithDough3D {
   transform: skewY(-5deg);
   transition: all 0.2s;
-  width: 10em;
-  height: 10em;
-  background-image: url("/Donnay-Krog-Portfolio/Photos/dwdHomePage.jpg");
+  width: 20em;
+  height: 20em;
+  background-image: url("/Photos/dwdHomePage.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
