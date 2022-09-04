@@ -8,7 +8,6 @@ header .toggleLight {
   cursor: pointer;
 }
 header nav {
-  padding: 0.3em;
   display: grid;
   flex-direction: column;
   position: fixed;
@@ -16,6 +15,7 @@ header nav {
   background: linear-gradient();
   top: 0;
   left: 0;
+  width: 3em;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 0 3px 1px black;
@@ -23,6 +23,7 @@ header nav {
 header nav .toggleLight {
   width: 100%;
   height: 100%;
+  fill: white;
 }
 header .hamburgerMenu {
   display: flex;
@@ -92,12 +93,10 @@ header #navList a:hover {
 }
 
 .one {
-  max-width: 90vw;
   flex-direction: column;
   margin: auto;
   display: flex;
   position: relative;
-  left: 0.5em;
 }
 .one main {
   display: flex;
@@ -157,6 +156,7 @@ header #navList a:hover {
 }
 .one .main2 {
   display: flex;
+  width: 100%;
 }
 
 .main3 {
@@ -164,6 +164,7 @@ header #navList a:hover {
   flex-direction: column;
   height: 100vh;
   margin: 0 auto;
+  width: 100%;
 }
 .main3 .banner {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
@@ -176,32 +177,10 @@ header #navList a:hover {
   scrollbar-width: none;
 }
 .main3 .banner .slidingBanner h1 {
-  width: 30em;
+  width: 25em;
 }
 .main3 .banner::-webkit-scrollbar {
   display: none;
-}
-.main3 .banner::before {
-  content: "";
-  height: 100%;
-  width: 20px;
-  left: -14px;
-  top: 0;
-  position: absolute;
-  transform: skewY(35deg);
-  background-color: #d9524e;
-  transform-origin: right;
-}
-.main3 .banner::after {
-  content: "";
-  height: 10px;
-  width: 100%;
-  position: absolute;
-  transform: skewX(55deg);
-  background-color: #2da8d8;
-  transform-origin: bottom;
-  top: -10px;
-  left: 0;
 }
 
 /* SIDEBAR START */
@@ -441,27 +420,23 @@ body body::-webkit-scrollbar {
   margin: 2em auto;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 2em;
+  align-items: center;
 }
-.main3 .portfolioContainer .portfolio {
-  display: flex;
-  transform: skewY(-5deg);
-  flex-direction: column;
-  box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-}
-.main3 .portfolioContainer .portfolio .downWithDough3D {
+.main3 .portfolioContainer .downWithDough3D {
   transform: skewY(-5deg);
   transition: all 0.2s;
+  width: 10em;
+  height: 10em;
+  background-image: url("/Photos/dwdHomePage.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-.main3 .portfolioContainer .portfolio .downWithDough3D img {
-  width: 100%;
-  transition: all 0.2s;
-}
-.main3 .portfolioContainer .portfolio .downWithDough3D img:hover {
+.main3 .portfolioContainer .downWithDough3D:hover {
   transition: all 0.3s;
-  width: 108%;
 }
-.main3 .portfolioContainer .portfolio .downWithDough3D::before {
+.main3 .portfolioContainer .downWithDough3D::before {
   content: "";
   height: 100%;
   width: 14.4px;
@@ -469,28 +444,30 @@ body body::-webkit-scrollbar {
   top: 0;
   position: absolute;
   transform: skewY(35deg);
-  background-color: #d9524e;
+  background-color: #2da8d8;
   transform-origin: right;
+  transition: 0.3s;
 }
-.main3 .portfolioContainer .portfolio .downWithDough3D::after {
+.main3 .portfolioContainer .downWithDough3D::after {
   content: "";
   height: 10px;
   width: 100%;
   position: absolute;
   transform: skewX(55deg);
-  background-color: #2da8d8;
+  background-color: #d9524e;
   transform-origin: bottom;
   top: -10px;
   left: 0;
+  transition: all 0.3s;
 }
-.main3 .portfolioContainer .portfolio .downWithDough3D:hover::before {
+.main3 .portfolioContainer .downWithDough3D:hover::before {
   color: black;
-  transform: rotateY(160deg) translateZ(-6em) skewY(30deg);
+  transform: rotateY(160deg) translateZ(-5em) skewY(30deg);
   transition: all 0.5s;
 }
-.main3 .portfolioContainer .portfolio .downWithDough3D:hover::after {
+.main3 .portfolioContainer .downWithDough3D:hover::after {
   color: black;
-  transform: rotateX(130deg) translateZ(4em) skewX(30deg) translateX(-1em);
+  transform: rotateX(130deg) translateZ(2em) skewX(30deg) translateX(0em);
   transition: all 0.5s;
 }
 
@@ -896,11 +873,10 @@ body body::-webkit-scrollbar {
 }
 .lightMode p {
   transition: 0.5s;
-  color: rgb(17, 16, 16);
 }
 .lightMode .toggleLight {
   transition: all 0.5s ease;
-  fill: whitesmoke;
+  fill: black;
 }
 
 @media only screen and (min-width: 500px) {
@@ -1015,6 +991,7 @@ body body::-webkit-scrollbar {
     gap: 0;
     height: 100vh;
     overflow: hidden;
+    width: 100vw;
   }
   .one main {
     width: 25vw;
@@ -1066,8 +1043,8 @@ body body::-webkit-scrollbar {
     width: 34.5vw;
   }
   .one .main3 .portfolioContainer {
-    width: 90%;
-    margin: 1.25em auto;
+    width: 100%;
+    margin: 1em auto;
   }
 }
 @media only screen and (min-width: 1500px) {
@@ -1108,11 +1085,6 @@ body body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(90deg, rgb(68, 241, 175) 0%, rgb(68, 241, 175) 30%, lightblue 30%, lightblue 100%);
-  width: 100%;
-}
-
 .contactUs {
   width: 80%;
   position: relative;
@@ -1144,7 +1116,6 @@ body {
 
 .contact {
   padding: 40px;
-  background-color: white;
 }
 
 .box {
@@ -1206,7 +1177,7 @@ body {
 }
 
 .inputBox input[type=submit] {
-  background: rgb(255, 87, 115);
+  background: #d9524e;
   border: none;
   font-size: 1.1em;
   font-weight: 500;
@@ -1269,9 +1240,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  body {
-    background: lightblue;
-  }
   .contactUs {
     padding: 20px;
   }

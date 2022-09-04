@@ -1,11 +1,9 @@
 .one {
- max-width: 90vw;
  flex-direction: column;
  margin: auto;
  display: flex;
  position: relative;
- left: 0.5em;
-
+ 
 main {
  display: flex;
  flex-direction: column;
@@ -14,7 +12,7 @@ main {
  margin: 0 auto;
  gap: 3em;
 
-.headingContainer {
+ .headingContainer {
   height: 90%;
   display: flex;
   margin: auto 0;
@@ -73,6 +71,7 @@ main {
 
 .main2 {
   display: flex;
+  width: 100%;
 }
 }
 
@@ -81,6 +80,7 @@ main {
   flex-direction: column;
   height: 100vh;
     margin: 0 auto;
+    width: 100%;
 
 .banner {
   @include boxShadow;
@@ -94,7 +94,7 @@ main {
   scrollbar-width: none;
 
   .slidingBanner h1 {
-    width: 30em;
+    width: 25em;
   }
 
 }
@@ -103,29 +103,6 @@ main {
   display: none;
 }
 
-.banner::before {
-  content: '';
-  height: 100%;
-  width: 20px;
-  left: -14px;
-  top: 0;
-  position: absolute;
-  transform: skewY(35deg);
-  background-color: $salmon;
-  transform-origin: right ;
- }
-
- .banner::after {
-  content: '';
-  height: 10px;
-  width: 100%;
-  position: absolute;
-  transform: skewX(55deg);
-  background-color: $blue;
-  transform-origin: bottom;
-  top: -10px;
-  left: 0;
- }
 
 }
 

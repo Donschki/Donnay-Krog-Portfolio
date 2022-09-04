@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background:  linear-gradient(90deg, rgb(68, 241, 175)0%, rgb(68, 241, 175) 30%, lightblue 30%, lightblue 100%);
-    width: 100%;
-}
 
 .contactUs {
     width: 80%;
@@ -41,7 +37,6 @@ body {
 
 .contact {
     padding: 40px;
-    background-color: white;
 }
 
 .box {
@@ -60,8 +55,7 @@ body {
     margin-bottom: 10px;
 }
 
-// Form
-
+/////////////////////////// Form
 .formBox {
     position: relative;
     width: 100%;
@@ -107,7 +101,7 @@ body {
 }
 
 .inputBox input[type="submit"] {
-    background: rgb(255, 87, 115);
+    background: $salmon;
     border: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -121,7 +115,7 @@ body {
     color: #999;
 }
 
-// info
+//////////////////////////////// info
 .info {
     background-color: #4e56fc;
 }
@@ -164,9 +158,6 @@ body {
 
 // Responsive Layout
 @media (max-width:991px) {
-    body {
-        background: lightblue;
-    }
 
     .contactUs {
         padding: 20px;

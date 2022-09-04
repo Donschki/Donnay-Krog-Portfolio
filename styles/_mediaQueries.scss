@@ -163,6 +163,7 @@
  gap: 0;
  height: 100vh;
  overflow: hidden;
+ width: 100vw;
 
  main {
   width: 25vw;
@@ -181,7 +182,6 @@
   }
 }}
 }
-
 
  .main2 {
   max-width: 30vw;
@@ -227,19 +227,18 @@
   }
 }
 
- }
-
-.banner {
-  margin: 0.5em auto ;
 }
 
+ .banner {
+  margin: 0.5em auto ;
+}
 
  .main3 {
      width: 34.5vw;
 
      .portfolioContainer {
-     width: 90%;
-     margin: 1.25em auto;
+     width: 100%;
+     margin: 1em auto;
 
      }
 }

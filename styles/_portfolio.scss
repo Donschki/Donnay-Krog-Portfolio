@@ -1,8 +1,4 @@
-@mixin flexCenter {
- display: flex;
- justify-content: center;
- align-items: center;
-}
+
 
 .main3 {
  width: 100%;
@@ -14,13 +10,8 @@
   margin: 2em auto ;
   display: flex;
   flex-direction: column;
-  gap: 3em;
-
-.portfolio {//               PORTFOLIO
- display: flex;
- transform: skewY(-5deg);
- flex-direction: column;
- @include boxShadow;
+  gap: 2em;
+  align-items: center;
 
 .downWithDough3D {
  -moz-transform: skewY(-5deg);
@@ -28,15 +19,18 @@
  transform: skewY(-5deg);
  transition: all 0.2s;
 
-     img {
-      width: 100%;
-      transition: all 0.2s;
-     }
+ width: 10em;
+ height: 10em;
+
+ background-image: url('/Photos/dwdHomePage.jpg');
+ background-attachment: fixed;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+  
 }
 
-.downWithDough3D img:hover {
+.downWithDough3D:hover {
  transition: all 0.3s;
- width: 108%;
 }
 
 .downWithDough3D::before {
@@ -47,8 +41,9 @@
   top: 0;
   position: absolute;
   transform: skewY(35deg);
-  background-color: $salmon;
+  background-color: $blue;
   transform-origin: right ;
+  transition: 0.3s;
  }
 
  .downWithDough3D::after {
@@ -57,23 +52,23 @@
   width: 100%;
   position: absolute;
   transform: skewX(55deg);
-  background-color: $blue;
+  background-color: $salmon;
   transform-origin: bottom;
   top: -10px;
   left: 0;
+  transition: all 0.3s;
  }
 
 .downWithDough3D:hover::before {
  color: black;
- transform: rotateY(160deg) translateZ(-6em) skewY(30deg);
+ transform: rotateY(160deg) translateZ(-5em) skewY(30deg);
  transition: all 0.5s;
 }
 
 .downWithDough3D:hover::after {
  color: black;
- transform: rotateX(130deg) translateZ(4em) skewX(30deg) translateX(-1em);
+ transform: rotateX(130deg) translateZ(2em) skewX(30deg) translateX(0em);
  transition: all 0.5s;
 }}
-}
 }
 
