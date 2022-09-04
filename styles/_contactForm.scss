@@ -35,10 +35,6 @@
     grid-area: map;
 }
 
-.contact {
-    padding: 40px;
-}
-
 .box {
     position: relative;
     display: grid;
@@ -57,9 +53,7 @@
 
 /////////////////////////// Form
 .formBox {
-    position: relative;
     width: 100%;
-    padding: 30px;
 }
 
 .formBox .row50 {
@@ -157,13 +151,13 @@
 }
 
 // Responsive Layout
-@media (max-width:991px) {
+@media (max-width: 991px) {
 
-    .contactUs {
+.contactUs {
         padding: 20px;
-    }
+}
 
-    .box {
+.box {
         position: relative;
         display: grid;
         grid-template-columns: 1fr;
