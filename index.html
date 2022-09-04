@@ -15,7 +15,7 @@
 
 <body>
 
-    <header>        <!--HEADER -->
+    <header>           <!--HEADER -->
 
          <div class="sideBar "><!------------- SIDE_BAR -->
            <ul class="hoverMenu change">
@@ -146,55 +146,40 @@
 
     </div>
  </div>
-
-
            
-                                        <!--FORM-->
+                      <!--FORM-->
     <div class="box">
         <div class="contact from">
             <h3>Send a message</h3>
 
-         <form method="post" action="contactFormHandler.php">
-             <div class="formBox">
-                 <div class="row50">
-                        
-                        <div class="inputBox">
-                            <span>First Name</span>
-                            <input name="name" type="text" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div class="inputBox">
-                            <span>last Name</span>
-                            <input name="lastName" type="text" placeholder="Your Last Name" required>
-                        </div>
-                 </div>
-                    <div class="row50">
-                        <div class="inputBox">
-                            <span>Email</span>
-                            <input name="email" type="text" placeholder="Your Email" required>
-                        </div>
-
-                        <div class="inputBox">
-                            <span>Mobile</span>
-                            <input name="mobile" type="text" placeholder="+91 987 654 3210">
-                        </div>
-                    </div>
-
-                    <div class="row100">
-                        <div class="inputBox">
-                            <span>Message</span>
-                            <textarea name="message" placeholder="Write your message here" required></textarea>
-                        </div>
-                    </div>   
-
-                    <div class="row100">
-                        <div class="inputBox">
-                            <input type="submit" value="Send">
-                        </div>
-                    </div> 
-            </div>
-        </div>
-    </form>
+            <form action="contact.php" method="post">
+                <div class="elem-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email">Your E-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label for="department-selection">Choose Concerned Department</label>
+                  <select id="department-selection" name="concerned_department" required>
+                      <option value="">Select a Department</option>
+                      <option value="billing">Billing</option>
+                      <option value="marketing">Marketing</option>
+                      <option value="technical support">Technical Support</option>
+                  </select>
+                </div>
+                <div class="elem-group">
+                  <label for="title">Reason For Contacting Us</label>
+                  <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+                </div>
+                <div class="elem-group">
+                  <label for="message">Write your message</label>
+                  <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
 
         <!-- info box-->
         <div class="contact info">
