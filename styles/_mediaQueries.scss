@@ -67,9 +67,9 @@
    flex-wrap: wrap;
 
  main {
- width: 35vw;
- margin: auto 4em;
- 
+ width: 50vw;
+ padding: 0 3em; 
+
 .headingContainer {
  margin: 1em 0;
  height: 100vh;
@@ -151,10 +151,7 @@
 .banner {
   margin-top: 3em;
 }
-
-.main3 {
-  width: 85vw;
-}
+ 
 }}
 
 @media only screen and (min-width: 1280px) {
@@ -162,7 +159,6 @@
 .one {
  gap: 0;
  overflow: hidden;
- width: 100vw;
 
  main {
   width: 25vw;
@@ -204,12 +200,12 @@
 
       .initial {
         letter-spacing: 8px;
-        line-height: 1.7;
+        line-height: 2;
         font-size: 2.5vh;
       }
 
       .initial::first-letter {
-        font-size: 6em;
+        font-size: 6.5em;
       }
     } 
   }
@@ -250,8 +246,7 @@
   max-width: 1900px;
 
  main {
-  max-width: 300px;
-
+max-width: 400px;
   .headingContainer {
   .mainHeading {
 
@@ -266,7 +261,7 @@
 }}
 
 .main2 {
-
+  max-width: 500px;
  .aboutContainer { 
   margin: 1.5em auto ;
 
@@ -294,8 +289,10 @@
 }
 
 }}
+ }
 
-
+ .main3 {
+  max-width: 500px;
  }
 }
 

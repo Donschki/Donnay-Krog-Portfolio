@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.contact h3 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 3em;
+}
 
 .contactUs {
     width: 100%;
@@ -45,11 +50,6 @@
     margin-top: 20px;
 }
 
-.contact h3 {
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-    margin-bottom: 10px;
-}
 
 /////////////////////////// Form
 .formBox {
@@ -70,9 +70,9 @@
 
 .inputBox span {
     color: black;
-    margin-top: 10px;
     margin-bottom: 5px;
     font-weight: 500;
+    font-size: 2.2vh;
 }
 
 .inputBox input {
@@ -166,6 +166,8 @@
          "form" 
          "info"
          "map";
+        border: 10px solid black ;
+
 }
 
 .map {

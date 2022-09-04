@@ -2,8 +2,7 @@
  flex-direction: column;
  margin: auto;
  display: flex;
- position: relative;
- 
+ width: 100vw; 
 main {
  display: flex;
  flex-direction: column;
@@ -94,17 +93,16 @@ main {
   .slidingBanner h1 {
     width: 25em;
   }
-
 }
 
 .banner::-webkit-scrollbar {
   display: none;
 }
 
-
 }
 }
 
 .two {
   width: 100%;
+  padding: 0 2em;
 }

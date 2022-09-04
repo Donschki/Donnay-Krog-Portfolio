@@ -96,7 +96,7 @@ header #navList a:hover {
   flex-direction: column;
   margin: auto;
   display: flex;
-  position: relative;
+  width: 100vw;
 }
 .one main {
   display: flex;
@@ -183,6 +183,7 @@ header #navList a:hover {
 
 .two {
   width: 100%;
+  padding: 0 2em;
 }
 
 /* SIDEBAR START */
@@ -410,7 +411,6 @@ body body::-webkit-scrollbar {
   width: 100%;
   height: 100%;
   justify-content: space-around;
-  align-items: center;
 }
 
 .main3 {
@@ -430,7 +430,7 @@ body body::-webkit-scrollbar {
   transition: all 0.2s;
   width: 10em;
   height: 10em;
-  background-image: url("/Photos/dwdHomePage.jpg");
+  background-image: url("/Donnay-Krog-Portfolio/Photos/dwdHomePage.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -921,8 +921,8 @@ body body::-webkit-scrollbar {
     flex-wrap: wrap;
   }
   .one main {
-    width: 35vw;
-    margin: auto 4em;
+    width: 50vw;
+    padding: 0 3em;
   }
   .one main .headingContainer {
     margin: 1em 0;
@@ -984,15 +984,11 @@ body body::-webkit-scrollbar {
   .one .banner {
     margin-top: 3em;
   }
-  .one .main3 {
-    width: 85vw;
-  }
 }
 @media only screen and (min-width: 1280px) {
   .one {
     gap: 0;
     overflow: hidden;
-    width: 100vw;
   }
   .one main {
     width: 25vw;
@@ -1024,11 +1020,11 @@ body body::-webkit-scrollbar {
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
-    line-height: 1.7;
+    line-height: 2;
     font-size: 2.5vh;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
-    font-size: 6em;
+    font-size: 6.5em;
   }
   .one .main2 .aboutContainer .myJourneyBox {
     max-width: 350px;
@@ -1053,13 +1049,16 @@ body body::-webkit-scrollbar {
     max-width: 1900px;
   }
   .one main {
-    max-width: 300px;
+    max-width: 400px;
   }
   .one main .headingContainer .mainHeading .firstName {
     font-size: 10vh;
   }
   .one main .headingContainer .mainHeading .lastName {
     font-size: 17.5vh;
+  }
+  .one .main2 {
+    max-width: 500px;
   }
   .one .main2 .aboutContainer {
     margin: 1.5em auto;
@@ -1079,11 +1078,20 @@ body body::-webkit-scrollbar {
   .one .main2 .aboutContainer .myJourneyBox {
     max-width: 500px;
   }
+  .main3 {
+    max-width: 500px;
+  }
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.contact h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 3em;
 }
 
 .contactUs {
@@ -1125,12 +1133,6 @@ body body::-webkit-scrollbar {
   margin-top: 20px;
 }
 
-.contact h3 {
-  color: rgb(255, 255, 255);
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
 .formBox {
   width: 100%;
 }
@@ -1149,9 +1151,9 @@ body body::-webkit-scrollbar {
 
 .inputBox span {
   color: black;
-  margin-top: 10px;
   margin-bottom: 5px;
   font-weight: 500;
+  font-size: 2.2vh;
 }
 
 .inputBox input {
@@ -1244,6 +1246,7 @@ body body::-webkit-scrollbar {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "form" "info" "map";
+    border: 10px solid black;
   }
   .map {
     padding: 0;
@@ -1262,7 +1265,6 @@ body body::-webkit-scrollbar {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: solid 1px black;
 }
 
 html {
