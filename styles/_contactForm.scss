@@ -1,4 +1,4 @@
-*  {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -69,7 +69,7 @@
 }
 
 .inputBox span {
-    color: white;
+    color: $blue;
     margin-bottom: 5px;
     font-weight: 500;
     font-size: 2.2vh;
@@ -110,10 +110,6 @@
 }
 
 //////////////////////////////// info
-.info {
-    background-color: #4e56fc;
-}
-
 .info .infoBox div {
     display: flex;
     align-items: center;
@@ -164,7 +160,7 @@
 }
 
 .contactfrom{
-    width: 50%;
+    width: 100%;
     border: solid 1px black;
 }
 
@@ -178,7 +174,7 @@
 }
 
 .formBox {
-    width: 50%;
+    width: 100%;
 }
 
 .formBox .row50 {
@@ -190,3 +186,26 @@
 .infoBox {
     width: 100%;
 }}
+
+@media (min-width: 991px) {
+ 
+.two {
+    display: flex;
+    flex-wrap: wrap;
+}
+    .form {
+        width: 50%;
+        grid-gap: 2em;
+    }
+
+    .info {
+        width: 50%;
+    }
+
+    .infoBox {
+        display: grid;
+        gap: 2em;
+    }
+
+    
+}

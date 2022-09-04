@@ -185,7 +185,6 @@ header #navList a:hover {
 
 .two {
   width: 100%;
-  padding: 0 2em;
 }
 
 /* SIDEBAR START */
@@ -371,7 +370,7 @@ body body::-webkit-scrollbar {
   padding-top: 1.5em;
 }
 .main2 .aboutContainer .myJourneyBox #spanHungry {
-  font-size: 5.2vw;
+  font-size: 10vw;
   width: 100%;
 }
 .main2 .aboutContainer .myJourneyBox #myJourneySection {
@@ -1149,7 +1148,7 @@ body body::-webkit-scrollbar {
 }
 
 .inputBox span {
-  color: white;
+  color: #2da8d8;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 2.2vh;
@@ -1193,10 +1192,6 @@ body body::-webkit-scrollbar {
 
 .inputBox ::placeholder {
   color: #999;
-}
-
-.info {
-  background-color: #4e56fc;
 }
 
 .info .infoBox div {
@@ -1244,7 +1239,7 @@ body body::-webkit-scrollbar {
     grid-template-areas: "form" "info" "map";
   }
   .contactfrom {
-    width: 50%;
+    width: 100%;
     border: solid 1px black;
   }
   .contactUs {
@@ -1255,7 +1250,7 @@ body body::-webkit-scrollbar {
     min-height: 300px;
   }
   .formBox {
-    width: 50%;
+    width: 100%;
   }
   .formBox .row50 {
     gap: 0;
@@ -1264,6 +1259,23 @@ body body::-webkit-scrollbar {
   }
   .infoBox {
     width: 100%;
+  }
+}
+@media (min-width: 991px) {
+  .two {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form {
+    width: 50%;
+    grid-gap: 2em;
+  }
+  .info {
+    width: 50%;
+  }
+  .infoBox {
+    display: grid;
+    gap: 2em;
   }
 }
 * {
