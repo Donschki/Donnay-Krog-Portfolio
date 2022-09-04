@@ -97,6 +97,7 @@ header #navList a:hover {
   margin: auto;
   display: flex;
   width: 100vw;
+  padding: 0 1em;
 }
 .one main {
   display: flex;
@@ -163,6 +164,7 @@ header #navList a:hover {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  padding: 0 1em;
 }
 .one .main3 .banner {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
@@ -981,9 +983,6 @@ body body::-webkit-scrollbar {
     font-size: 2vh;
     width: 100%;
   }
-  .one .banner {
-    margin-top: 3em;
-  }
 }
 @media only screen and (min-width: 1280px) {
   .one {
@@ -991,7 +990,7 @@ body body::-webkit-scrollbar {
     overflow: hidden;
   }
   .one main {
-    width: 25vw;
+    width: 30vw;
   }
   .one main .headingContainer {
     margin: 1em 0;
@@ -1150,7 +1149,7 @@ body body::-webkit-scrollbar {
 }
 
 .inputBox span {
-  color: black;
+  color: white;
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 2.2vh;
@@ -1160,7 +1159,7 @@ body body::-webkit-scrollbar {
   padding: 10px;
   font-size: 1.1em;
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid rgb(97, 97, 97);
 }
 
 .inputBox textarea {
@@ -1237,20 +1236,26 @@ body body::-webkit-scrollbar {
 }
 
 @media (max-width: 991px) {
-  .contactUs {
-    padding: 20px;
-  }
   .box {
-    position: relative;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "form" "info" "map";
-    border: 10px solid black;
+  }
+  .contactfrom {
+    width: 50%;
+    border: solid 1px black;
+  }
+  .contactUs {
+    padding: 20px;
   }
   .map {
     padding: 0;
     min-height: 300px;
+  }
+  .formBox {
+    width: 50%;
   }
   .formBox .row50 {
     gap: 0;
