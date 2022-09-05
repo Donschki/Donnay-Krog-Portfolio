@@ -86,7 +86,7 @@ main {
   @include boxShadow;
   background-color: $backgroundColor;
   width: 100%;
-  transform: skewY(-5deg);
+  transform: skewY(2deg);
   overflow-y: hidden;
   padding: 1em;
 

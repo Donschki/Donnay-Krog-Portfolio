@@ -170,7 +170,7 @@ header #navList a:hover {
   box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
   background-color: #242f33;
   width: 100%;
-  transform: skewY(-5deg);
+  transform: skewY(2deg);
   overflow-y: hidden;
   padding: 1em;
   -ms-overflow-style: none;
@@ -428,8 +428,9 @@ body body::-webkit-scrollbar {
   align-items: center;
 }
 .main3 .portfolioContainer .downWithDough3D {
-  transform: skewY(-5deg);
+  transform: skewY(2deg);
   transition: all 0.2s;
+  box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
   width: 100%;
   height: 20em;
   background-attachment: fixed;
@@ -443,7 +444,7 @@ body body::-webkit-scrollbar {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
-.main3 .portfolioContainer .downWithDough3D img:hover {
+.main3 .portfolioContainer .downWithDough3D .downWithDough3D:hover {
   transition: 0.3s;
   width: 105%;
   height: 120%;
@@ -457,35 +458,33 @@ body body::-webkit-scrollbar {
   content: "";
   height: 100%;
   width: 14.4px;
-  left: -14px;
+  right: -14px;
   top: 0;
   position: absolute;
-  transform: skewY(35deg);
+  transform: skewY(-35deg);
   background-color: #2da8d8;
-  transform-origin: right;
-  transition: 0.3s;
+  transform-origin: left;
+  transition: all 0.7s;
 }
 .main3 .portfolioContainer .downWithDough3D::after {
   content: "";
   height: 10px;
   width: 100%;
   position: absolute;
-  transform: skewX(55deg);
+  transform: skewX(-55deg);
   background-color: #d9524e;
   transform-origin: bottom;
   top: -10px;
-  left: 0;
-  transition: all 0.3s;
+  right: 0;
+  transition: all 0.7s;
 }
 .main3 .portfolioContainer .downWithDough3D:hover::before {
-  color: black;
-  transform: rotateY(160deg) translateZ(-5em) skewY(30deg);
-  transition: all 0.5s;
+  transition: all 0.3s;
+  height: 0%;
 }
 .main3 .portfolioContainer .downWithDough3D:hover::after {
-  color: black;
-  transform: rotateX(130deg) translateZ(2em) skewX(30deg) translateX(0em);
-  transition: all 0.5s;
+  transition: all 0.3s;
+  width: 0%;
 }
 
 #DON {

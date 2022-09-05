@@ -13,10 +13,11 @@
   align-items: center;
 
 .downWithDough3D {
- -moz-transform: skewY(-5deg);
- -ms-transform: skewY(-5deg);
- transform: skewY(-5deg);
+ -moz-transform: skewY(2deg);
+ -ms-transform: skewY(2deg);
+ transform: skewY(2deg);
  transition: all 0.2s;
+ @include boxShadow;
 
  width: 100%;
  height: 20em;
@@ -33,7 +34,7 @@
 
  }
 
- img:hover {
+ .downWithDough3D:hover {
   transition: 0.3s;
   width: 105%;
   height: 120%;
@@ -47,41 +48,39 @@
 }
 
 .downWithDough3D::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 14.4px;
-  left: -14px;
+  right: -14px;
   top: 0;
   position: absolute;
-  transform: skewY(35deg);
-  background-color: $blue;
-  transform-origin: right ;
-  transition: 0.3s;
+  transform: skewY(-35deg);
+  background-color: #2da8d8;
+  transform-origin: left;
+  transition: all 0.7s;
  }
 
  .downWithDough3D::after {
-  content: '';
+  content: "";
   height: 10px;
   width: 100%;
   position: absolute;
-  transform: skewX(55deg);
-  background-color: $salmon;
+  transform: skewX(-55deg);
+  background-color: #d9524e;
   transform-origin: bottom;
   top: -10px;
-  left: 0;
-  transition: all 0.3s;
+  right: 0;
+  transition: all 0.7s;
  }
 
 .downWithDough3D:hover::before {
- color: black;
- transform: rotateY(160deg) translateZ(-5em) skewY(30deg);
- transition: all 0.5s;
+ transition: all 0.3s;
+ height: 0%;
 }
 
 .downWithDough3D:hover::after {
- color: black;
- transform: rotateX(130deg) translateZ(2em) skewX(30deg) translateX(0em);
- transition: all 0.5s;
+ transition: all 0.3s;
+ width: 0%;
 }}
 }
 
