@@ -278,31 +278,32 @@ h1 {
   100% {fill: rgb(58, 55, 55);}
 }}
 
+
  .contact h3 {
   color: rgba(255, 255, 255, 0.295);
   animation: contacth3 1.5s linear infinite;
-
 
   @keyframes contacth3 {
 
     0%, 100% {
     
       text-shadow: 
-      0 0 1px $blue,
-      0 0 1px $blue,
-      0 0 1px $blue,
-      0 0 1px $blue,
-      0 0 1px $blue,
-      0 0 1px $blue,
-      0 0 2px $blue,
-      0 0 2px $blue,
-      0 0 30px $blue,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 2px white,
+      0 0 2px white,
+      0 0 30px white,
     }
     
     50%, 55%, 60% {
       text-shadow: none;
     
   }}}
+
 
  .info h3 {
   color: rgba(255, 255, 255, 0.295);
@@ -314,23 +315,23 @@ h1 {
     0%, 100% {
     
       text-shadow: 
-      0 0 1px $salmon,
-      0 0 1px $salmon,
-      0 0 1px $salmon,
-      0 0 1px $salmon,
-      0 0 1px $salmon,
-      0 0 1px $salmon,
-      0 0 2px $salmon,
-      0 0 2px $salmon,
-      0 0 7px $salmon,
-      0 0 30px $salmon,
-      }
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 1px white,
+      0 0 2px white,
+      0 0 2px white,
+      0 0 30px white,
+    }
     
     50%, 55%, 60% {
       text-shadow: none;
     }
     
   }}
+
 
  .inputBox span {
     color: rgba(255, 255, 255, 0.295);
@@ -351,6 +352,7 @@ h1 {
     }
     
   }}
+
 
 @media screen and (min-width: 768px) {// SLIDING_BANNER
 .slidingBanner {

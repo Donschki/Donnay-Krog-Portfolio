@@ -432,10 +432,19 @@ body body::-webkit-scrollbar {
   transition: all 0.2s;
   width: 100%;
   height: 20em;
-  background-image: url("/Photos/dwdHomePage.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+}
+.main3 .portfolioContainer .downWithDough3D img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.main3 .portfolioContainer .downWithDough3D img:hover {
+  transition: 0.3s;
+  width: 120%;
+  height: 110%;
 }
 .main3 .portfolioContainer .downWithDough3D:hover {
   transition: all 0.3s;
@@ -793,7 +802,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes contacth3 {
   0%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 30px #2da8d8;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 2px white, 0 0 2px white, 0 0 30px white;
   }
   50%, 55%, 60% {
     text-shadow: none;
@@ -801,7 +810,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes contacth3 {
   0%, 100% {
-    text-shadow: 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 1px #2da8d8, 0 0 2px #2da8d8, 0 0 2px #2da8d8, 0 0 30px #2da8d8;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 2px white, 0 0 2px white, 0 0 30px white;
   }
   50%, 55%, 60% {
     text-shadow: none;
@@ -815,7 +824,7 @@ body body::-webkit-scrollbar {
 }
 @-webkit-keyframes infoh3 {
   0%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 2px white, 0 0 2px white, 0 0 30px white;
   }
   50%, 55%, 60% {
     text-shadow: none;
@@ -823,7 +832,7 @@ body body::-webkit-scrollbar {
 }
 @keyframes infoh3 {
   0%, 100% {
-    text-shadow: 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 1px #d9524e, 0 0 2px #d9524e, 0 0 2px #d9524e, 0 0 7px #d9524e, 0 0 30px #d9524e;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 2px white, 0 0 2px white, 0 0 30px white;
   }
   50%, 55%, 60% {
     text-shadow: none;
