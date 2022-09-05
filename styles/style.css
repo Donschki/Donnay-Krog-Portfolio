@@ -1363,6 +1363,13 @@ body body::-webkit-scrollbar {
     width: 30%;
   }
 }
+@media (min-width: 1500px) {
+  .two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 * {
   padding: 0;
   margin: 0;
