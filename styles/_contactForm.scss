@@ -69,6 +69,7 @@
     background: #34414e;
     width: 100%;
     border: none;
+    color: white;
 }
 
 .inputBox textarea {
@@ -80,6 +81,7 @@
     background: #34414e;
     outline: none;
     border: none;
+    color: white;
 }
 
 .inputBox input[type="submit"] {
@@ -127,6 +129,7 @@
 
 .map {
      padding: 0;
+     height: 50%;
 }
 
 .map iframe {
@@ -157,7 +160,6 @@
 
 .map {
     padding: 0;
-    height: 10em;
 }
 
 .formBox {

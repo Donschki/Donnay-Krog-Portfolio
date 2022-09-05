@@ -1058,6 +1058,9 @@ body body::-webkit-scrollbar {
     font-size: 2vh;
     width: 100%;
   }
+  .one .main2 .aboutContainer .iconBar svg {
+    padding: 10px;
+  }
   .one .main3 {
     margin: 0 auto;
   }
@@ -1231,6 +1234,7 @@ body body::-webkit-scrollbar {
   background: #34414e;
   width: 100%;
   border: none;
+  color: white;
 }
 
 .inputBox textarea {
@@ -1242,6 +1246,7 @@ body body::-webkit-scrollbar {
   background: #34414e;
   outline: none;
   border: none;
+  color: white;
 }
 
 .inputBox input[type=submit] {
@@ -1296,6 +1301,7 @@ body body::-webkit-scrollbar {
 
 .map {
   padding: 0;
+  height: 50%;
 }
 
 .map iframe {
@@ -1319,7 +1325,6 @@ body body::-webkit-scrollbar {
   }
   .map {
     padding: 0;
-    height: 10em;
   }
   .formBox {
     width: 100%;

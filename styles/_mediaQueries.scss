@@ -91,8 +91,8 @@
   height: 100vh;
 
 .aboutContainer {
-    margin: 1em auto;
-    gap: 0;
+   margin: 1em auto;
+   gap: 0;
    display: grid;
  
    .paragraphHeadings {
@@ -142,6 +142,10 @@
         width: 100%;
       }
     }
+  }
+
+  .iconBar svg{
+    padding: 10px;
   }
 }
 }
