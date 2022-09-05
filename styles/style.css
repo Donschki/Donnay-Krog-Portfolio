@@ -1104,7 +1104,7 @@ body body::-webkit-scrollbar {
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
     line-height: 2;
-    font-size: 2.5vh;
+    font-size: 2.1vh;
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 6.5em;
