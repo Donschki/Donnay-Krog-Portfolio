@@ -237,7 +237,7 @@ h1 {
 }}
 
 
-#facebook {
+ #facebook {
   animation: facebook 1.5s infinite alternate;
   animation-delay: 0.5s;
   
@@ -247,7 +247,7 @@ h1 {
   }
 }
 
-#instagram {
+ #instagram {
   animation: instagram 1.5s infinite alternate;
   animation-delay: 1s;
   
@@ -257,7 +257,7 @@ h1 {
 }}
 
 
-#linkedIn {
+ #linkedIn {
   animation: linkedIn 1.5s infinite alternate;
   animation-delay: 1.5s;
  
@@ -269,7 +269,7 @@ h1 {
 
 }
 
-#resume {
+ #resume {
   animation: resume 1.5s infinite alternate;
   animation-delay: 2s;
   
@@ -277,6 +277,80 @@ h1 {
   0% {fill: white;}
   100% {fill: rgb(58, 55, 55);}
 }}
+
+ .contact h3 {
+  color: rgba(255, 255, 255, 0.295);
+  animation: contacth3 1.5s linear infinite;
+
+
+  @keyframes contacth3 {
+
+    0%, 100% {
+    
+      text-shadow: 
+      0 0 1px $blue,
+      0 0 1px $blue,
+      0 0 1px $blue,
+      0 0 1px $blue,
+      0 0 1px $blue,
+      0 0 1px $blue,
+      0 0 2px $blue,
+      0 0 2px $blue,
+      0 0 30px $blue,
+    }
+    
+    50%, 55%, 60% {
+      text-shadow: none;
+    
+  }}}
+
+ .info h3 {
+  color: rgba(255, 255, 255, 0.295);
+  animation: infoh3 1.5s linear infinite;
+
+
+  @keyframes infoh3 {
+
+    0%, 100% {
+    
+      text-shadow: 
+      0 0 1px $salmon,
+      0 0 1px $salmon,
+      0 0 1px $salmon,
+      0 0 1px $salmon,
+      0 0 1px $salmon,
+      0 0 1px $salmon,
+      0 0 2px $salmon,
+      0 0 2px $salmon,
+      0 0 7px $salmon,
+      0 0 30px $salmon,
+      }
+    
+    50%, 55%, 60% {
+      text-shadow: none;
+    }
+    
+  }}
+
+ .inputBox span {
+    color: rgba(255, 255, 255, 0.295);
+    animation: placeholder 4.5s linear infinite;
+
+  @keyframes placeholder {
+
+    0%,10%,20%,30%,40%,50%,60%,70%,80%,89%,91%, 100% {
+    
+      text-shadow: 
+      0 0 1px #D9524EFF,
+      0 0 10px #D9524EFF,
+      0 0 42px #D9524EFF,
+    }
+    
+    90%, 99% {
+      text-shadow: none;
+    }
+    
+  }}
 
 @media screen and (min-width: 768px) {// SLIDING_BANNER
 .slidingBanner {
