@@ -1104,6 +1104,9 @@ body body::-webkit-scrollbar {
   .one .main2 .aboutContainer .aboutMeBox {
     max-width: 300px;
   }
+  .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
+    font: 2em;
+  }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial {
     letter-spacing: 8px;
     line-height: 2;
@@ -1116,7 +1119,7 @@ body body::-webkit-scrollbar {
     max-width: 350px;
   }
   .one .main2 .aboutContainer .myJourneyBox #myJourneySection #spanHungry {
-    font-size: 1em;
+    font-size: 1.3em;
     width: 100%;
   }
   .one .banner {

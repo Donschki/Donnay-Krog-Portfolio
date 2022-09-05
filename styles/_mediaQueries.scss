@@ -198,10 +198,15 @@
   .paragraphs {
       font-size: 2vh;
       line-height: 1.5;
+      
   }
 
   .aboutMeBox {
     max-width: 300px;
+
+    #spanPrinciples {
+      font: 2em;
+    }
 
     #aboutMeSection {
 
@@ -219,10 +224,11 @@
    
   .myJourneyBox {
     max-width: 350px;
+
     #myJourneySection{
 
       #spanHungry {
-        font-size: 1em;
+        font-size: 1.3em;
         width: 100%;
       }
     } 
