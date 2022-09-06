@@ -251,7 +251,7 @@
  
  .downWithDough3D {
  display: none;
- 
+
   img {
      display: none;
    }
@@ -265,15 +265,16 @@
  @include boxShadow;
  width: 100%;
  height: 20em;
+ display: flex;
 
  background-attachment: fixed;
  background-size: 100% 100%;
  background-repeat: no-repeat;
 
  img {
-   width: 100%;
-   height: 100%;
-  }
+    width: 100%;
+    height: 100%;
+   }
 }
 
 .downWithDough3D2::before {
