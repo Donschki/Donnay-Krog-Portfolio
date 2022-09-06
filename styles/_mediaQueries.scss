@@ -247,10 +247,14 @@
 }
 
  .portfolioContainer {
- margin: 1em auto;
+  margin: 1em auto;
  
  .downWithDough3D {
   display: none;
+
+  img {
+    display: none;
+  }
  }
 
  .downWithDough3D2 {
@@ -270,9 +274,7 @@
    width: 100%;
    height: 100%;
   }
- 
 }
-
 
 .downWithDough3D2::before {
   content: "";

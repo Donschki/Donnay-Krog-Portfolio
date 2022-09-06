@@ -440,6 +440,44 @@ h2 {
 }}
 }
 
+@media screen and (min-width: 1280px) {// SLIDING_BANNER
+  .slidingBanner {
+    animation: banner5 7s linear infinite; 
+    transform: translateX(100%);
+    font-size: 4vh;
+
+   @keyframes banner5 {
+   
+     0% {
+       transform: translateX(80%); 
+     }
+     
+     100% {
+       transform: translateX(-380%); 
+     }
+     
+     0%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+       
+       text-shadow: 
+       0 0 1px $blue,
+       0 0 1px $blue,
+       0 0 1px $blue,
+       0 0 1px $blue,
+       0 0 1px $blue,
+       0 0 1px $blue,
+       0 0 2px $blue,
+       0 0 2px $blue,
+       0 0 7px $blue,
+       0 0 30px $blue,
+       }
+     
+     1%,5%,9%, 90% {
+       text-shadow: none;
+     }
+   
+   }}
+} 
+
     
 
 
