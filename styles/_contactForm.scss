@@ -100,6 +100,11 @@
 }
 
 //////////////////////////////// info
+ 
+.info h3 {
+    margin-bottom: 10px;
+}
+
 .info .infoBox div {
     display: flex;
     align-items: center;
@@ -111,7 +116,7 @@
     min-width: 40px;
     height: 40px;
     color: white;
-    background: lightblue;
+    background: $salmon;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,11 +125,11 @@
 }
 
 .info .infoBox div p {
-    color: white;
+     color: $blue;
 }
 
 .info .infoBox div a {
-    color: white;
+     color: $blue;
 }
 
 .map {
