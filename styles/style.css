@@ -414,6 +414,10 @@ body body::-webkit-scrollbar {
   height: 100%;
   justify-content: space-around;
 }
+.main2 .aboutContainer .iconBar svg {
+  color: rgba(255, 255, 255, 0.295);
+  padding: 10px;
+}
 
 .main3 {
   width: 100%;
@@ -687,7 +691,7 @@ body {
           animation: banner 5s linear infinite;
   transform: translateX(100%);
   font-size: 1.3em;
-  color: rgba(150, 54, 54, 0.123);
+  color: rgba(57, 159, 228, 0.123);
 }
 .slidingBanner h1 {
   text-align: center;
@@ -887,6 +891,7 @@ body {
             animation: banner3 7s linear infinite;
     transform: translateX(100%);
     font-size: 2em;
+    color: rgba(57, 159, 228, 0.123);
   }
   @-webkit-keyframes banner3 {
     0% {
@@ -965,6 +970,7 @@ body {
             animation: banner5 7s linear infinite;
     transform: translateX(100%);
     font-size: 4vh;
+    color: rgba(57, 159, 228, 0.123);
   }
   @-webkit-keyframes banner5 {
     0% {
@@ -1110,9 +1116,6 @@ body {
     text-align: left;
     font-size: 2vh;
     width: 100%;
-  }
-  .one .main2 .aboutContainer .iconBar svg {
-    padding: 10px;
   }
   .one .main3 {
     margin: 0 auto;
@@ -1467,6 +1470,7 @@ body {
   }
   .map {
     width: 30%;
+    height: 100%;
   }
 }
 @media (min-width: 1500px) {

@@ -198,7 +198,7 @@ body { //                          FADE_IN_AT_PAGE_ENTER
  animation: banner 5s linear infinite; 
  transform: translateX(100%);
  font-size: 1.3em;
- color: rgba(150, 54, 54, 0.123);
+ color: rgba(57, 159, 228, 0.123);
 
 h1 {
   text-align: center;
@@ -359,6 +359,7 @@ h1 {
  animation: banner3 7s linear infinite; 
  transform: translateX(100%);
  font-size: 2em;
+  color: rgba(57, 159, 228, 0.123);
 
  
 @keyframes banner3 {
@@ -442,6 +443,7 @@ h2 {
     animation: banner5 7s linear infinite; 
     transform: translateX(100%);
     font-size: 4vh;
+     color: rgba(57, 159, 228, 0.123);
 
    @keyframes banner5 {
    
