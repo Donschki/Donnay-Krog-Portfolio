@@ -13,9 +13,9 @@
   align-items: center;
 
 .downWithDough3D {
- -moz-transform: skewY(2deg);
- -ms-transform: skewY(2deg);
- transform: skewY(2deg);
+ -moz-transform: skewY(-5deg);
+ -ms-transform: skewY(-5deg);
+ transform: skewY(-5deg);
  transition: all 0.2s;
  @include boxShadow;
 
@@ -29,47 +29,34 @@
  img {
   width: 100%;
   height: 100%;
-  transition: 0.3s;
-  backdrop-filter: blur(5px);
 
  }
 
- .downWithDough3D:hover {
-  transition: 0.3s;
-  width: 105%;
-  height: 120%;
-  backdrop-filter: blur(0px);
- }
-  
-}
-
-.downWithDough3D:hover {
- transition: all 0.3s;
 }
 
 .downWithDough3D::before {
   content: "";
   height: 100%;
   width: 14.4px;
-  right: -14px;
+  left: -14px;
   top: 0;
   position: absolute;
-  transform: skewY(-35deg);
+  transform: skewY(35deg);
   background-color: #2da8d8;
-  transform-origin: left;
+  transform-origin: right;
   transition: all 0.7s;
  }
 
- .downWithDough3D::after {
+.downWithDough3D::after {
   content: "";
   height: 10px;
   width: 100%;
   position: absolute;
-  transform: skewX(-55deg);
+  transform: skewX(55deg);
   background-color: #d9524e;
   transform-origin: bottom;
   top: -10px;
-  right: 0;
+  left: 0;
   transition: all 0.7s;
  }
 
@@ -81,6 +68,13 @@
 .downWithDough3D:hover::after {
  transition: all 0.3s;
  width: 0%;
-}}
+}
+
+}
+}
+@media (min-width: 1280px){
+  .downWithDough3D {
+    width: 1em;
+  }
 }
 

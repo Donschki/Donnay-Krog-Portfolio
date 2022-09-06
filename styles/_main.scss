@@ -85,8 +85,8 @@ main {
 .banner {
   @include boxShadow;
   background-color: $backgroundColor;
-  width: 100%;
-  transform: skewY(2deg);
+  width: 90%;
+  transform: skewY(-5deg);
   overflow-y: hidden;
   padding: 1em;
 
