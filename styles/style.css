@@ -479,6 +479,33 @@ body body::-webkit-scrollbar {
     width: 1em;
   }
 }
+body {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #DON {
   -webkit-animation: spanDon 3.1s infinite;
           animation: spanDon 3.1s infinite;
@@ -1120,7 +1147,7 @@ body body::-webkit-scrollbar {
   .one .main3 .banner {
     margin: 0.5em auto;
     transform: skewY(2deg);
-    width: 100% s;
+    width: 100%;
   }
   .one .main3 .portfolioContainer {
     margin: 1em auto;
