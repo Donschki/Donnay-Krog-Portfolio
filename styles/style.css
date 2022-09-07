@@ -416,7 +416,6 @@ body body::-webkit-scrollbar {
   justify-content: space-around;
 }
 .main2 .aboutContainer .iconBar svg {
-  color: rgba(255, 255, 255, 0.295);
   padding: 10px;
 }
 
