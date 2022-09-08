@@ -758,7 +758,7 @@ body {
 }
 @-webkit-keyframes instagram {
   0% {
-    fill: rgb(233, 87, 82);
+    fill: #d9524e;
   }
   100% {
     fill: rgb(58, 55, 55);
@@ -766,7 +766,7 @@ body {
 }
 @keyframes instagram {
   0% {
-    fill: rgb(233, 87, 82);
+    fill: #d9524e;
   }
   100% {
     fill: rgb(58, 55, 55);
