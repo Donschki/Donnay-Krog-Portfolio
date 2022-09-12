@@ -30,7 +30,11 @@
   transition: transform 0.7s, left 0.4s;
   left: -15em;
   z-index: 100;
+
+  
 }
+
+
 
 @mixin hamburger {//////////HAMBURGER
   display: flex;
