@@ -19,7 +19,8 @@
 }
 
 html {
- -ms-scrollbar-style:none;
+ scroll-behavior: smooth;
+ -ms-scrollbar-style:smooth;
  scrollbar-width: none;
 }
 
