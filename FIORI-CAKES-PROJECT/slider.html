@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="slider.css">
+     <title>Document</title>
+ </head>
+ <body>
+    
+  <div id="slider"> 
+
+    <a href="Photos/Cupcakes/Hand-Cupcake.jpg" target="_blank"> <img class="slides" src="Photos/Cupcakes/Hand-Cupcake.jpg"></a>
+    <a href="Photos/Cupcakes/5-cactus-cupcakes.jpeg" target="_blank"> <img class="slides" src="Photos/Cupcakes/5-cactus-cupcakes.jpeg"></a>   
+    <a href="Photos/Cupcakes/Floral-Cupakes-3.jpg" target="_blank"> <img class="slides" src="Photos/Cupcakes/Floral-Cupakes-3.jpg"></a>
+    <a href="Photos/Cakes/Cake-Box-1.jpg" target="_blank"> <img class="slides" src="Photos/Cakes/Cake-Box-1.jpg"></a>             
+    <a href="Photos/Cakes/Floral-Cake-2.jpg" target="_blank"> <img class="slides" src="Photos/Cakes/Floral-Cake-2.jpg"> </a>         
+    <a href="Photos/Cakes/Floral-Cake-4.jpg" target="_blank"> <img class="slides" src="Photos/Cakes/Floral-Cake-4.jpg">  </a>
+    <a href="Photos/Cupcakes/5-cactus-cupcakes.jpeg" target="_blank"> <img class="slides" src="Photos/Cupcakes/5-cactus-cupcakes.jpeg">  </a>
+    <a href="Photos/Cupcakes/Succulent-Cupcakes-2.jpg" target="_blank"> <img class="slides" src="Photos/Cupcakes/Succulent-Cupcakes-2.jpg">  </a>
+
+
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+  
+     var fadeComplete = function() { stage.appendChild(arr[0]); };
+  
+     var stage = document.getElementById("slider");
+     var arr = stage.getElementsByTagName("a");
+     for(var i=0; i < arr.length; i++) {
+       
+       arr[i].addEventListener("animationend", fadeComplete, false);
+       
+     }
+  
+   }, false);
+  
+    </script>
+ </body>
+ </html>
+
+
