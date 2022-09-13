@@ -168,7 +168,6 @@
     width: 25em;
   }
 }
-
  
 }}
 
@@ -243,9 +242,7 @@
       }
     } 
   }
-}
-
-}
+}}
 
  .main3 {
   width: 34.5vw;
@@ -257,16 +254,15 @@
 }
 
  .portfolioContainer {
-  margin: 1em auto;
   flex-direction: column;
  
  .downWithDough3D {
- display: none;
+  display: none;
 
   img {
      display: none;
    }
- }
+}
  
  .downWithDough3D2 {
  -moz-transform: skewY(2deg);
@@ -288,7 +284,7 @@
    }
 }
 
-.downWithDough3D2::before {
+ .downWithDough3D2::before {
   content: "";
   height: 100%;
   width: 14.4px;
@@ -299,9 +295,9 @@
   background-color: #2da8d8;
   transform-origin: left;
   transition: all 0.7s;
- }
+}
 
-.downWithDough3D2::after {
+ .downWithDough3D2::after {
   content: "";
   height: 10px;
   width: 100%;
@@ -312,17 +308,17 @@
   top: -10px;
   right: 0;
   transition: all 0.7s;
- }
+}
 
  .downWithDough3D2:hover::before {
   transition: all 0.3s;
   height: 0%;
- }
+}
  
  .downWithDough3D2:hover::after {
   transition: all 0.3s;
   width: 0%;
- }
+}
 
  .fioriCakes3D {
   display: none;
@@ -330,9 +326,9 @@
    img {
       display: none;
     }
-  }
+}
   
-  .fioriCakes3D2 {
+ .fioriCakes3D2 {
   -moz-transform: skewY(2deg);
   -ms-transform: skewY(2deg);
   transform: skewY(2deg);
@@ -350,7 +346,7 @@
      width: 100%;
      height: 100%;
     }
- }
+}
  
  .fioriCakes3D2::before {
    content: "";
@@ -363,7 +359,7 @@
    background-color: #2da8d8;
    transform-origin: left;
    transition: all 0.7s;
-  }
+}
  
  .fioriCakes3D2::after {
    content: "";
@@ -376,20 +372,19 @@
    top: -10px;
    right: 0;
    transition: all 0.7s;
-  }
+}
  
-  .fioriCakes3D2:hover::before {
+ .fioriCakes3D2:hover::before {
    transition: all 0.3s;
    height: 0%;
-  }
+}
   
-  .fioriCakes3D2:hover::after {
+ .fioriCakes3D2:hover::after {
    transition: all 0.3s;
    width: 0%;
-  }
-  }
+}
 
- }
+}}
 }
   
 }
