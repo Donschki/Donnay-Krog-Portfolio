@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#slider {
+    
+    border-radius: 20px;
+} 
+
+#Slides {
+
+    width: 500px;
+    height: 500px;
+}
+
+#slider a {
+
+    position: absolute;
+}
+
+#slider img {
+  
+    width: 600px;
+    height: 600px;
+
+}
+
+/* ---------------------------------- Cake Auto Gallery -------------------------------------*/
+
+#slider a:nth-of-type(1) {
+
+    animation-name: fader;
+    animation-delay: 3.5s;
+    animation-duration: 1s ;
+    z-index: 20;
+}
+
+#slider a:nth-of-type(2) {
+
+    z-index: 10;
+}
+
+#slider a:nth-of-type(n+3) {  
+
+    display: none;
+}
+
+@keyframes fader {
+
+    from{opacity: 1.0;}
+    to {opacity: 0.0;}; 
+}
