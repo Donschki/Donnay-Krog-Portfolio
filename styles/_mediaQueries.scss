@@ -53,6 +53,17 @@
 .main3 {
   .portfolioContainer {
     width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .downWithDough3D {
+      width: 40%;
+    }
+
+    .fioriCakes3D {
+      width: 40%;
+    }
 
   }
 }
