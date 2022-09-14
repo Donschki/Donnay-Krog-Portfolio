@@ -1185,7 +1185,7 @@ body body::-webkit-scrollbar {
     font-size: 3.5vh;
   }
   .one .main2 .aboutContainer .paragraphs {
-    font-size: 2vh;
+    font-size: 1em;
     line-height: 1.5;
   }
   .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
