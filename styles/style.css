@@ -1228,7 +1228,7 @@ body body::-webkit-scrollbar {
     transform: skewY(2deg);
     transition: all 0.2s;
     box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-    width: 50%;
+    width: 85%;
     height: 50%;
     display: flex;
     background-attachment: fixed;
@@ -1281,7 +1281,7 @@ body body::-webkit-scrollbar {
     transform: skewY(2deg);
     transition: all 0.2s;
     box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-    width: 50%;
+    width: 85%;
     height: 50%;
     display: flex;
     background-attachment: fixed;
