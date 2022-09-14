@@ -193,10 +193,9 @@
   .lastName {
    font-size: 15vh;
   }
-}}
-}
+}}}
 
- .main2 {
+.main2 {
   max-width: 30vw;
 
 .aboutContainer {
@@ -222,7 +221,7 @@
       .initial {
         letter-spacing: 8px;
         line-height: 2;
-        font-size: 2.1vh;
+        font-size: 0.8em;
       }
 
       .initial::first-letter {
@@ -243,7 +242,7 @@
   }
 }}
 
- .main3 {
+.main3 {
   width: 37vw;
   gap: 0;
 
@@ -386,11 +385,7 @@
    transition: all 0.3s;
    width: 0%;
 }
-
-}}
-}
-  
-}
+}}}}
 
 @media screen and (min-width: 1500px) {
 
