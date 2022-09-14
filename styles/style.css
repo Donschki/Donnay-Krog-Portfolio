@@ -1159,6 +1159,8 @@ body body::-webkit-scrollbar {
 @media screen and (min-width: 1280px) {
   .one {
     overflow: hidden;
+    padding: 0;
+    justify-content: center;
   }
   .one main {
     width: 25vw;
@@ -1201,7 +1203,7 @@ body body::-webkit-scrollbar {
     width: 100%;
   }
   .one .main3 {
-    width: 34.5vw;
+    width: 37vw;
     gap: 0;
   }
   .one .main3 .banner {
@@ -1212,6 +1214,7 @@ body body::-webkit-scrollbar {
   .one .main3 .portfolioContainer {
     margin: 1em auto;
     height: 100%;
+    width: 100%;
     flex-direction: column;
   }
   .one .main3 .portfolioContainer .downWithDough3D {
@@ -1224,7 +1227,7 @@ body body::-webkit-scrollbar {
     transform: skewY(2deg);
     transition: all 0.2s;
     box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-    width: 100%;
+    width: 50%;
     height: 50%;
     display: flex;
     background-attachment: fixed;
@@ -1277,7 +1280,7 @@ body body::-webkit-scrollbar {
     transform: skewY(2deg);
     transition: all 0.2s;
     box-shadow: -50px 20px 5px rgba(0, 0, 0, 0.281);
-    width: 100%;
+    width: 50%;
     height: 50%;
     display: flex;
     background-attachment: fixed;

@@ -175,6 +175,8 @@
   
 .one {
  overflow: hidden;
+ padding: 0;
+ justify-content: center;
 
  main {
   width: 25vw;
@@ -242,7 +244,7 @@
 }}
 
  .main3 {
-  width: 34.5vw;
+  width: 37vw;
   gap: 0;
 
  .banner {
@@ -254,6 +256,7 @@
  .portfolioContainer {
    margin: 1em auto;
    height: 100%;
+   width: 100%;
    flex-direction: column;
 
  .downWithDough3D {
@@ -270,7 +273,7 @@
  transform: skewY(2deg);
  transition: all 0.2s;
  @include boxShadow;
- width: 100%;
+ width: 50%;
  height: 50%;
  display: flex;
 
@@ -334,7 +337,7 @@
   transform: skewY(2deg);
   transition: all 0.2s;
   @include boxShadow;
-  width: 100%;
+  width: 50%;
   height: 50%;
   display: flex;
  
