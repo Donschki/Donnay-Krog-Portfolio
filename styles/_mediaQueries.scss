@@ -174,7 +174,6 @@
 @media screen and (min-width: 1280px) {
   
 .one {
- gap: 0;
  overflow: hidden;
 
  main {
@@ -211,7 +210,6 @@
   }
 
   .aboutMeBox {
-    max-width: 300px;
 
     #spanPrinciples {
       font: 2em;
@@ -232,7 +230,6 @@
   }
    
   .myJourneyBox {
-    max-width: 350px;
 
     #myJourneySection{
 
@@ -412,6 +409,7 @@
 
 .main2 {
   max-width: 500px;
+  
  .aboutContainer { 
 
   .paragraphHeadings {

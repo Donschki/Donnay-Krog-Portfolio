@@ -532,33 +532,6 @@ body body::-webkit-scrollbar {
   width: 0%;
 }
 
-body {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: animate-fade;
-          animation-name: animate-fade;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-@-webkit-keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes animate-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 #DON {
   -webkit-animation: spanDon 3.1s infinite;
           animation: spanDon 3.1s infinite;
@@ -1186,7 +1159,6 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .one {
-    gap: 0;
     overflow: hidden;
   }
   .one main {
@@ -1214,9 +1186,6 @@ body {
     font-size: 2vh;
     line-height: 1.5;
   }
-  .one .main2 .aboutContainer .aboutMeBox {
-    max-width: 300px;
-  }
   .one .main2 .aboutContainer .aboutMeBox #spanPrinciples {
     font: 2em;
   }
@@ -1227,9 +1196,6 @@ body {
   }
   .one .main2 .aboutContainer .aboutMeBox #aboutMeSection .initial::first-letter {
     font-size: 6.5em;
-  }
-  .one .main2 .aboutContainer .myJourneyBox {
-    max-width: 350px;
   }
   .one .main2 .aboutContainer .myJourneyBox #myJourneySection #spanHungry {
     font-size: 1.3em;
@@ -1603,6 +1569,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: solid 1px black;
 }
 
 html {
