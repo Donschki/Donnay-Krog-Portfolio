@@ -30,6 +30,8 @@
 
 .info {
     grid-area: info;
+    background: $backgroundColor;
+    display: block;
 }
 
 .map {

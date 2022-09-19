@@ -1,9 +1,9 @@
 .one {
  flex-direction: column;
  display: flex;
- width: 100vw; 
  padding: 0 1em;
  gap: 2em;
+ overflow: visible;
 
  main {
  display: flex;

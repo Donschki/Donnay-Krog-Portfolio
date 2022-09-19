@@ -97,9 +97,9 @@ header #navList a:hover {
 .one {
   flex-direction: column;
   display: flex;
-  width: 100vw;
   padding: 0 1em;
   gap: 2em;
+  overflow: visible;
 }
 .one main {
   display: flex;
@@ -1210,7 +1210,6 @@ body body::-webkit-scrollbar {
 }
 @media screen and (min-width: 1200px) {
   .one {
-    overflow: hidden;
     padding: 0;
     justify-content: center;
   }
@@ -1446,6 +1445,8 @@ body body::-webkit-scrollbar {
 
 .info {
   grid-area: info;
+  background: #242f33;
+  display: block;
 }
 
 .map {
