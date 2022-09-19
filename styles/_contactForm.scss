@@ -34,9 +34,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 0%;
     padding: 2em 0;
-    gap: 2em;
 }
 
 .map {
@@ -112,14 +110,19 @@
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin: auto;
 }
+
 
 .info .infoBox div {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-    gap: 1em;
+    padding: 1em;
+    text-align: center;
 }
+
+
 
 .info .infoBox div span {
     min-width: 40px;
@@ -151,6 +154,22 @@
 }
 
 // Responsive Layout
+@media (min-width: 500px) {
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-around;
+    }
+    .infoBox {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+    }
+}
+
 @media (max-width: 768px) {
 .box {
  display: flex;
@@ -183,10 +202,6 @@
     gap: 0;
     display: flex;
     flex-direction: column;
-}
-
-.infoBox {
-    width: 100%;
 }}
 
 @media (min-width: 991px) {
@@ -203,7 +218,7 @@
 
     .info {
         width: 20%;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .infoBox {

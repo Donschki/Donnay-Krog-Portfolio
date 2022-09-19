@@ -272,7 +272,7 @@ body {
   font-family: "Tapestry", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
   transition: 0.5s;
-  gap: 2em;
+  gap: 3em;
   /* Hide scrollbar for Chrome, Safari and Opera */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -1450,9 +1450,7 @@ body body::-webkit-scrollbar {
   display: grid;
   justify-content: center;
   align-items: center;
-  height: 0%;
   padding: 2em 0;
-  gap: 2em;
 }
 
 .map {
@@ -1533,13 +1531,15 @@ body body::-webkit-scrollbar {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin: auto;
 }
 
 .info .infoBox div {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
-  gap: 1em;
+  padding: 1em;
+  text-align: center;
 }
 
 .info .infoBox div span {
@@ -1571,6 +1571,19 @@ body body::-webkit-scrollbar {
   height: 100%;
 }
 
+@media (min-width: 500px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+  }
+  .infoBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
 @media (max-width: 768px) {
   .box {
     display: flex;
@@ -1596,9 +1609,6 @@ body body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
   }
-  .infoBox {
-    width: 100%;
-  }
 }
 @media (min-width: 991px) {
   .two {
@@ -1612,7 +1622,7 @@ body body::-webkit-scrollbar {
   }
   .info {
     width: 20%;
-    flex-direction: row;
+    flex-direction: column;
   }
   .infoBox {
     display: grid;
