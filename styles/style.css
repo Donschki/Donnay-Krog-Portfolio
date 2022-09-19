@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
 header {
   position: absolute;
-  height: 10em;
-  z-index: 11;
+  width: 100%;
 }
 header .toggleLight {
   cursor: pointer;
@@ -12,12 +11,10 @@ header nav {
   flex-direction: column;
   position: fixed;
   z-index: 1000;
-  background: linear-gradient();
   top: 0;
-  left: 0;
-  width: 3em;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  margin: auto;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 0 3px 1px black;
 }
 header nav .toggleLight {
@@ -1567,6 +1564,7 @@ body body::-webkit-scrollbar {
   }
   .info {
     width: 20%;
+    flex-direction: row;
   }
   .infoBox {
     display: grid;

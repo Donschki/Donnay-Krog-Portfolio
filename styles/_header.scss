@@ -11,12 +11,10 @@
   flex-direction: column;
   position: fixed;
   z-index: 1000; 
-  background: linear-gradient();
   top: 0;
-  left: 0;
-  width: 3em;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  margin: auto;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 0 3px 1px black;
   
 }
@@ -30,11 +28,7 @@
   transition: transform 0.7s, left 0.4s;
   left: -15em;
   z-index: 100;
-
-  
 }
-
-
 
 @mixin hamburger {//////////HAMBURGER
   display: flex;
@@ -50,13 +44,16 @@
     height: 2px;
     border-radius: 70px;
   }
+
   #line1 {
    width: 0.9em;
    background-color: white;
   }
+
   #line2 {
    background-color: $fontColor;
   }
+
   #line3 {
    background-color: $salmon;
 }}
@@ -98,8 +95,8 @@ a {///////////////////////SIDEBAR_LINKS
 
 header {///////////////HEADER
  position: absolute;
- height: 10em;
- z-index: 11;
+ width: 100%;
+
   .toggleLight {
     cursor: pointer;
     
@@ -117,6 +114,7 @@ nav {///////////////////////NAV_BAR
 
 .hamburgerMenu {//////////HAMBURGER
   @include hamburger();
+ 
 }
 
 .sideBar {//////////SIDEBAR
