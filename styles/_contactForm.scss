@@ -31,7 +31,12 @@
 .info {
     grid-area: info;
     background: $backgroundColor;
-    display: block;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    padding: 2em 0;
+    gap: 2em;
 }
 
 .map {

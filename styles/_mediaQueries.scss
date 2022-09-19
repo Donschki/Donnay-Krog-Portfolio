@@ -3,8 +3,8 @@
 
  .one {
   max-width: 450px;
-  margin: auto;
   left: 0;
+  margin: auto;
  
  main {
   .mainHeading {
@@ -83,6 +83,7 @@ body {
    max-width: 100%;
    flex-direction: row;
    flex-wrap: wrap;
+    margin: 0;
 
  main {
  width: 40vw;
@@ -409,7 +410,7 @@ body {
 @media screen and (min-width: 1500px) {
 
  .one {
-  max-width: 1900px;
+  max-width: 2200px;
   justify-content: space-around;
 
  main {

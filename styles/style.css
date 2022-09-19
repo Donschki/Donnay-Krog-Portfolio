@@ -1072,8 +1072,8 @@ body body::-webkit-scrollbar {
 @media screen and (min-width: 500px) {
   .one {
     max-width: 450px;
-    margin: auto;
     left: 0;
+    margin: auto;
   }
   .one main .mainHeading {
     margin: 1em auto;
@@ -1126,6 +1126,7 @@ body body::-webkit-scrollbar {
     max-width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
   }
   .one main {
     width: 40vw;
@@ -1378,7 +1379,7 @@ body body::-webkit-scrollbar {
 }
 @media screen and (min-width: 1500px) {
   .one {
-    max-width: 1900px;
+    max-width: 2200px;
     justify-content: space-around;
   }
   .one main {
@@ -1446,7 +1447,12 @@ body body::-webkit-scrollbar {
 .info {
   grid-area: info;
   background: #242f33;
-  display: block;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  padding: 2em 0;
+  gap: 2em;
 }
 
 .map {
