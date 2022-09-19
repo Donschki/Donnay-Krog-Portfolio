@@ -67,13 +67,11 @@
  #aboutMeSection {
  color: $fontColor;
  display: flex;
- height: 70%;
 
 .initial {
  font-size: 6vw;
  line-height: 2;
  letter-spacing: 0.9vw;
- text-align: left;
 }
 
 .initial::first-letter {

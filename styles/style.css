@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro:wght@200&family=Tapestry&display=swap");
+#lines1:hover {
+  width: 0%;
+  transition: all 1s ease-in-out;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -12,9 +17,8 @@ header nav {
   position: fixed;
   z-index: 1000;
   top: 0;
-  margin: auto;
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   box-shadow: 0 0 3px 1px black;
 }
 header nav .toggleLight {
@@ -336,13 +340,11 @@ body body::-webkit-scrollbar {
 .main2 .aboutContainer #aboutMeSection {
   color: #2da8d8;
   display: flex;
-  height: 70%;
 }
 .main2 .aboutContainer #aboutMeSection .initial {
   font-size: 6vw;
   line-height: 2;
   letter-spacing: 0.9vw;
-  text-align: left;
 }
 .main2 .aboutContainer #aboutMeSection .initial::first-letter {
   color: #d9524e;
@@ -527,6 +529,33 @@ body body::-webkit-scrollbar {
 .main3 .portfolioContainer .fioriCakes3D:hover::after {
   transition: all 0.3s;
   width: 0%;
+}
+
+body {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+@-webkit-keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #DON {
