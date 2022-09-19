@@ -1,22 +1,37 @@
   
                    
-body { //                          FADE_IN_AT_PAGE_ENTER
-    animation-duration: 2s;
-    animation-name: animate-fade;
-    animation-delay: 1s;
-    animation-fill-mode: both;
+// body { //                          FADE_IN_AT_PAGE_ENTER
+//     animation-duration: 2s;
+//     animation-name: animate-fade;
+//     animation-delay: 1s;
+//     animation-fill-mode: both;
   
   
-  @keyframes animate-fade { //      
-    0% {
-      opacity: 0;
+//   @keyframes animate-fade { //      
+//     0% {
+//       opacity: 0;
+//     }
+    
+//     100% {
+//       opacity: 1;
+//     }
+//   }}
+ 
+.light {
+  animation: lightTopRight 3s infinite alternate ;
+
+  @keyframes  lightTopRight {
+
+    1%,10%,20%,30%,40%,50%,70%,60%,80%,89%,91%,99%, 100% {
+      box-shadow: 
+      0 0 100px 80px #F3E7D3,
     }
     
-    100% {
-      opacity: 1;
+    0%,5%,8%,9% {
+      box-shadow: none;
     }
-  }}
- 
+  }
+}
 
 #DON {
  animation: spanDon 3.1s infinite;

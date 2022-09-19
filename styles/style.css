@@ -276,6 +276,13 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+body .light {
+  position: fixed;
+  right: 0.5em;
+  top: 0.5em;
+  box-shadow: 0px 0px 90px 80px #F3E7D3;
+  z-index: 10;
+}
 body body::-webkit-scrollbar {
   display: none;
 }
@@ -531,30 +538,24 @@ body body::-webkit-scrollbar {
   width: 0%;
 }
 
-body {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: animate-fade;
-          animation-name: animate-fade;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+.light {
+  -webkit-animation: lightTopRight 3s infinite alternate;
+          animation: lightTopRight 3s infinite alternate;
 }
-@-webkit-keyframes animate-fade {
-  0% {
-    opacity: 0;
+@-webkit-keyframes lightTopRight {
+  1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    box-shadow: 0 0 100px 80px #F3E7D3;
   }
-  100% {
-    opacity: 1;
+  0%, 5%, 8%, 9% {
+    box-shadow: none;
   }
 }
-@keyframes animate-fade {
-  0% {
-    opacity: 0;
+@keyframes lightTopRight {
+  1%, 10%, 20%, 30%, 40%, 50%, 70%, 60%, 80%, 89%, 91%, 99%, 100% {
+    box-shadow: 0 0 100px 80px #F3E7D3;
   }
-  100% {
-    opacity: 1;
+  0%, 5%, 8%, 9% {
+    box-shadow: none;
   }
 }
 
