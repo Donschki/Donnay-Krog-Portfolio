@@ -452,7 +452,7 @@ h2 {
 }}
 }
 
-@media screen and (min-width: 1280px) {// SLIDING_BANNER
+@media screen and (min-width: 1200px) {// SLIDING_BANNER
   .slidingBanner {
     animation: banner5 7s linear infinite; 
     transform: translateX(100%);

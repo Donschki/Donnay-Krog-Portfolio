@@ -14,8 +14,9 @@
 }
 
 .main2 {
-
 .aboutContainer {
+  margin: 1em auto ;
+
    .paragraphHeadings {
      font-size: 1.5em;
    }
@@ -51,6 +52,8 @@
 }}
 
 .main3 {
+  margin: 0 auto;
+
   .portfolioContainer {
     width: 100%;
     flex-direction: column;
@@ -71,7 +74,11 @@
 }
 
 @media screen and (min-width: 768px) { 
+body {
+  display: flex;
+  flex-direction: column;
 
+}
   .one {
    max-width: 100%;
    flex-direction: row;
@@ -80,10 +87,11 @@
  main {
  width: 40vw;
  padding: 0 3em; 
+ margin: 0;
 
 .headingContainer {
  margin: 1em 0;
- height: 100vh;
+ min-height: 100%;
 
  .mainHeading {
 
@@ -99,7 +107,7 @@
 
 .main2 {
   max-width: 50vw;
-  height: 100vh;
+  margin: 0;
 
 .aboutContainer {
    margin: 1em auto;
@@ -182,7 +190,7 @@
  
 }}
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   
 .one {
  overflow: hidden;

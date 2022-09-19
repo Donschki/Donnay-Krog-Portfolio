@@ -5,20 +5,15 @@ body {////////////////BODY      ///TABLE_TENNIS
     font-family: 'Tapestry', cursive;
     font-family: 'Edu NSW ACT Foundation', cursive;
     transition: 0.5s;
-    display: grid;
     gap: 2em;
-
+    
     .light {
-
         position: fixed;
         right: 0.5em;
         top: 0.5em;
         box-shadow: 0px 0px 90px 80px #F3E7D3;
         z-index: 10;
     }
-
-
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
    -ms-overflow-style: none;  /* IE and Edge */
