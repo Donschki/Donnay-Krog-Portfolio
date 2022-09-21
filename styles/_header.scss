@@ -100,11 +100,11 @@ header {///////////////HEADER
  position: absolute;
  width: 100%;
 
-  .toggleLight {
+.toggleLight {
     cursor: pointer;
-    
-  }
-nav {///////////////////////NAV_BAR
+}
+
+ nav {///////////////////////NAV_BAR
   @include navBar();
 
   .toggleLight {
@@ -125,7 +125,7 @@ nav {///////////////////////NAV_BAR
 }
 
 .change {//////////SIDEBAR_CHANGE
-  left: 1em
+  left: 1em;
 }
 
 #navList {///////////////NAV_LIST

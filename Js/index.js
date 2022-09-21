@@ -3,28 +3,25 @@
 
 let hamburger = document.querySelector (".hamburgerMenu");
 let sideBar = document.querySelector (".sideBar");
+
+//                          TOGGLE SIDE BAR
+
 hamburger.addEventListener("click", () => {
     sideBar.classList.toggle("change");
+    body.click.toggle("change");
+    
 });
 
-//////////////////////////SIDE_BAR_TOGGLE
+document.querySelector('.one').addEventListener('click', () => {
+  sideBar.classList.remove('change');
+});
 
-const toggle = document.getElementById('toggle');
-
-document.onclick = function(e){
- if(e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
-    toggle.classList.remove('active');
-    sideBar.classList.remove('active');
- }
-}
-
-toggle.onclick = function () {
-    toggle.classList.toggle('active')
-    sideBar.classList.toggle('active')
-}
+document.querySelector('.two').addEventListener('click', () => {
+  sideBar.classList.remove('change');
+});
 
 
-///////////////////////////TOGGLE_LIGHT_MODE_BUTTON
+//                           TOGGLE_LIGHT_MODE_BUTTON
 
 function toggleButton () {
 var light = document.body;
@@ -32,7 +29,7 @@ var light = document.body;
     
 }
 
-//                                MAKE SMOOTH SCROLL WORK ON ALL BROWSERS      ////////
+//                            SMOOTH SCROLL WORK ON ALL BROWSERS      ////////
 
 $(document).ready(function(){
     // Add smooth scrolling to all links
