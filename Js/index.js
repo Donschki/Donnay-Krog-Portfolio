@@ -12,6 +12,9 @@ hamburger.addEventListener("click", () => {
     
 });
 
+//                          CLICK TO REMOVE SIDE BAR
+
+
 document.querySelector('.one').addEventListener('click', () => {
   sideBar.classList.remove('change');
 });
